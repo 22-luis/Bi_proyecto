@@ -1,0 +1,90 @@
+table vendor_data
+	lineageTag: 3d8b8846-8153-461d-9530-73d1550fc34c
+
+	column Vendor_ID
+		dataType: string
+		lineageTag: 20b53493-bd35-4711-b58a-1a446d43d898
+		summarizeBy: none
+		sourceColumn: Vendor_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Vendor_Name
+		dataType: string
+		lineageTag: 04eed55c-298c-4b91-bf6b-df94e0a5a4e5
+		summarizeBy: none
+		sourceColumn: Vendor_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Item_Supplied
+		dataType: string
+		lineageTag: 588a2eb9-2d0d-4188-a035-662eaa3e3ae4
+		summarizeBy: none
+		sourceColumn: Item_Supplied
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Avg_Lead_Time (days)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2aa0dd6e-5371-4f31-82f2-70a3f7b9177b
+		summarizeBy: sum
+		sourceColumn: Avg_Lead_Time (days)
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cost_Per_Item
+		dataType: double
+		lineageTag: a0053bf8-cd2b-49aa-bb27-0f21fe33bf26
+		summarizeBy: sum
+		sourceColumn: Cost_Per_Item
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Last_Order_Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 444af083-392e-43db-be74-051933a7655a
+		summarizeBy: none
+		sourceColumn: Last_Order_Date
+
+		variation Variación
+			isDefault
+			relationship: c469f685-95d2-4b9f-8574-c420a8d1df45
+			defaultHierarchy: LocalDateTable_21d38cf4-93fa-4e33-9b4e-6371ffc186c5.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Next_Delivery_Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: be10170b-73ac-4da5-895c-e95aa364460d
+		summarizeBy: none
+		sourceColumn: Next_Delivery_Date
+
+		variation Variación
+			isDefault
+			relationship: 7fa1b30c-a1d7-475f-aae3-105b050cbf76
+			defaultHierarchy: LocalDateTable_c71b7bca-ba41-4798-a882-219c6a960160.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition vendor_data = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents("C:\Users\Edwin\Downloads\BI\Bi_proyecto\Base Proyecto\vendor_data.csv"),[Delimiter=",", Columns=7, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Vendor_ID", type text}, {"Vendor_Name", type text}, {"Item_Supplied", type text}, {"Avg_Lead_Time (days)", Int64.Type}, {"Cost_Per_Item", type number}, {"Last_Order_Date", type date}, {"Next_Delivery_Date", type date}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,33 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-SV
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["financial_data","healthcare_dataset","inventory_data","patient_data","staff_data","vendor_data"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.143.1378.0 (25.05)+4e1de9c957866bc5336e0d250838314aa54ff3a8
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table financial_data
+ref table DateTableTemplate_c1d1d402-6330-4791-86f4-bce2a610ff6b
+ref table LocalDateTable_d7a5baf4-7277-4fab-bfb5-e67cee610167
+ref table healthcare_dataset
+ref table inventory_data
+ref table LocalDateTable_3fa1e710-1047-4487-a8b3-46df4e69dac8
+ref table patient_data
+ref table LocalDateTable_aa82b482-6930-4acf-93ad-506d070c1f8f
+ref table LocalDateTable_f30b8415-843d-490b-9900-be1e57ceffdf
+ref table staff_data
+ref table LocalDateTable_bf79cb95-e387-4490-adf5-6772ffff3caf
+ref table vendor_data
+ref table LocalDateTable_21d38cf4-93fa-4e33-9b4e-6371ffc186c5
+ref table LocalDateTable_c71b7bca-ba41-4798-a882-219c6a960160
+
+ref cultureInfo es-MX
+
