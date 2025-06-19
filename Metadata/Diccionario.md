@@ -1,4 +1,4 @@
-**Diccionario de Datos: healthcare_dataset**
+**Diccionario de Datos: patient_data**
 
 | Nombre del Dato     | Descripción                                                |
 |---------------------|------------------------------------------------------------|
@@ -8,14 +8,11 @@
 | Gender              | Género del paciente (por ejemplo, Male o Female)           |
 | Blood Type          | Tipo de sangre del paciente (por ejemplo, A+, O-, etc.)    |
 | Medical Condition   | Condición médica principal diagnosticada                   |
-| Admission Type      | Tipo de admisión al hospital (por ejemplo, Emergency)      |
-| Medication          | Medicamento administrado al paciente                       |
-| Test Results        | Resultados de exámenes médicos o pruebas realizadas        |
 
 **Diccionario de Datos: vendor_data**
 
 | Nombre del Dato         | Descripción                                                    |
-|--------------------------|----------------------------------------------------------------|
+|-------------------------|----------------------------------------------------------------|
 | Vendor_ID               | Identificador único del proveedor                              |
 | Vendor_Name             | Nombre de la empresa o proveedor                               |
 | Item_Supplied           | Nombre del artículo suministrado por el proveedor              |
@@ -24,7 +21,7 @@
 | Last_Order_Date         | Fecha del último pedido realizado al proveedor                 |
 | Next_Delivery_Date      | Fecha estimada para la próxima entrega                         |
 
-**Diccionario de Datos: patient_data**
+**Diccionario de Datos: admission_data**
 
 | Nombre del Dato        | Descripción                                                        |
 |------------------------|--------------------------------------------------------------------|
@@ -32,23 +29,27 @@
 | Admission_Date         | Fecha y hora de ingreso del paciente                               |
 | Discharge_Date         | Fecha y hora de alta del paciente                                  |
 | Primary_Diagnosis      | Diagnóstico principal al momento del ingreso                       |
+| Admission Type         | Tipo de admisión al hospital (por ejemplo, Emergency)              |
 | Procedure_Performed    | Procedimiento médico realizado durante la estancia                 |
 | Room_Type              | Tipo de habitación asignada al paciente                            |
 | Bed_Days               | Número de días que el paciente ocupó una cama                      |
-| Supplies_Used          | Insumos médicos utilizados durante la estancia (ej. guantes, IV)  |
+| Supplies_Used          | Insumos médicos utilizados durante la estancia (ej. guantes, IV)   |
 | Equipment_Used         | Equipos médicos utilizados (ej. mesa quirúrgica)                   |
 | Staff_Needed           | Personal requerido para la atención (ej. 2 cirujanos)              |
+| Medication             | Medicamento administrado al paciente                               |
+| Test Results           | Resultados de exámenes médicos o pruebas realizadas                |
 
-**Diccionario de Datos: financial_data**
+**Diccionario de Datos: expense_data**
 
 | Nombre del Dato     | Descripción                                                    |
 |---------------------|----------------------------------------------------------------|
-| Date                | Fecha en que se registró el gasto                              |
-| Expense_Category    | Categoría a la que pertenece el gasto (ej. Personal, Suministros) |
-| Amount              | Monto del gasto registrado                                     |
-| Description         | Descripción breve del gasto realizado                          |
+| Admission ID        | Identificador unico de la admision a la que pertence el gasto  |
+| Expense ID          | Identificador unico del gasto                                  |
+| Resource Name       | Nombre del recurso utilizado                                   |
+| Resource Type       | Categoría a la que pertenece el gasto (ej. Personal, Suministros) |
+| Resource Cost       | Monto total del gasto registrado                               |
 
-**Diccionario de Datos: staff_data**
+**Diccionario de Datos: staff_shift_data**
 
 | Nombre del Dato       | Descripción                                                        |
 |-----------------------|--------------------------------------------------------------------|
