@@ -26,13 +26,8 @@ CREATE TABLE dim_staff (
     staff_type VARCHAR(50)
 );
 
--- 4. Dimension: Patient (basic)
+-- 4. Dimension: Patient
 CREATE TABLE dim_patient (
-    patient_id VARCHAR(10) PRIMARY KEY
-);
-
--- 5. Dimension: Patient Detail (extending patient)
-CREATE TABLE dim_patient_detail (
     patient_id VARCHAR(10) PRIMARY KEY,
     name VARCHAR(100),
     age INT,
@@ -41,23 +36,43 @@ CREATE TABLE dim_patient_detail (
     medical_condition VARCHAR(100)
 );
 
--- 6. Dimension: Admission Type
-CREATE TABLE dim_admission_type (
-    admission_type_id INT IDENTITY(1,1) PRIMARY KEY,
-    admission_type VARCHAR(50) UNIQUE
-);
-
--- 7. Dimension: Medication
+-- 5. Dimension: Medication
 CREATE TABLE dim_medication (
     medication_id INT IDENTITY(1,1) PRIMARY KEY,
     medication_name VARCHAR(100) UNIQUE
 );
 
--- 8. Dimension: Test Result
+-- 6. Dimension: Test Result
 CREATE TABLE dim_test_result (
     test_result_id INT IDENTITY(1,1) PRIMARY KEY,
     test_result VARCHAR(50) UNIQUE
 );
+-- 7. Dimension: Admission Type
+CREATE TABLE dim_admission_type (
+    admission_type_id INT IDENTITY(1,1) PRIMARY KEY,
+    admission_type VARCHAR(50) UNIQUE
+);
+-- 8. Dimension: Admission
+CREATE TABLE dim_admission (
+    admission_id INT IDENTITY(1,1) PRIMARY KEY,
+	patient_id VARCHAR(10),
+    admission_date DATETIME,
+    discharge_date DATETIME,
+    primary_diagnosis VARCHAR(100),
+    procedure_performed VARCHAR(100),
+    room_type VARCHAR(50),
+    bed_days INT,
+	medication_id INT,
+	admission_type_id INT,
+	test_result_id INT,
+
+	CONSTRAINT FK_admission_patient FOREIGN KEY (patient_id) REFERENCES dim_patient(patient_id) ON DELETE CASCADE,
+	CONSTRAINT FK_admission_medication FOREIGN KEY (medication_id) REFERENCES dim_medication(medication_id) ON DELETE CASCADE,
+    CONSTRAINT FK_admission_test_result FOREIGN KEY (test_result_id) REFERENCES dim_test_result(test_result_id) ON DELETE CASCADE,
+	CONSTRAINT FK_admission_admission_type FOREIGN KEY (admission_type_id) REFERENCES dim_admission_type(admission_type_id) ON DELETE CASCADE
+);
+
+
 
 -- 9. Dimension: Item
 CREATE TABLE dim_item (
@@ -66,10 +81,11 @@ CREATE TABLE dim_item (
     item_name VARCHAR(100)
 );
 
--- 10. Dimension: Expense Category
-CREATE TABLE dim_expense_category (
-    expense_category_id INT IDENTITY(1,1) PRIMARY KEY,
-    expense_category VARCHAR(100) UNIQUE
+-- 10. Dimension: Resource
+CREATE TABLE dim_resource (
+    resource_id INT IDENTITY(1,1) PRIMARY KEY,
+	resource_name VARCHAR(100),
+    resource_category VARCHAR(100)
 );
 
 -- === Fact Tables ===
@@ -87,9 +103,9 @@ CREATE TABLE fact_inventory (
     restock_lead_time INT,
     vendor_id VARCHAR(10),
 
-    CONSTRAINT FK_inventory_date FOREIGN KEY (date_id) REFERENCES dim_date(date_id),
-    CONSTRAINT FK_inventory_item FOREIGN KEY (item_id) REFERENCES dim_item(item_id),
-    CONSTRAINT FK_inventory_vendor FOREIGN KEY (vendor_id) REFERENCES dim_vendor(vendor_id)
+    CONSTRAINT FK_inventory_date FOREIGN KEY (date_id) REFERENCES dim_date(date_id) ON DELETE CASCADE,
+    CONSTRAINT FK_inventory_item FOREIGN KEY (item_id) REFERENCES dim_item(item_id) ON DELETE CASCADE,
+    CONSTRAINT FK_inventory_vendor FOREIGN KEY (vendor_id) REFERENCES dim_vendor(vendor_id) ON DELETE CASCADE
 );
 
 -- 12. Fact: Staff Shift
@@ -104,49 +120,28 @@ CREATE TABLE fact_staff_shift (
     patients_assigned INT,
     overtime_hours INT,
 
-    CONSTRAINT FK_staff_shift_staff FOREIGN KEY (staff_id) REFERENCES dim_staff(staff_id)
+    CONSTRAINT FK_staff_shift_staff FOREIGN KEY (staff_id) REFERENCES dim_staff(staff_id) ON DELETE CASCADE
 );
 
--- 13. Fact: Patient Stay
-CREATE TABLE fact_patient_stay (
-    stay_id INT IDENTITY(1,1) PRIMARY KEY,
-    patient_id VARCHAR(10),
-    admission_date DATETIME,
-    discharge_date DATETIME,
-    primary_diagnosis VARCHAR(100),
-    procedure_performed VARCHAR(100),
-    room_type VARCHAR(50),
-    bed_days INT,
+-- 13. Fact: Admission
+CREATE TABLE fact_admission (
+    fact_id INT IDENTITY(1,1) PRIMARY KEY,
+    admission_id INT,
     supplies_used VARCHAR(255),
     equipment_used VARCHAR(100),
     staff_needed VARCHAR(100),
     total_cost INT,
 
-    CONSTRAINT FK_patient_stay_patient FOREIGN KEY (patient_id) REFERENCES dim_patient(patient_id)
-);
-
--- 14. Fact: Patient Health Details
-CREATE TABLE fact_patient_health (
-    fact_id INT IDENTITY(1,1) PRIMARY KEY,
-    patient_id VARCHAR(10),
-    admission_type_id INT,
-    medication_id INT,
-    test_result_id INT,
-
-    CONSTRAINT FK_patient_health_patient FOREIGN KEY (patient_id) REFERENCES dim_patient_detail(patient_id),
-    CONSTRAINT FK_patient_health_admission FOREIGN KEY (admission_type_id) REFERENCES dim_admission_type(admission_type_id),
-    CONSTRAINT FK_patient_health_medication FOREIGN KEY (medication_id) REFERENCES dim_medication(medication_id),
-    CONSTRAINT FK_patient_health_test_result FOREIGN KEY (test_result_id) REFERENCES dim_test_result(test_result_id)
+    CONSTRAINT FK_fact_admission FOREIGN KEY (admission_id) REFERENCES dim_admission(admission_id) ON DELETE CASCADE
 );
 
 -- 15. Fact: Expenses
 CREATE TABLE fact_expense (
     expense_id INT IDENTITY(1,1) PRIMARY KEY,
-    date_id INT,
-    expense_category_id INT,
-    amount DECIMAL(14, 2),
-    description VARCHAR(255),
+    admission_id INT,
+    resource_id INT,
+    cost DECIMAL(14, 2)
 
-    CONSTRAINT FK_expense_date FOREIGN KEY (date_id) REFERENCES dim_date(date_id),
-    CONSTRAINT FK_expense_category FOREIGN KEY (expense_category_id) REFERENCES dim_expense_category(expense_category_id)
+    CONSTRAINT FK_expense_admission FOREIGN KEY (admission_id) REFERENCES dim_admission(admission_id) ON DELETE CASCADE,
+    CONSTRAINT FK_expense_resource FOREIGN KEY (resource_id) REFERENCES dim_resource(resource_id) ON DELETE CASCADE
 );
