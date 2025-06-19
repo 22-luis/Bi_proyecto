@@ -1,45 +1,16 @@
-import os
 from typing import Any
 from prefect import task, flow
-from prefect.states import Completed, Failed
 from prefect.futures import wait
-import csv
 
-TABLE_DIR = "../Base Proyecto/"
+import table_config
+from extract_csv import scan_directory, parse_csv
+from transforms.transform_inventory import transform_inventory
+from transforms.transform_expense import transform_expense
+from transforms.transform_fact_admission import transform_fact_admission
+from transforms.transform_staff_shift import transform_staff_shift
+from load_sql_server import connect, clear, load
 
-@task
-def scan_directory(path: str) -> list[str]:
-    files = [entry.name for entry in os.scandir(path) if entry.is_file() and entry.name in tableFormatting]
-    return files
 
-@task
-def parse_csv(name: str) -> dict:
-    table = {"name": str, "fields": [], "rows": []}
-    with open(TABLE_DIR + name, 'r') as csv_file:
-        reader = csv.reader(csv_file)
-        table["fields"] = next(reader)
-        for row in reader:
-            table["rows"].append(row)
-    table["name"] = name
-    return table
-
-def healthcare_datasetFmt(table: dict[str, Any]) -> dict:
-    for row in table["rows"]:
-        row[1] = row[1].title()
-        
-    return table
-
-tableFormatting = {
-    "healthcare_dataset.csv" : healthcare_datasetFmt
-}
-
-@task()
-def format_tables(table: dict[str, Any]) -> dict:
-    fmtTable = tableFormatting[table["name"]](table)
-    if fmtTable is None:
-        return Completed(message= "Table format doesn't match")
-    return fmtTable
-    
 
 @task()
 def print_tables(tables: list[dict[str, Any]]) -> None:
@@ -52,19 +23,30 @@ def print_tables(tables: list[dict[str, Any]]) -> None:
 def etl() -> None:
 
     # Extract
-    filePaths = scan_directory(TABLE_DIR)
-    tables = parse_csv.map(filePaths)
-    # print("TABLES:")
-    # printTables(tables)
+    filePaths = scan_directory(table_config.TABLE_DIR, table_config.CSV_TABLES)
+    raw_tables = parse_csv.map(filePaths)
+    wait(raw_tables)
+    tagged_tables = {}
+    for table in raw_tables.result(): tagged_tables[table["name"]] = table 
+    
     # Transform
-    # Reformat
-    fmtTables = format_tables.map(tables)
-    wait(fmtTables)
-    filtered_tables = [i for i in fmtTables.result() if i is not None]
-    print("RESULTS:")
-    # print(fmtTables.result())
-    print_tables(filtered_tables)
-    # Split
+    load_tables = {}
+    inventory_state = transform_inventory(tagged_tables, return_state=True)
+    if inventory_state.is_completed(): load_tables.update(inventory_state.result())
+    expense_state = transform_expense(tagged_tables, return_state=True)
+    if expense_state.is_completed(): load_tables.update(expense_state.result())
+    admission_state = transform_fact_admission(tagged_tables, return_state=True)
+    if admission_state.is_completed(): load_tables.update(admission_state.result())
+    staff_shift_state = transform_staff_shift(tagged_tables, return_state=True)
+    if staff_shift_state.is_completed(): load_tables.update(staff_shift_state.result())
+
+    # Load
+    connection = connect()
+    for key in load_tables:
+        clear(connection, load_tables[key])
+    for key in load_tables:
+        load(connection, load_tables[key])
+        
 
 
 if __name__ == "__main__":
