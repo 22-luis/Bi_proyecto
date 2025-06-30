@@ -8,3 +8,7 @@ CSV_TABLES = [
     "staff_shift_data.csv",
     "vendor_data.csv"
 ]
+
+DB_NAME = 'DW'
+
+CONN_STR = f'Driver={{ODBC Driver 17 for SQL Server}};Server=.\\TESTDW;Database={DB_NAME};Trusted_Connection=yes;'

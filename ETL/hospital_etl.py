@@ -41,7 +41,7 @@ def etl() -> None:
     if staff_shift_state.is_completed(): load_tables.update(staff_shift_state.result())
 
     # Load
-    connection = connect()
+    connection = connect(table_config.CONN_STR)
     for key in load_tables:
         clear(connection, load_tables[key])
     for key in load_tables:
