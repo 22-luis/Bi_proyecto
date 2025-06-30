@@ -1,0 +1,102 @@
+table staff_data
+	lineageTag: e1261583-2c90-4040-b3e0-a2f3d030277e
+
+	column Staff_ID
+		dataType: string
+		lineageTag: 081481ac-ec68-421c-9185-c249b3c5336e
+		summarizeBy: none
+		sourceColumn: Staff_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Staff_Type
+		dataType: string
+		lineageTag: 7691f892-1717-44e1-b296-ccb123df071f
+		summarizeBy: none
+		sourceColumn: Staff_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Shift_Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 709c073a-7ad5-4fc0-ab18-d6b4b0900fb6
+		summarizeBy: none
+		sourceColumn: Shift_Date
+
+		variation Variación
+			isDefault
+			relationship: 6b5dcd56-fe39-4d66-a1c3-bb22d8413d62
+			defaultHierarchy: LocalDateTable_bf79cb95-e387-4490-adf5-6772ffff3caf.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Shift_Start_Time
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 4b9adfb2-e917-48df-9ced-9aaaf2edc412
+		summarizeBy: none
+		sourceColumn: Shift_Start_Time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column Shift_End_Time
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: f4b47311-8f9f-4617-b675-b4b3d472b508
+		summarizeBy: none
+		sourceColumn: Shift_End_Time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column Current_Assignment
+		dataType: string
+		lineageTag: dec23f27-1137-4279-ae89-e4f94c3f23b5
+		summarizeBy: none
+		sourceColumn: Current_Assignment
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hours_Worked
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a00bc08-0a39-4c8e-a75b-0a0dd12f8d55
+		summarizeBy: sum
+		sourceColumn: Hours_Worked
+
+		annotation SummarizationSetBy = Automatic
+
+	column Patients_Assigned
+		dataType: int64
+		formatString: 0
+		lineageTag: b65d4f0c-f43b-4528-9fae-d446d49f2367
+		summarizeBy: sum
+		sourceColumn: Patients_Assigned
+
+		annotation SummarizationSetBy = Automatic
+
+	column Overtime_Hours
+		dataType: int64
+		formatString: 0
+		lineageTag: 000f1b13-298d-47c6-80f7-eaa301251900
+		summarizeBy: sum
+		sourceColumn: Overtime_Hours
+
+		annotation SummarizationSetBy = Automatic
+
+	partition staff_data = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents("C:\Users\Edwin\Downloads\BI\Bi_proyecto\Base Proyecto\staff_data.csv"),[Delimiter=",", Columns=9, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Staff_ID", type text}, {"Staff_Type", type text}, {"Shift_Date", type datetime}, {"Shift_Start_Time", type time}, {"Shift_End_Time", type time}, {"Current_Assignment", type text}, {"Hours_Worked", Int64.Type}, {"Patients_Assigned", Int64.Type}, {"Overtime_Hours", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

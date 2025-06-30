@@ -1,0 +1,108 @@
+table patient_data
+	lineageTag: 282022f6-74a3-4c1b-b2f3-c8f4558343b5
+
+	column Patient_ID
+		dataType: string
+		lineageTag: 93de9318-6398-45c1-ae46-fdd460c29426
+		summarizeBy: none
+		sourceColumn: Patient_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Admission_Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0398a570-84d2-445b-8660-83041aec7a73
+		summarizeBy: none
+		sourceColumn: Admission_Date
+
+		variation Variación
+			isDefault
+			relationship: a3caa1e6-a105-447a-80b4-9abb6a36154b
+			defaultHierarchy: LocalDateTable_aa82b482-6930-4acf-93ad-506d070c1f8f.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discharge_Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 60d8fe13-f0f5-4ee2-9c83-26e1cf7f3d98
+		summarizeBy: none
+		sourceColumn: Discharge_Date
+
+		variation Variación
+			isDefault
+			relationship: d81c36b1-1356-48c8-b2a3-3744129fa986
+			defaultHierarchy: LocalDateTable_f30b8415-843d-490b-9900-be1e57ceffdf.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Primary_Diagnosis
+		dataType: string
+		lineageTag: 5e5782be-2afe-4835-bed5-74fa2becda24
+		summarizeBy: none
+		sourceColumn: Primary_Diagnosis
+
+		annotation SummarizationSetBy = Automatic
+
+	column Procedure_Performed
+		dataType: string
+		lineageTag: a1cf7ec6-afbe-423e-b4e6-5e1142a184af
+		summarizeBy: none
+		sourceColumn: Procedure_Performed
+
+		annotation SummarizationSetBy = Automatic
+
+	column Room_Type
+		dataType: string
+		lineageTag: 027ee028-2c69-4aac-b9cb-edef3b83831f
+		summarizeBy: none
+		sourceColumn: Room_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Bed_Days
+		dataType: int64
+		formatString: 0
+		lineageTag: c4f74945-f2fa-4b32-b563-34623f1b01a9
+		summarizeBy: sum
+		sourceColumn: Bed_Days
+
+		annotation SummarizationSetBy = Automatic
+
+	column Supplies_Used
+		dataType: string
+		lineageTag: 40520ee1-aa82-40ff-ba8a-b4fc1f102050
+		summarizeBy: none
+		sourceColumn: Supplies_Used
+
+		annotation SummarizationSetBy = Automatic
+
+	column Equipment_Used
+		dataType: string
+		lineageTag: 5d0ad5ed-8040-4ef9-bbe5-d99dc6c2bf81
+		summarizeBy: none
+		sourceColumn: Equipment_Used
+
+		annotation SummarizationSetBy = Automatic
+
+	column Staff_Needed
+		dataType: string
+		lineageTag: 25ff71fa-4c4e-48e4-b6fa-a7bad962cdb5
+		summarizeBy: none
+		sourceColumn: Staff_Needed
+
+		annotation SummarizationSetBy = Automatic
+
+	partition patient_data = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents("C:\Users\Edwin\Downloads\BI\Bi_proyecto\Base Proyecto\patient_data.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Patient_ID", type text}, {"Admission_Date", type datetime}, {"Discharge_Date", type datetime}, {"Primary_Diagnosis", type text}, {"Procedure_Performed", type text}, {"Room_Type", type text}, {"Bed_Days", Int64.Type}, {"Supplies_Used", type text}, {"Equipment_Used", type text}, {"Staff_Needed", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

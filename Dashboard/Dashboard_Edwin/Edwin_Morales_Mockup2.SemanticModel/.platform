@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Edwin_Morales_Mockup2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a7fd6b71-7043-4055-89ec-2c1e9db6067d"
+  }
+}

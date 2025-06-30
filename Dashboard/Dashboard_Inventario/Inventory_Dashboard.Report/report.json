@@ -1,0 +1,150 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"4ee7f53f587cce11d1bb\",\"target\":\"ecdd69510885c219de17\",\"type\":1}]}",
+      "displayName": "Page 1",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1283.00,
+      "name": "0326e1c756a5a92600dd",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1dafab6f07690e4d6723\",\"layouts\":[{\"id\":0,\"position\":{\"x\":410,\"y\":304,\"z\":4000,\"width\":720,\"height\":350,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(inventory_data.Avg_Usage_Per_Day)\"},{\"queryRef\":\"Sum(inventory_data.Current_Stock)\"}],\"Category\":[{\"queryRef\":\"inventory_data.Date.Variation.Date Hierarchy.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"inventory_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Avg_Usage_Per_Day\"}},\"Function\":0},\"Name\":\"Sum(inventory_data.Avg_Usage_Per_Day)\",\"NativeReferenceName\":\"Uso diario\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Current_Stock\"}},\"Function\":0},\"Name\":\"Sum(inventory_data.Current_Stock)\",\"NativeReferenceName\":\"En stock\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"inventory_data.Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Day\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"}}}]},\"columnProperties\":{\"Sum(inventory_data.Avg_Usage_Per_Day)\":{\"displayName\":\"Uso diario\"},\"Sum(inventory_data.Current_Stock)\":{\"displayName\":\"En stock\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Stock vs Uso diario'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 350.00,
+          "width": 720.00,
+          "x": 410.00,
+          "y": 304.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"1dcc045674c30e705040\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26,\"y\":780,\"z\":7000,\"width\":614,\"height\":382,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(patient_data.Supplies_Used)\"}],\"Series\":[{\"queryRef\":\"patient_data.Room_Type\"}],\"Category\":[{\"queryRef\":\"patient_data.Admission_Date.Variation.Date Hierarchy.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"patient_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplies_Used\"}},\"Function\":5},\"Name\":\"CountNonNull(patient_data.Supplies_Used)\",\"NativeReferenceName\":\"Productos usados\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Room_Type\"},\"Name\":\"patient_data.Room_Type\",\"NativeReferenceName\":\"Tipo de cuarto\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"Admission_Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"patient_data.Admission_Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Admission_Date Day\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"Admission_Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"}}}]},\"columnProperties\":{\"patient_data.Room_Type\":{\"displayName\":\"Tipo de cuarto\"},\"CountNonNull(patient_data.Supplies_Used)\":{\"displayName\":\"Productos usados\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Productos usados por dia y tipo de cuarto usados '\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 382.00,
+          "width": 614.00,
+          "x": 26.00,
+          "y": 780.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"2312717e079c263a8066\",\"layouts\":[{\"id\":0,\"position\":{\"x\":102,\"y\":280,\"z\":9000,\"width\":280,\"height\":178,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(healthcare_dataset.Patient_ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"healthcare_dataset\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Patient_ID\"}},\"Function\":2},\"Name\":\"Min(healthcare_dataset.Patient_ID)\",\"NativeReferenceName\":\"Cnaitdad de Pacientes Atendidos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Patient_ID\"}},\"Function\":2}}}]},\"columnProperties\":{\"Min(healthcare_dataset.Patient_ID)\":{\"displayName\":\"Cnaitdad de Pacientes Atendidos\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 178.00,
+          "width": 280.00,
+          "x": 102.00,
+          "y": 280.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"4ee7f53f587cce11d1bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1326,\"y\":154,\"z\":6000,\"width\":460,\"height\":106,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"patient_data.Admission_Date.Variation.Date Hierarchy.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"patient_data\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"Admission_Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"patient_data.Admission_Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Admission_Date Day\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"Admission_Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"}}}]},\"syncGroup\":{\"groupName\":\"Day1\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 106.00,
+          "width": 460.00,
+          "x": 1326.00,
+          "y": 154.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"8a5c83a58c04170b4553\",\"layouts\":[{\"id\":0,\"position\":{\"x\":658,\"y\":750,\"z\":11000,\"width\":538,\"height\":440,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"inventory_data.Item_Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(inventory_data.Avg_Usage_Per_Day)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"inventory_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Item_Name\"},\"Name\":\"inventory_data.Item_Name\",\"NativeReferenceName\":\"Producto\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Avg_Usage_Per_Day\"}},\"Function\":1},\"Name\":\"Sum(inventory_data.Avg_Usage_Per_Day)\",\"NativeReferenceName\":\"Uso diario\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Avg_Usage_Per_Day\"}},\"Function\":1}}}]},\"columnProperties\":{\"inventory_data.Item_Name\":{\"displayName\":\"Producto\"},\"Sum(inventory_data.Avg_Usage_Per_Day)\":{\"displayName\":\"Uso diario\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Uso diario de Producto'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 440.00,
+          "width": 538.00,
+          "x": 658.00,
+          "y": 750.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"91ff5f64491022583056\",\"layouts\":[{\"id\":0,\"position\":{\"x\":707.1428571428572,\"y\":151.42857142857144,\"z\":5000,\"width\":585.7142857142858,\"height\":107.14285714285715,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"inventory_data.Item_Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"inventory_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Item_Name\"},\"Name\":\"inventory_data.Item_Name\",\"NativeReferenceName\":\"Nombre del Producto\"}]},\"columnProperties\":{\"inventory_data.Item_Name\":{\"displayName\":\"Nombre del Producto\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 107.14,
+          "width": 585.71,
+          "x": 707.14,
+          "y": 151.43,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"a7d08251c27c4418142b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":710,\"z\":2000,\"width\":2000,\"height\":580,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#CED6F4'\"}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.2}}}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 580.00,
+          "width": 2000.00,
+          "x": 0.00,
+          "y": 710.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"ad9fdbaf72091bcdc998\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":30.000000000000004,\"z\":1000,\"width\":720,\"height\":110,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Reporte Mensual\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Verdana\",\"fontSize\":\"54pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 110.00,
+          "width": 720.00,
+          "x": 640.00,
+          "y": 30.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c9b9c5316740bece8ec1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"daac69680d874407c45e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":102,\"y\":504,\"z\":10000,\"width\":280,\"height\":150,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(inventory_data.Current_Stock)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"inventory_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Current_Stock\"}},\"Function\":0},\"Name\":\"Sum(inventory_data.Current_Stock)\",\"NativeReferenceName\":\"Productos en Stock\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Current_Stock\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(inventory_data.Current_Stock)\":{\"displayName\":\"Productos en Stock\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 280.00,
+          "x": 102.00,
+          "y": 504.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"dd28aebfe5d667005c9b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1184,\"y\":292,\"z\":8000,\"width\":602,\"height\":350,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"decompositionTreeVisual\",\"projections\":{\"Analyze\":[{\"queryRef\":\"CountNonNull(patient_data.Admission_Date)\"}],\"ExplainBy\":[{\"queryRef\":\"patient_data.Room_Type\",\"active\":true},{\"queryRef\":\"patient_data.Supplies_Used\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"patient_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Admission_Date\"}},\"Function\":5},\"Name\":\"CountNonNull(patient_data.Admission_Date)\",\"NativeReferenceName\":\"Admission_Date Month\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Room_Type\"},\"Name\":\"patient_data.Room_Type\",\"NativeReferenceName\":\"Tipo de cuarto\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Supplies_Used\"},\"Name\":\"patient_data.Supplies_Used\",\"NativeReferenceName\":\"Productos usados\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Admission_Date\"}},\"Function\":5}}}]},\"expansionStates\":[{\"roles\":[\"ExplainBy\"],\"levels\":[{\"queryRefs\":[\"patient_data.Room_Type\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"patient_data\"}},\"Property\":\"Room_Type\"}}],\"isPinned\":true},{\"queryRefs\":[\"patient_data.Supplies_Used\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"patient_data\"}},\"Property\":\"Supplies_Used\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'ICU'\"}}],\"isToggled\":true}]}}],\"columnProperties\":{\"patient_data.Room_Type\":{\"displayName\":\"Tipo de cuarto\"},\"patient_data.Supplies_Used\":{\"displayName\":\"Productos usados\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"tree\":[{\"properties\":{\"effectiveBarsPerLevel\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}}}}],\"insights\":[{\"properties\":{\"isAINode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"vendor_data\"}},\"Property\":\"Vendor_Name\"}},\"Right\":{\"Literal\":{\"Value\":\"'MedSupplies Inc.'\"}}}}}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 350.00,
+          "width": 602.00,
+          "x": 1184.00,
+          "y": 292.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"ecdd69510885c219de17\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1242,\"y\":780,\"z\":3000,\"width\":544,\"height\":380,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(patient_data.Equipment_Used)\"}],\"Series\":[{\"queryRef\":\"patient_data.Room_Type\"}],\"Category\":[{\"queryRef\":\"patient_data.Admission_Date.Variation.Date Hierarchy.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"patient_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Equipment_Used\"}},\"Function\":5},\"Name\":\"CountNonNull(patient_data.Equipment_Used)\",\"NativeReferenceName\":\"Costo de producto\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Room_Type\"},\"Name\":\"patient_data.Room_Type\",\"NativeReferenceName\":\"Tipo de cuarto\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"Admission_Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"patient_data.Admission_Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Admission_Date Day\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Name\":\"Variation\",\"Property\":\"Admission_Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"}}}]},\"columnProperties\":{\"CountNonNull(patient_data.Equipment_Used)\":{\"displayName\":\"Costo de producto\"},\"patient_data.Room_Type\":{\"displayName\":\"Tipo de cuarto\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Costo de producto por dia y Tipo de cuarto'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 380.00,
+          "width": 544.00,
+          "x": 1242.00,
+          "y": 780.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"f1705f9e26d917b7bd62\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.153846153846153,\"y\":17.692307692307693,\"z\":12000,\"width\":235.3846153846154,\"height\":67.6923076923077,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Octubre 2024\",\"textStyle\":{\"fontFamily\":\"Verdana\",\"fontStyle\":\"italic\",\"fontSize\":\"24pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 67.69,
+          "width": 235.38,
+          "x": 26.15,
+          "y": 17.69,
+          "z": 12000.00
+        }
+      ],
+      "width": 2000.00
+    }
+  ]
+}

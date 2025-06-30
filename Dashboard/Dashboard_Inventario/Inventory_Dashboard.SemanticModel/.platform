@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Inventory_Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5c087dad-13eb-4db7-9a71-a1a513ac1845"
+  }
+}
