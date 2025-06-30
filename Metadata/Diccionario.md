@@ -29,15 +29,20 @@
 | Admission_Date         | Fecha y hora de ingreso del paciente                               |
 | Discharge_Date         | Fecha y hora de alta del paciente                                  |
 | Primary_Diagnosis      | Diagnóstico principal al momento del ingreso                       |
-| Admission Type         | Tipo de admisión al hospital (por ejemplo, Emergency)              |
+| Admission_Type         | Tipo de admisión al hospital (por ejemplo, Critical)               |
 | Procedure_Performed    | Procedimiento médico realizado durante la estancia                 |
 | Room_Type              | Tipo de habitación asignada al paciente                            |
 | Bed_Days               | Número de días que el paciente ocupó una cama                      |
 | Supplies_Used          | Insumos médicos utilizados durante la estancia (ej. guantes, IV)   |
 | Equipment_Used         | Equipos médicos utilizados (ej. mesa quirúrgica)                   |
-| Staff_Needed           | Personal requerido para la atención (ej. 2 cirujanos)              |
+| Nurse_Ratio            | Proporcion de enfermeros atendiendo al paciente                    |
 | Medication             | Medicamento administrado al paciente                               |
-| Test Results           | Resultados de exámenes médicos o pruebas realizadas                |
+| Patient_Outcome        | Resultado del encuentro principal con el paciente (ej. Admitted)   |
+| Time to Registration   | Tiempo desde que el paciente llega hasta que se registra (min)     |
+| Time_to_Triage         | Tiempo desde que el paciente se registra hasta que llega a triaje  |
+| Time_to_Medic          | Tiempo desde triaje hasta que el paciente ve a un medico (min)     |
+| Total_Wait_Time        | Tiempo total de espera (min)                                       |
+| Patient_Satisfaction   | Nivel de satisfaccion del paciente con su servicio del 1 al 5      |
 
 **Diccionario de Datos: expense_data**
 

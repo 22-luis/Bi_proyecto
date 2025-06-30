@@ -43,9 +43,9 @@ CREATE TABLE dim_medication (
 );
 
 -- 6. Dimension: Test Result
-CREATE TABLE dim_test_result (
-    test_result_id INT IDENTITY(1,1) PRIMARY KEY,
-    test_result VARCHAR(50) UNIQUE
+CREATE TABLE dim_patient_outcome (
+    patient_outcome_id INT IDENTITY(1,1) PRIMARY KEY,
+    patient_outcome VARCHAR(50) UNIQUE
 );
 -- 7. Dimension: Admission Type
 CREATE TABLE dim_admission_type (
@@ -64,11 +64,16 @@ CREATE TABLE dim_admission (
     bed_days INT,
 	medication_id INT,
 	admission_type_id INT,
-	test_result_id INT,
+	patient_outcome_id INT,
+	"registration_time" INT,
+    "triage_time" INT,
+    "medic_time" INT,
+    "total_time" INT,
+    "patient_satisfaction" INT,
 
 	CONSTRAINT FK_admission_patient FOREIGN KEY (patient_id) REFERENCES dim_patient(patient_id) ON DELETE CASCADE,
 	CONSTRAINT FK_admission_medication FOREIGN KEY (medication_id) REFERENCES dim_medication(medication_id) ON DELETE CASCADE,
-    CONSTRAINT FK_admission_test_result FOREIGN KEY (test_result_id) REFERENCES dim_test_result(test_result_id) ON DELETE CASCADE,
+    CONSTRAINT FK_admission_patient_outcome FOREIGN KEY (patient_outcome_id) REFERENCES dim_patient_outcome(patient_outcome_id) ON DELETE CASCADE,
 	CONSTRAINT FK_admission_admission_type FOREIGN KEY (admission_type_id) REFERENCES dim_admission_type(admission_type_id) ON DELETE CASCADE
 );
 
@@ -129,7 +134,7 @@ CREATE TABLE fact_admission (
     admission_id INT,
     supplies_used VARCHAR(255),
     equipment_used VARCHAR(100),
-    staff_needed VARCHAR(100),
+    nurse_ratio VARCHAR(100),
     total_cost INT,
 
     CONSTRAINT FK_fact_admission FOREIGN KEY (admission_id) REFERENCES dim_admission(admission_id) ON DELETE CASCADE

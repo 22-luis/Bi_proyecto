@@ -13,7 +13,7 @@ def format_fact_admission_row(row: list[Any]) -> list:
     fact_admission_row.append(None)  # admission_id
     fact_admission_row.append(row[8])  # supplies_used
     fact_admission_row.append(row[9])  # equipment_used
-    fact_admission_row.append(row[10])  # staff_needed
+    fact_admission_row.append(row[10])  # nurse_ratio
     fact_admission_row.append(0)  # total_cost
 
     return fact_admission_row
@@ -25,7 +25,7 @@ def format_fact_admission(raw_tables: dict[str, dict[str, Any]]) -> dict:
                       "fields": ["admission_id",
                                  "supplies_used",
                                  "equipment_used",
-                                 "staff_needed",
+                                 "nurse_ratio",
                                  "total_cost"],
                       "rows": []}
     if "admission_data.csv" not in raw_tables:

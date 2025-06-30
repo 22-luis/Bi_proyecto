@@ -1,501 +1,501 @@
-Patient_ID,Admission_Date,Discharge_Date,Primary_Diagnosis,Admission Type,Procedure_Performed,Room_Type,Bed_Days,Supplies_Used,Equipment_Used,Staff_Needed,Medication,Test Results
-P001,10/6/2024 5:30,10/23/2024 1:11,Diabetes,Emergency,Appendectomy,General Ward,2,"Gloves, IV",Surgical Table,2 Surgeons,Ibuprofen,Inconclusive
-P002,10/24/2024 11:07,10/15/2024 5:16,Fracture,Elective,Appendectomy,ICU,10,"Gown, IV",MRI Machine,1 Nurse,Paracetamol,Normal
-P003,10/22/2024 21:43,10/24/2024 10:56,Fracture,Urgent,Chest X-ray,ICU,10,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Lipitor,Inconclusive
-P004,10/5/2024 17:04,10/30/2024 14:10,Diabetes,Emergency,Chest X-ray,ICU,11,"Gloves, IV",X-ray Machine,1 Nurse,Aspirin,Normal
-P005,10/21/2024 17:04,10/8/2024 15:53,Appendicitis,Urgent,MRI,ICU,2,"Gloves, IV",X-ray Machine,2 Surgeons,Paracetamol,Normal
-P006,10/12/2024 9:33,10/17/2024 8:21,Diabetes,Elective,MRI,General Ward,5,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P007,10/19/2024 6:35,10/9/2024 6:01,Diabetes,Emergency,Appendectomy,General Ward,1,"Gown, IV",X-ray Machine,2 Surgeons,Paracetamol,Inconclusive
-P008,10/12/2024 16:50,10/8/2024 14:26,Fracture,Urgent,MRI,General Ward,11,"Gown, IV",X-ray Machine,2 Surgeons,Penicillin,Abnormal
-P009,10/19/2024 14:43,10/28/2024 23:19,Diabetes,Urgent,Appendectomy,ICU,10,"Gloves, IV",MRI Machine,2 Surgeons,Lipitor,Inconclusive
-P010,10/22/2024 11:32,10/26/2024 19:53,Diabetes,Emergency,Chest X-ray,General Ward,7,"Mask, Gown",Surgical Table,1 Nurse,Penicillin,Abnormal
-P011,10/25/2024 18:24,10/24/2024 10:40,Appendicitis,Urgent,Appendectomy,ICU,12,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Penicillin,Abnormal
-P012,10/18/2024 19:35,10/29/2024 15:19,Appendicitis,Emergency,Blood Test,General Ward,11,"Gloves, IV",Surgical Table,2 Surgeons,Paracetamol,Inconclusive
-P013,10/5/2024 17:31,10/14/2024 14:32,Pneumonia,Urgent,Chest X-ray,ICU,3,"Mask, Gown",Surgical Table,2 Surgeons,Ibuprofen,Normal
-P014,10/24/2024 14:38,10/15/2024 14:50,Diabetes,Elective,MRI,General Ward,6,"Gloves, IV",MRI Machine,1 Nurse,Aspirin,Inconclusive
-P015,10/14/2024 4:08,10/29/2024 10:33,Diabetes,Urgent,Appendectomy,ICU,8,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P016,10/12/2024 22:31,10/27/2024 1:59,Diabetes,Elective,Blood Test,ICU,3,"Gown, IV",Surgical Table,2 Surgeons,Aspirin,Abnormal
-P017,10/13/2024 8:19,10/19/2024 8:56,Appendicitis,Elective,Chest X-ray,ICU,3,"Gown, IV",X-ray Machine,2 Surgeons,Paracetamol,Inconclusive
-P018,10/26/2024 0:39,10/5/2024 16:21,Diabetes,Emergency,MRI,General Ward,9,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Inconclusive
-P019,10/10/2024 5:43,10/6/2024 7:11,Appendicitis,Urgent,Chest X-ray,General Ward,14,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P020,10/12/2024 10:00,10/11/2024 4:20,Fracture,Elective,Appendectomy,ICU,7,"Gown, IV",MRI Machine,1 Nurse,Penicillin,Normal
-P021,10/11/2024 15:29,10/8/2024 13:41,Pneumonia,Elective,Blood Test,ICU,1,"Gloves, IV",Surgical Table,2 Surgeons,Aspirin,Abnormal
-P022,10/29/2024 21:02,10/20/2024 16:28,Pneumonia,Urgent,Appendectomy,ICU,14,"Gloves, IV",Surgical Table,1 Nurse,Lipitor,Normal
-P023,10/5/2024 18:44,10/9/2024 12:36,Diabetes,Urgent,Appendectomy,General Ward,3,"Gown, IV",MRI Machine,1 Nurse,Aspirin,Abnormal
-P024,10/14/2024 15:33,10/7/2024 18:42,Pneumonia,Elective,Blood Test,General Ward,4,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Normal
-P025,10/28/2024 10:21,10/19/2024 9:58,Diabetes,Emergency,Appendectomy,ICU,2,"Gloves, IV",Surgical Table,1 Nurse,Lipitor,Abnormal
-P026,10/15/2024 1:52,10/27/2024 0:55,Appendicitis,Urgent,MRI,ICU,6,"Mask, Gown",MRI Machine,2 Surgeons,Paracetamol,Normal
-P027,10/25/2024 20:39,10/31/2024 2:23,Pneumonia,Elective,Chest X-ray,General Ward,6,"Mask, Gown",Surgical Table,2 Surgeons,Aspirin,Normal
-P028,10/8/2024 10:23,10/12/2024 10:52,Pneumonia,Urgent,MRI,General Ward,11,"Gown, IV",X-ray Machine,2 Surgeons,Lipitor,Normal
-P029,10/18/2024 11:12,10/16/2024 12:55,Diabetes,Emergency,Blood Test,ICU,3,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Normal
-P030,10/5/2024 13:10,10/8/2024 5:24,Fracture,Elective,MRI,ICU,2,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Normal
-P031,10/29/2024 16:59,10/25/2024 13:36,Fracture,Elective,Appendectomy,General Ward,9,"Mask, Gown",MRI Machine,2 Surgeons,Paracetamol,Abnormal
-P032,10/14/2024 3:54,10/14/2024 6:49,Appendicitis,Elective,Appendectomy,ICU,6,"Mask, Gown",Surgical Table,2 Surgeons,Ibuprofen,Normal
-P033,10/12/2024 6:02,10/11/2024 10:57,Appendicitis,Urgent,Appendectomy,General Ward,11,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Penicillin,Abnormal
-P034,10/26/2024 13:17,10/24/2024 4:04,Appendicitis,Emergency,MRI,ICU,3,"Mask, Gown",X-ray Machine,2 Surgeons,Penicillin,Normal
-P035,10/23/2024 14:01,10/28/2024 21:02,Fracture,Emergency,Chest X-ray,ICU,11,"Gloves, IV",Surgical Table,2 Surgeons,Paracetamol,Inconclusive
-P036,10/21/2024 5:02,10/31/2024 12:18,Pneumonia,Urgent,MRI,General Ward,3,"Gown, IV",MRI Machine,1 Nurse,Lipitor,Inconclusive
-P037,10/14/2024 1:51,10/27/2024 2:43,Pneumonia,Elective,Chest X-ray,General Ward,2,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P038,10/29/2024 2:21,10/30/2024 14:33,Diabetes,Elective,Blood Test,ICU,1,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P039,10/22/2024 21:36,10/28/2024 12:04,Diabetes,Emergency,Blood Test,General Ward,12,"Gown, IV",Surgical Table,2 Surgeons,Lipitor,Normal
-P040,10/28/2024 7:09,10/21/2024 17:12,Pneumonia,Urgent,Chest X-ray,General Ward,10,"Gown, IV",MRI Machine,1 Nurse,Ibuprofen,Inconclusive
-P041,10/11/2024 21:16,10/26/2024 14:47,Fracture,Urgent,Blood Test,General Ward,12,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Normal
-P042,10/1/2024 3:54,10/15/2024 15:04,Fracture,Emergency,MRI,ICU,7,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Penicillin,Inconclusive
-P043,10/5/2024 6:55,10/6/2024 2:32,Fracture,Emergency,MRI,General Ward,8,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P044,10/16/2024 2:37,10/14/2024 5:20,Diabetes,Urgent,Chest X-ray,ICU,4,"Gloves, IV",Surgical Table,1 Nurse,Paracetamol,Inconclusive
-P045,10/4/2024 14:26,10/31/2024 4:34,Fracture,Emergency,Chest X-ray,ICU,2,"Mask, Gown",Surgical Table,1 Nurse,Ibuprofen,Inconclusive
-P046,10/25/2024 22:51,10/14/2024 18:58,Pneumonia,Elective,MRI,ICU,9,"Mask, Gown",X-ray Machine,1 Nurse,Lipitor,Abnormal
-P047,10/10/2024 16:07,10/8/2024 13:10,Diabetes,Urgent,MRI,ICU,9,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P048,10/18/2024 17:03,10/18/2024 21:21,Diabetes,Emergency,Appendectomy,General Ward,6,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Lipitor,Abnormal
-P049,10/29/2024 16:44,10/26/2024 6:48,Pneumonia,Elective,Blood Test,General Ward,1,"Gloves, IV",MRI Machine,1 Nurse,Paracetamol,Normal
-P050,10/21/2024 22:04,10/18/2024 10:28,Fracture,Elective,Appendectomy,ICU,2,"Gloves, IV",X-ray Machine,1 Nurse,Aspirin,Normal
-P051,10/7/2024 5:00,10/22/2024 12:04,Diabetes,Urgent,Chest X-ray,General Ward,10,"Mask, Gown",Surgical Table,1 Nurse,Penicillin,Abnormal
-P052,10/18/2024 4:33,10/31/2024 21:33,Fracture,Emergency,Blood Test,General Ward,5,"Gown, IV",X-ray Machine,2 Surgeons,Aspirin,Abnormal
-P053,10/8/2024 22:24,10/15/2024 23:51,Pneumonia,Urgent,Appendectomy,ICU,2,"Gown, IV",MRI Machine,1 Nurse,Ibuprofen,Abnormal
-P054,10/29/2024 22:28,10/19/2024 8:43,Appendicitis,Emergency,MRI,General Ward,13,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P055,10/24/2024 9:00,10/19/2024 4:18,Appendicitis,Urgent,Chest X-ray,General Ward,12,"Mask, Gown",MRI Machine,1 Nurse,Penicillin,Inconclusive
-P056,10/11/2024 10:24,10/8/2024 11:43,Fracture,Emergency,MRI,General Ward,2,"Mask, Gown",X-ray Machine,1 Nurse,Penicillin,Abnormal
-P057,10/21/2024 5:02,10/11/2024 1:56,Fracture,Emergency,Chest X-ray,General Ward,5,"Gloves, IV",X-ray Machine,2 Surgeons,Ibuprofen,Normal
-P058,10/18/2024 8:22,10/20/2024 22:54,Appendicitis,Emergency,MRI,General Ward,1,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P059,10/6/2024 11:16,10/23/2024 21:07,Fracture,Urgent,MRI,General Ward,14,"Gloves, IV",MRI Machine,1 Nurse,Aspirin,Abnormal
-P060,10/23/2024 0:24,10/30/2024 6:01,Appendicitis,Urgent,MRI,General Ward,4,"Mask, Gown",MRI Machine,2 Surgeons,Ibuprofen,Normal
-P061,10/8/2024 9:52,10/26/2024 2:13,Diabetes,Emergency,Appendectomy,ICU,10,"Gloves, IV",X-ray Machine,1 Nurse,Lipitor,Normal
-P062,10/9/2024 1:59,10/16/2024 15:39,Pneumonia,Elective,MRI,General Ward,14,"Gloves, IV",Surgical Table,2 Surgeons,Ibuprofen,Inconclusive
-P063,10/24/2024 12:25,10/7/2024 7:07,Diabetes,Urgent,Appendectomy,General Ward,8,"Gown, IV",MRI Machine,2 Surgeons,Aspirin,Normal
-P064,10/21/2024 23:33,10/16/2024 2:37,Pneumonia,Emergency,Appendectomy,General Ward,11,"Gloves, IV",X-ray Machine,2 Surgeons,Ibuprofen,Inconclusive
-P065,10/29/2024 14:56,10/6/2024 23:12,Fracture,Elective,Blood Test,General Ward,7,"Mask, Gown",X-ray Machine,2 Surgeons,Paracetamol,Inconclusive
-P066,10/16/2024 18:04,10/10/2024 6:39,Appendicitis,Emergency,MRI,General Ward,12,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Aspirin,Normal
-P067,10/24/2024 7:13,10/30/2024 0:50,Fracture,Emergency,Blood Test,General Ward,14,"Mask, Gown",MRI Machine,2 Surgeons,Aspirin,Inconclusive
-P068,10/15/2024 17:31,10/18/2024 22:51,Fracture,Urgent,Appendectomy,ICU,4,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P069,10/20/2024 11:38,10/18/2024 16:07,Diabetes,Urgent,Appendectomy,General Ward,5,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P070,10/18/2024 5:41,10/22/2024 5:48,Pneumonia,Emergency,Chest X-ray,ICU,2,"Mask, Gown",X-ray Machine,1 Nurse,Ibuprofen,Abnormal
-P071,10/5/2024 19:29,10/5/2024 8:48,Appendicitis,Urgent,Blood Test,General Ward,13,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Lipitor,Abnormal
-P072,10/28/2024 3:13,10/14/2024 0:09,Appendicitis,Urgent,Appendectomy,General Ward,4,"Gloves, IV",Surgical Table,1 Nurse,Ibuprofen,Normal
-P073,10/14/2024 16:28,10/18/2024 15:29,Fracture,Elective,Blood Test,ICU,9,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Aspirin,Abnormal
-P074,10/17/2024 1:31,10/20/2024 13:34,Diabetes,Elective,Blood Test,General Ward,2,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P075,10/25/2024 2:50,10/17/2024 7:39,Pneumonia,Emergency,Blood Test,General Ward,2,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Inconclusive
-P076,10/3/2024 6:30,10/24/2024 12:55,Appendicitis,Emergency,Chest X-ray,General Ward,8,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P077,10/23/2024 9:37,10/23/2024 15:23,Appendicitis,Urgent,MRI,General Ward,14,"Gloves, IV",Surgical Table,1 Nurse,Ibuprofen,Inconclusive
-P078,10/15/2024 10:00,10/6/2024 0:17,Fracture,Elective,Appendectomy,ICU,14,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P079,10/6/2024 4:48,10/11/2024 14:44,Pneumonia,Urgent,Appendectomy,ICU,7,"Gown, IV",MRI Machine,1 Nurse,Ibuprofen,Inconclusive
-P080,10/5/2024 0:57,10/6/2024 17:08,Appendicitis,Emergency,MRI,General Ward,10,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P081,10/21/2024 16:00,10/16/2024 18:35,Pneumonia,Elective,Appendectomy,ICU,14,"Gown, IV",Surgical Table,2 Surgeons,Aspirin,Abnormal
-P082,10/26/2024 14:36,10/28/2024 15:47,Fracture,Emergency,Chest X-ray,ICU,9,"Mask, Gown",X-ray Machine,1 Nurse,Paracetamol,Abnormal
-P083,10/17/2024 7:16,10/31/2024 20:46,Fracture,Urgent,Chest X-ray,General Ward,4,"Gown, IV",X-ray Machine,2 Surgeons,Penicillin,Normal
-P084,10/24/2024 21:15,10/23/2024 13:49,Diabetes,Urgent,MRI,ICU,11,"Mask, Gown",X-ray Machine,1 Nurse,Aspirin,Normal
-P085,10/1/2024 5:42,10/10/2024 23:05,Diabetes,Urgent,MRI,General Ward,12,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P086,10/20/2024 17:09,10/25/2024 8:58,Appendicitis,Elective,MRI,General Ward,9,"Gown, IV",Surgical Table,1 Nurse,Aspirin,Abnormal
-P087,10/19/2024 19:14,10/20/2024 21:33,Pneumonia,Elective,Chest X-ray,ICU,5,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P088,10/12/2024 17:39,10/5/2024 15:51,Appendicitis,Elective,Appendectomy,General Ward,13,"Gloves, IV",X-ray Machine,1 Nurse,Penicillin,Abnormal
-P089,10/17/2024 1:32,10/13/2024 20:24,Appendicitis,Elective,Blood Test,General Ward,14,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Aspirin,Normal
-P090,10/26/2024 13:17,10/21/2024 0:49,Diabetes,Emergency,Chest X-ray,ICU,11,"Gloves, IV",MRI Machine,1 Nurse,Paracetamol,Inconclusive
-P091,10/21/2024 21:37,10/10/2024 16:03,Pneumonia,Elective,Blood Test,General Ward,13,"Gloves, IV",X-ray Machine,2 Surgeons,Penicillin,Abnormal
-P092,10/3/2024 6:29,10/30/2024 2:15,Fracture,Elective,Chest X-ray,General Ward,9,"Gown, IV",MRI Machine,1 Nurse,Lipitor,Abnormal
-P093,10/2/2024 10:31,10/22/2024 14:39,Pneumonia,Elective,Chest X-ray,ICU,3,"Gloves, IV",X-ray Machine,1 Nurse,Ibuprofen,Inconclusive
-P094,10/1/2024 17:40,10/7/2024 8:52,Pneumonia,Urgent,MRI,ICU,1,"Gloves, IV",X-ray Machine,1 Nurse,Paracetamol,Inconclusive
-P095,10/13/2024 17:56,10/9/2024 14:08,Diabetes,Elective,Chest X-ray,General Ward,10,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Lipitor,Abnormal
-P096,10/1/2024 19:22,10/17/2024 6:34,Appendicitis,Elective,Appendectomy,ICU,13,"Gown, IV",X-ray Machine,2 Surgeons,Ibuprofen,Abnormal
-P097,10/25/2024 10:42,10/30/2024 0:59,Fracture,Urgent,Chest X-ray,ICU,6,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P098,10/13/2024 1:36,10/26/2024 19:59,Diabetes,Emergency,Appendectomy,ICU,8,"Mask, Gown",X-ray Machine,2 Surgeons,Paracetamol,Inconclusive
-P099,10/7/2024 20:15,10/23/2024 15:32,Diabetes,Emergency,Chest X-ray,General Ward,7,"Gloves, IV",MRI Machine,1 Nurse,Ibuprofen,Inconclusive
-P100,10/23/2024 9:45,10/23/2024 10:39,Fracture,Elective,Chest X-ray,General Ward,2,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Lipitor,Normal
-P101,10/2/2024 8:18,10/19/2024 14:31,Appendicitis,Elective,Blood Test,ICU,12,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P102,10/10/2024 7:17,10/7/2024 1:44,Appendicitis,Elective,Chest X-ray,ICU,7,"Gown, IV",X-ray Machine,1 Nurse,Penicillin,Inconclusive
-P103,10/6/2024 2:09,10/28/2024 7:28,Fracture,Emergency,Chest X-ray,General Ward,7,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P104,10/6/2024 6:32,10/11/2024 8:13,Appendicitis,Elective,Blood Test,ICU,2,"Mask, Gown",MRI Machine,2 Surgeons,Ibuprofen,Abnormal
-P105,10/2/2024 2:19,10/6/2024 22:35,Diabetes,Elective,Chest X-ray,General Ward,13,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P106,10/10/2024 23:20,10/24/2024 18:38,Diabetes,Elective,MRI,ICU,12,"Mask, Gown",MRI Machine,1 Nurse,Paracetamol,Inconclusive
-P107,10/9/2024 20:05,10/29/2024 21:47,Pneumonia,Elective,Appendectomy,General Ward,5,"Mask, Gown",MRI Machine,1 Nurse,Ibuprofen,Abnormal
-P108,10/16/2024 18:19,10/14/2024 18:26,Diabetes,Elective,MRI,ICU,13,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Aspirin,Inconclusive
-P109,10/18/2024 10:23,10/27/2024 17:13,Pneumonia,Elective,Chest X-ray,General Ward,5,"Gown, IV",MRI Machine,2 Surgeons,Ibuprofen,Inconclusive
-P110,10/25/2024 1:10,10/17/2024 15:02,Appendicitis,Elective,Appendectomy,General Ward,9,"Mask, Gown",X-ray Machine,1 Nurse,Lipitor,Inconclusive
-P111,10/23/2024 6:38,10/31/2024 16:28,Pneumonia,Elective,Chest X-ray,General Ward,6,"Gloves, IV",Surgical Table,2 Surgeons,Ibuprofen,Inconclusive
-P112,10/20/2024 6:55,10/5/2024 22:07,Appendicitis,Urgent,Appendectomy,ICU,13,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Penicillin,Normal
-P113,10/1/2024 23:29,10/24/2024 15:36,Fracture,Elective,Chest X-ray,ICU,4,"Gown, IV",Surgical Table,1 Nurse,Penicillin,Inconclusive
-P114,10/12/2024 0:07,10/29/2024 1:34,Appendicitis,Emergency,Blood Test,ICU,4,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Lipitor,Abnormal
-P115,10/17/2024 12:32,10/26/2024 2:20,Fracture,Urgent,Chest X-ray,ICU,3,"Gown, IV",MRI Machine,2 Surgeons,Paracetamol,Normal
-P116,10/15/2024 0:42,10/19/2024 13:20,Appendicitis,Urgent,Appendectomy,ICU,5,"Mask, Gown",MRI Machine,2 Surgeons,Penicillin,Normal
-P117,10/20/2024 2:41,10/23/2024 8:38,Appendicitis,Elective,Chest X-ray,General Ward,9,"Mask, Gown",X-ray Machine,2 Surgeons,Aspirin,Abnormal
-P118,10/7/2024 14:16,10/7/2024 22:16,Pneumonia,Emergency,Chest X-ray,General Ward,13,"Gown, IV",MRI Machine,1 Nurse,Paracetamol,Inconclusive
-P119,10/4/2024 4:35,10/5/2024 0:33,Pneumonia,Elective,Chest X-ray,ICU,14,"Gloves, IV",Surgical Table,1 Nurse,Ibuprofen,Normal
-P120,10/23/2024 5:23,10/18/2024 21:14,Pneumonia,Emergency,MRI,General Ward,4,"Gloves, IV",X-ray Machine,1 Nurse,Penicillin,Abnormal
-P121,10/17/2024 1:55,10/6/2024 23:04,Diabetes,Emergency,Appendectomy,ICU,2,"Gown, IV",Surgical Table,2 Surgeons,Aspirin,Abnormal
-P122,10/6/2024 9:33,10/24/2024 13:44,Pneumonia,Elective,Appendectomy,ICU,7,"Mask, Gown",MRI Machine,1 Nurse,Penicillin,Inconclusive
-P123,10/3/2024 20:03,10/14/2024 21:26,Appendicitis,Elective,Chest X-ray,General Ward,13,"Gown, IV",X-ray Machine,2 Surgeons,Ibuprofen,Abnormal
-P124,10/8/2024 17:05,10/11/2024 1:18,Diabetes,Emergency,Chest X-ray,General Ward,1,"Gown, IV",X-ray Machine,1 Nurse,Penicillin,Abnormal
-P125,10/11/2024 23:34,10/12/2024 6:22,Diabetes,Elective,Chest X-ray,General Ward,4,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Lipitor,Inconclusive
-P126,10/9/2024 16:13,10/10/2024 11:58,Pneumonia,Elective,Blood Test,ICU,5,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P127,10/5/2024 13:09,10/6/2024 13:40,Diabetes,Emergency,Blood Test,ICU,6,"Gloves, IV",X-ray Machine,2 Surgeons,Penicillin,Normal
-P128,10/27/2024 0:57,10/18/2024 4:07,Appendicitis,Elective,MRI,ICU,7,"Gloves, IV",X-ray Machine,2 Surgeons,Lipitor,Inconclusive
-P129,10/23/2024 4:00,10/12/2024 23:23,Appendicitis,Elective,Chest X-ray,ICU,7,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P130,10/7/2024 16:22,10/12/2024 7:25,Fracture,Emergency,Chest X-ray,ICU,11,"Gown, IV",MRI Machine,2 Surgeons,Aspirin,Inconclusive
-P131,10/2/2024 14:30,10/17/2024 19:38,Appendicitis,Elective,MRI,General Ward,10,"Gloves, IV",Surgical Table,2 Surgeons,Ibuprofen,Abnormal
-P132,10/6/2024 15:01,10/14/2024 7:02,Pneumonia,Elective,MRI,ICU,7,"Gown, IV",X-ray Machine,1 Nurse,Penicillin,Normal
-P133,10/5/2024 2:40,10/10/2024 1:17,Fracture,Emergency,Chest X-ray,ICU,4,"Gloves, IV",X-ray Machine,1 Nurse,Penicillin,Abnormal
-P134,10/6/2024 19:43,10/15/2024 15:13,Diabetes,Emergency,Chest X-ray,ICU,11,"Gloves, IV",X-ray Machine,1 Nurse,Aspirin,Inconclusive
-P135,10/18/2024 11:38,10/31/2024 12:19,Fracture,Emergency,Blood Test,General Ward,4,"Gown, IV",Surgical Table,2 Surgeons,Aspirin,Normal
-P136,10/18/2024 4:07,10/9/2024 23:31,Fracture,Urgent,Appendectomy,General Ward,6,"Gloves, IV",Surgical Table,1 Nurse,Ibuprofen,Normal
-P137,10/4/2024 21:48,10/22/2024 14:17,Appendicitis,Emergency,Appendectomy,ICU,10,"Mask, Gown",Surgical Table,1 Nurse,Lipitor,Abnormal
-P138,10/2/2024 9:11,10/9/2024 6:14,Pneumonia,Urgent,Appendectomy,General Ward,11,"Gloves, IV",Surgical Table,1 Nurse,Ibuprofen,Normal
-P139,10/6/2024 8:13,10/6/2024 16:09,Fracture,Elective,MRI,General Ward,11,"Mask, Gown",Surgical Table,2 Surgeons,Paracetamol,Abnormal
-P140,10/7/2024 12:27,10/17/2024 9:33,Appendicitis,Elective,Chest X-ray,ICU,10,"Mask, Gown",X-ray Machine,1 Nurse,Penicillin,Normal
-P141,10/11/2024 5:35,10/7/2024 16:59,Appendicitis,Emergency,MRI,ICU,14,"Gloves, IV",Surgical Table,1 Nurse,Aspirin,Inconclusive
-P142,10/3/2024 8:20,10/30/2024 9:03,Fracture,Elective,MRI,ICU,10,"Gloves, IV",X-ray Machine,2 Surgeons,Aspirin,Normal
-P143,10/4/2024 5:06,10/28/2024 13:29,Pneumonia,Urgent,Blood Test,General Ward,14,"Gown, IV",Surgical Table,2 Surgeons,Paracetamol,Normal
-P144,10/29/2024 19:22,10/13/2024 14:34,Diabetes,Urgent,Appendectomy,General Ward,2,"Mask, Gown",Surgical Table,1 Nurse,Penicillin,Abnormal
-P145,10/27/2024 9:50,10/26/2024 10:37,Diabetes,Emergency,MRI,General Ward,12,"Gown, IV",MRI Machine,2 Surgeons,Penicillin,Inconclusive
-P146,10/10/2024 9:25,10/11/2024 22:57,Appendicitis,Elective,Blood Test,General Ward,6,"Gloves, IV",MRI Machine,1 Nurse,Penicillin,Abnormal
-P147,10/10/2024 14:24,10/6/2024 0:31,Diabetes,Urgent,Chest X-ray,General Ward,8,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Penicillin,Abnormal
-P148,10/29/2024 6:53,10/31/2024 3:31,Fracture,Urgent,Chest X-ray,General Ward,4,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Penicillin,Abnormal
-P149,10/14/2024 15:46,10/16/2024 8:24,Appendicitis,Urgent,MRI,ICU,1,"Gown, IV",MRI Machine,2 Surgeons,Lipitor,Abnormal
-P150,10/12/2024 7:08,10/26/2024 4:51,Pneumonia,Elective,Appendectomy,ICU,3,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Inconclusive
-P151,10/29/2024 15:21,10/30/2024 21:22,Pneumonia,Urgent,MRI,General Ward,11,"Gown, IV",X-ray Machine,1 Nurse,Lipitor,Inconclusive
-P152,10/25/2024 4:45,10/21/2024 16:42,Pneumonia,Urgent,Chest X-ray,ICU,6,"Gloves, IV",Surgical Table,2 Surgeons,Ibuprofen,Abnormal
-P153,10/5/2024 12:14,10/13/2024 13:19,Pneumonia,Urgent,Appendectomy,ICU,5,"Gloves, IV",MRI Machine,2 Surgeons,Penicillin,Inconclusive
-P154,10/6/2024 12:54,10/30/2024 10:00,Appendicitis,Urgent,Blood Test,ICU,11,"Gown, IV",Surgical Table,2 Surgeons,Ibuprofen,Abnormal
-P155,10/3/2024 21:18,10/20/2024 6:12,Pneumonia,Emergency,Chest X-ray,ICU,9,"Mask, Gown",Surgical Table,1 Nurse,Ibuprofen,Inconclusive
-P156,10/25/2024 1:49,10/22/2024 22:34,Fracture,Elective,Appendectomy,General Ward,1,"Mask, Gown",MRI Machine,2 Surgeons,Aspirin,Abnormal
-P157,10/6/2024 18:12,10/14/2024 0:01,Pneumonia,Urgent,Appendectomy,ICU,2,"Gloves, IV",MRI Machine,1 Nurse,Paracetamol,Normal
-P158,10/19/2024 23:35,10/24/2024 8:18,Pneumonia,Urgent,MRI,ICU,11,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Inconclusive
-P159,10/6/2024 0:37,10/23/2024 0:34,Diabetes,Elective,Chest X-ray,ICU,8,"Mask, Gown",X-ray Machine,2 Surgeons,Penicillin,Abnormal
-P160,10/21/2024 8:38,10/23/2024 3:20,Fracture,Emergency,MRI,General Ward,1,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P161,10/9/2024 14:16,10/17/2024 16:58,Pneumonia,Elective,MRI,General Ward,2,"Mask, Gown",MRI Machine,1 Nurse,Aspirin,Inconclusive
-P162,10/14/2024 22:38,10/24/2024 2:45,Pneumonia,Emergency,Blood Test,ICU,8,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Lipitor,Inconclusive
-P163,10/26/2024 16:40,10/31/2024 19:44,Fracture,Elective,Blood Test,ICU,8,"Gloves, IV",MRI Machine,2 Surgeons,Lipitor,Normal
-P164,10/16/2024 10:59,10/18/2024 10:28,Pneumonia,Emergency,Blood Test,ICU,7,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Normal
-P165,10/12/2024 11:17,10/24/2024 0:53,Appendicitis,Urgent,MRI,ICU,6,"Gloves, IV",X-ray Machine,2 Surgeons,Ibuprofen,Normal
-P166,10/21/2024 17:56,10/13/2024 0:44,Appendicitis,Urgent,Chest X-ray,ICU,1,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Aspirin,Normal
-P167,10/1/2024 9:26,10/6/2024 11:46,Pneumonia,Emergency,MRI,ICU,11,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P168,10/11/2024 13:03,10/28/2024 13:03,Appendicitis,Urgent,Chest X-ray,General Ward,7,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P169,10/8/2024 5:24,10/20/2024 1:52,Fracture,Emergency,Blood Test,ICU,3,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Aspirin,Inconclusive
-P170,10/29/2024 9:36,10/14/2024 9:28,Appendicitis,Elective,Chest X-ray,General Ward,10,"Gown, IV",Surgical Table,2 Surgeons,Lipitor,Inconclusive
-P171,10/16/2024 20:10,10/16/2024 8:27,Pneumonia,Emergency,MRI,ICU,3,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Inconclusive
-P172,10/22/2024 1:50,10/15/2024 23:56,Pneumonia,Elective,Blood Test,ICU,10,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Aspirin,Normal
-P173,10/17/2024 13:46,10/10/2024 13:39,Pneumonia,Emergency,Appendectomy,ICU,3,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Aspirin,Inconclusive
-P174,10/11/2024 20:42,10/25/2024 4:18,Pneumonia,Emergency,MRI,ICU,5,"Mask, Gown",MRI Machine,2 Surgeons,Paracetamol,Normal
-P175,10/24/2024 15:43,10/10/2024 2:39,Fracture,Emergency,Appendectomy,General Ward,10,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Ibuprofen,Inconclusive
-P176,10/3/2024 13:13,10/25/2024 22:06,Pneumonia,Emergency,Blood Test,ICU,13,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P177,10/9/2024 7:45,10/28/2024 23:03,Fracture,Elective,MRI,General Ward,6,"Gloves, IV",MRI Machine,2 Surgeons,Penicillin,Abnormal
-P178,10/21/2024 1:03,10/13/2024 1:09,Fracture,Emergency,Chest X-ray,General Ward,11,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Inconclusive
-P179,10/9/2024 22:45,10/19/2024 9:21,Pneumonia,Elective,Blood Test,ICU,7,"Gown, IV",MRI Machine,1 Nurse,Aspirin,Inconclusive
-P180,10/22/2024 20:13,10/12/2024 23:46,Appendicitis,Urgent,MRI,General Ward,6,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Aspirin,Abnormal
-P181,10/27/2024 5:02,10/30/2024 19:55,Diabetes,Emergency,Chest X-ray,General Ward,12,"Gloves, IV",Surgical Table,1 Nurse,Aspirin,Inconclusive
-P182,10/4/2024 2:44,10/13/2024 11:53,Appendicitis,Elective,Appendectomy,General Ward,3,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P183,10/21/2024 2:32,10/12/2024 15:36,Appendicitis,Urgent,Appendectomy,General Ward,6,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P184,10/25/2024 8:48,10/24/2024 0:57,Pneumonia,Elective,Chest X-ray,ICU,6,"Gown, IV",Surgical Table,2 Surgeons,Ibuprofen,Normal
-P185,10/15/2024 6:16,10/5/2024 6:25,Appendicitis,Emergency,Blood Test,General Ward,7,"Mask, Gown",X-ray Machine,1 Nurse,Paracetamol,Abnormal
-P186,10/24/2024 20:35,10/10/2024 23:10,Fracture,Elective,Chest X-ray,ICU,7,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Penicillin,Inconclusive
-P187,10/10/2024 15:42,10/9/2024 7:49,Appendicitis,Emergency,Blood Test,ICU,12,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P188,10/21/2024 23:18,10/8/2024 5:59,Diabetes,Elective,Blood Test,General Ward,11,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Inconclusive
-P189,10/26/2024 9:58,10/9/2024 7:30,Fracture,Emergency,Appendectomy,General Ward,2,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Inconclusive
-P190,10/6/2024 11:56,10/23/2024 9:20,Appendicitis,Elective,MRI,General Ward,9,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P191,10/6/2024 20:13,10/26/2024 19:48,Diabetes,Emergency,Blood Test,ICU,2,"Gown, IV",X-ray Machine,1 Nurse,Lipitor,Abnormal
-P192,10/3/2024 18:58,10/23/2024 0:54,Fracture,Elective,Appendectomy,General Ward,6,"Gloves, IV",Surgical Table,2 Surgeons,Lipitor,Normal
-P193,10/23/2024 13:12,10/31/2024 10:11,Appendicitis,Urgent,Appendectomy,ICU,4,"Gloves, IV",MRI Machine,2 Surgeons,Ibuprofen,Abnormal
-P194,10/16/2024 21:48,10/14/2024 15:47,Appendicitis,Elective,Chest X-ray,ICU,3,"Mask, Gown",MRI Machine,1 Nurse,Lipitor,Abnormal
-P195,10/17/2024 2:26,10/16/2024 13:57,Diabetes,Elective,MRI,ICU,11,"Gloves, IV",MRI Machine,2 Surgeons,Ibuprofen,Inconclusive
-P196,10/11/2024 2:09,10/18/2024 18:19,Diabetes,Elective,MRI,ICU,11,"Gloves, IV",MRI Machine,2 Surgeons,Lipitor,Inconclusive
-P197,10/7/2024 13:02,10/25/2024 15:45,Fracture,Emergency,MRI,General Ward,1,"Gown, IV",Surgical Table,1 Nurse,Lipitor,Abnormal
-P198,10/24/2024 0:56,10/17/2024 3:07,Diabetes,Elective,MRI,ICU,1,"Gloves, IV",Surgical Table,2 Surgeons,Lipitor,Abnormal
-P199,10/25/2024 18:00,10/8/2024 5:38,Appendicitis,Urgent,MRI,ICU,10,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Penicillin,Abnormal
-P200,10/24/2024 1:11,10/31/2024 17:23,Appendicitis,Elective,Appendectomy,ICU,14,"Gown, IV",Surgical Table,2 Surgeons,Lipitor,Inconclusive
-P201,10/20/2024 20:51,10/19/2024 1:33,Diabetes,Elective,MRI,General Ward,10,"Gloves, IV",MRI Machine,2 Surgeons,Aspirin,Abnormal
-P202,10/23/2024 22:39,10/25/2024 4:29,Diabetes,Elective,Appendectomy,General Ward,4,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P203,10/22/2024 0:00,10/27/2024 2:13,Diabetes,Emergency,MRI,ICU,1,"Gown, IV",MRI Machine,1 Nurse,Aspirin,Normal
-P204,10/3/2024 14:30,10/30/2024 17:42,Appendicitis,Elective,MRI,ICU,13,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P205,10/5/2024 2:20,10/9/2024 0:13,Diabetes,Urgent,Appendectomy,ICU,2,"Gloves, IV",Surgical Table,1 Nurse,Ibuprofen,Normal
-P206,10/22/2024 4:06,10/28/2024 14:31,Diabetes,Elective,MRI,ICU,6,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Inconclusive
-P207,10/22/2024 22:01,10/22/2024 23:13,Pneumonia,Urgent,Blood Test,ICU,7,"Gown, IV",MRI Machine,1 Nurse,Aspirin,Normal
-P208,10/14/2024 11:43,10/20/2024 21:40,Pneumonia,Elective,Chest X-ray,ICU,13,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Aspirin,Normal
-P209,10/18/2024 15:31,10/6/2024 3:12,Appendicitis,Urgent,Blood Test,General Ward,2,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P210,10/1/2024 15:59,10/28/2024 12:48,Diabetes,Elective,Appendectomy,General Ward,14,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Aspirin,Inconclusive
-P211,10/5/2024 19:43,10/26/2024 1:08,Appendicitis,Emergency,MRI,ICU,5,"Gloves, IV",MRI Machine,1 Nurse,Paracetamol,Abnormal
-P212,10/14/2024 16:05,10/26/2024 17:23,Pneumonia,Elective,Blood Test,ICU,7,"Gown, IV",X-ray Machine,1 Nurse,Lipitor,Abnormal
-P213,10/26/2024 1:20,10/22/2024 5:15,Diabetes,Elective,MRI,General Ward,5,"Mask, Gown",Surgical Table,1 Nurse,Penicillin,Abnormal
-P214,10/9/2024 16:40,10/15/2024 16:07,Fracture,Elective,Appendectomy,ICU,2,"Gloves, IV",Surgical Table,2 Surgeons,Ibuprofen,Inconclusive
-P215,10/20/2024 12:24,10/29/2024 12:53,Appendicitis,Emergency,Chest X-ray,ICU,1,"Gloves, IV",X-ray Machine,2 Surgeons,Paracetamol,Normal
-P216,10/22/2024 13:16,10/17/2024 6:47,Appendicitis,Emergency,Appendectomy,ICU,2,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Lipitor,Normal
-P217,10/22/2024 18:54,10/7/2024 2:10,Diabetes,Urgent,MRI,ICU,1,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Lipitor,Normal
-P218,10/6/2024 6:56,10/26/2024 21:19,Fracture,Urgent,Appendectomy,ICU,3,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P219,10/5/2024 23:48,10/24/2024 9:08,Fracture,Elective,Appendectomy,ICU,14,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P220,10/21/2024 8:07,10/17/2024 8:22,Fracture,Urgent,MRI,General Ward,8,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P221,10/27/2024 23:57,10/12/2024 1:59,Diabetes,Emergency,Blood Test,ICU,14,"Gown, IV",MRI Machine,2 Surgeons,Lipitor,Inconclusive
-P222,10/21/2024 12:59,10/25/2024 23:48,Diabetes,Elective,Appendectomy,ICU,11,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P223,10/17/2024 13:43,10/31/2024 14:20,Diabetes,Urgent,Appendectomy,General Ward,3,"Gloves, IV",X-ray Machine,2 Surgeons,Aspirin,Abnormal
-P224,10/29/2024 2:25,10/19/2024 3:13,Diabetes,Urgent,MRI,ICU,14,"Gloves, IV",Surgical Table,2 Surgeons,Penicillin,Normal
-P225,10/17/2024 0:29,10/12/2024 3:16,Appendicitis,Elective,Appendectomy,General Ward,3,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Inconclusive
-P226,10/4/2024 19:38,10/21/2024 11:49,Fracture,Emergency,Appendectomy,General Ward,12,"Gloves, IV",Surgical Table,1 Nurse,Penicillin,Inconclusive
-P227,10/12/2024 5:06,10/30/2024 23:19,Fracture,Urgent,Appendectomy,ICU,4,"Mask, Gown",X-ray Machine,2 Surgeons,Lipitor,Normal
-P228,10/17/2024 20:46,10/16/2024 6:48,Pneumonia,Elective,Appendectomy,ICU,2,"Gloves, IV",Surgical Table,2 Surgeons,Aspirin,Inconclusive
-P229,10/14/2024 0:40,10/17/2024 11:13,Fracture,Urgent,Blood Test,ICU,7,"Gown, IV",Surgical Table,1 Nurse,Ibuprofen,Abnormal
-P230,10/14/2024 5:08,10/18/2024 20:10,Appendicitis,Elective,MRI,General Ward,5,"Gown, IV",X-ray Machine,2 Surgeons,Paracetamol,Abnormal
-P231,10/3/2024 2:15,10/26/2024 10:08,Appendicitis,Urgent,Chest X-ray,ICU,4,"Mask, Gown",MRI Machine,1 Nurse,Lipitor,Normal
-P232,10/13/2024 12:14,10/17/2024 14:57,Pneumonia,Urgent,Chest X-ray,General Ward,12,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P233,10/17/2024 4:20,10/27/2024 5:28,Diabetes,Urgent,Chest X-ray,ICU,13,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P234,10/20/2024 5:16,10/22/2024 11:17,Appendicitis,Elective,Chest X-ray,ICU,4,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Inconclusive
-P235,10/26/2024 5:38,10/9/2024 18:36,Appendicitis,Urgent,Blood Test,ICU,5,"Mask, Gown",MRI Machine,2 Surgeons,Paracetamol,Normal
-P236,10/29/2024 20:31,10/14/2024 6:23,Pneumonia,Emergency,Appendectomy,ICU,12,"Gloves, IV",X-ray Machine,1 Nurse,Ibuprofen,Abnormal
-P237,10/11/2024 3:58,10/16/2024 13:54,Fracture,Emergency,Appendectomy,General Ward,3,"Mask, Gown",Surgical Table,1 Nurse,Ibuprofen,Abnormal
-P238,10/29/2024 18:39,10/5/2024 16:30,Fracture,Urgent,Blood Test,ICU,6,"Gloves, IV",X-ray Machine,2 Surgeons,Ibuprofen,Abnormal
-P239,10/1/2024 19:13,10/10/2024 10:19,Appendicitis,Elective,MRI,ICU,13,"Gloves, IV",MRI Machine,1 Nurse,Ibuprofen,Normal
-P240,10/14/2024 5:09,10/20/2024 22:45,Diabetes,Urgent,Chest X-ray,General Ward,7,"Mask, Gown",X-ray Machine,2 Surgeons,Ibuprofen,Normal
-P241,10/10/2024 15:36,10/11/2024 5:35,Pneumonia,Elective,Blood Test,ICU,11,"Gown, IV",X-ray Machine,2 Surgeons,Penicillin,Normal
-P242,10/1/2024 18:32,10/24/2024 3:10,Fracture,Urgent,Blood Test,ICU,2,"Gown, IV",Surgical Table,2 Surgeons,Penicillin,Abnormal
-P243,10/7/2024 15:36,10/17/2024 6:54,Appendicitis,Elective,MRI,General Ward,13,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P244,10/12/2024 17:02,10/17/2024 19:57,Fracture,Urgent,MRI,ICU,5,"Mask, Gown",MRI Machine,1 Nurse,Paracetamol,Inconclusive
-P245,10/25/2024 23:45,10/5/2024 15:24,Appendicitis,Emergency,Chest X-ray,ICU,1,"Gloves, IV",Surgical Table,1 Nurse,Lipitor,Inconclusive
-P246,10/22/2024 3:39,10/18/2024 8:10,Fracture,Urgent,Blood Test,General Ward,12,"Gloves, IV",MRI Machine,2 Surgeons,Penicillin,Normal
-P247,10/1/2024 12:14,10/16/2024 11:32,Fracture,Urgent,Appendectomy,General Ward,7,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P248,10/5/2024 4:27,10/27/2024 18:11,Appendicitis,Elective,Blood Test,ICU,13,"Gown, IV",X-ray Machine,2 Surgeons,Lipitor,Normal
-P249,10/23/2024 11:24,10/7/2024 13:30,Fracture,Emergency,Chest X-ray,General Ward,1,"Gloves, IV",Surgical Table,2 Surgeons,Lipitor,Abnormal
-P250,10/2/2024 11:38,10/23/2024 3:29,Appendicitis,Elective,Chest X-ray,General Ward,6,"Gown, IV",X-ray Machine,2 Surgeons,Ibuprofen,Normal
-P251,10/15/2024 2:08,10/6/2024 20:30,Pneumonia,Emergency,Chest X-ray,General Ward,9,"Gloves, IV",X-ray Machine,1 Nurse,Ibuprofen,Normal
-P252,10/23/2024 20:30,10/17/2024 8:36,Fracture,Urgent,MRI,General Ward,9,"Gown, IV",MRI Machine,1 Nurse,Lipitor,Normal
-P253,10/20/2024 9:16,10/31/2024 10:54,Diabetes,Urgent,Blood Test,ICU,14,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Lipitor,Inconclusive
-P254,10/11/2024 1:42,10/9/2024 4:18,Pneumonia,Urgent,MRI,ICU,3,"Gown, IV",Surgical Table,2 Surgeons,Penicillin,Normal
-P255,10/18/2024 15:39,10/27/2024 20:16,Diabetes,Emergency,Chest X-ray,ICU,9,"Mask, Gown",Surgical Table,2 Surgeons,Aspirin,Abnormal
-P256,10/6/2024 21:59,10/23/2024 10:55,Appendicitis,Elective,Appendectomy,ICU,5,"Gloves, IV",MRI Machine,1 Nurse,Lipitor,Abnormal
-P257,10/18/2024 15:28,10/28/2024 11:49,Diabetes,Emergency,Chest X-ray,General Ward,10,"Gloves, IV",MRI Machine,2 Surgeons,Penicillin,Abnormal
-P258,10/7/2024 15:14,10/28/2024 11:11,Fracture,Elective,Appendectomy,ICU,12,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P259,10/12/2024 4:32,10/12/2024 23:02,Diabetes,Emergency,Blood Test,General Ward,14,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Inconclusive
-P260,10/10/2024 4:42,10/18/2024 0:14,Diabetes,Emergency,Chest X-ray,ICU,3,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Aspirin,Normal
-P261,10/12/2024 9:04,10/11/2024 0:00,Fracture,Elective,Chest X-ray,ICU,6,"Gown, IV",Surgical Table,2 Surgeons,Aspirin,Abnormal
-P262,10/22/2024 20:21,10/22/2024 2:33,Fracture,Emergency,Appendectomy,ICU,9,"Mask, Gown",MRI Machine,1 Nurse,Aspirin,Abnormal
-P263,10/7/2024 1:50,10/22/2024 4:31,Pneumonia,Elective,Blood Test,General Ward,9,"Gown, IV",Surgical Table,1 Nurse,Penicillin,Abnormal
-P264,10/8/2024 2:30,10/23/2024 21:58,Fracture,Urgent,Appendectomy,ICU,11,"Gown, IV",Surgical Table,2 Surgeons,Aspirin,Abnormal
-P265,10/26/2024 3:32,10/7/2024 20:30,Fracture,Urgent,Blood Test,ICU,14,"Gown, IV",MRI Machine,2 Surgeons,Ibuprofen,Normal
-P266,10/2/2024 19:59,10/15/2024 23:09,Appendicitis,Elective,Appendectomy,General Ward,11,"Gown, IV",Surgical Table,1 Nurse,Ibuprofen,Inconclusive
-P267,10/3/2024 9:02,10/21/2024 9:51,Fracture,Emergency,Appendectomy,ICU,14,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Aspirin,Abnormal
-P268,10/9/2024 23:14,10/24/2024 18:19,Fracture,Emergency,MRI,General Ward,13,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P269,10/13/2024 5:23,10/13/2024 17:46,Pneumonia,Urgent,Chest X-ray,ICU,5,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Aspirin,Abnormal
-P270,10/13/2024 4:47,10/10/2024 1:33,Diabetes,Elective,Appendectomy,General Ward,7,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P271,10/1/2024 10:47,10/18/2024 18:01,Diabetes,Emergency,Blood Test,General Ward,2,"Mask, Gown",X-ray Machine,2 Surgeons,Aspirin,Normal
-P272,10/19/2024 4:35,10/26/2024 9:49,Pneumonia,Elective,Appendectomy,ICU,5,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P273,10/5/2024 23:41,10/5/2024 1:20,Diabetes,Urgent,Blood Test,General Ward,5,"Gown, IV",X-ray Machine,1 Nurse,Lipitor,Normal
-P274,10/24/2024 6:18,10/21/2024 19:10,Fracture,Elective,Appendectomy,General Ward,14,"Mask, Gown",Surgical Table,1 Nurse,Ibuprofen,Abnormal
-P275,10/14/2024 10:35,10/9/2024 22:40,Diabetes,Elective,MRI,ICU,7,"Gloves, IV",X-ray Machine,1 Nurse,Paracetamol,Abnormal
-P276,10/12/2024 10:31,10/14/2024 6:45,Diabetes,Elective,MRI,ICU,11,"Gown, IV",MRI Machine,1 Nurse,Paracetamol,Normal
-P277,10/22/2024 7:40,10/12/2024 12:25,Pneumonia,Emergency,MRI,General Ward,11,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Aspirin,Inconclusive
-P278,10/16/2024 8:20,10/6/2024 10:55,Diabetes,Urgent,Chest X-ray,ICU,4,"Gown, IV",X-ray Machine,1 Nurse,Aspirin,Inconclusive
-P279,10/28/2024 15:52,10/15/2024 16:44,Diabetes,Elective,Appendectomy,General Ward,3,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Lipitor,Normal
-P280,10/10/2024 17:50,10/10/2024 4:39,Diabetes,Emergency,Blood Test,ICU,11,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Lipitor,Inconclusive
-P281,10/12/2024 21:36,10/30/2024 4:55,Fracture,Elective,MRI,ICU,13,"Gown, IV",Surgical Table,2 Surgeons,Lipitor,Abnormal
-P282,10/6/2024 9:10,10/12/2024 17:45,Fracture,Emergency,Blood Test,ICU,6,"Mask, Gown",X-ray Machine,1 Nurse,Penicillin,Normal
-P283,10/5/2024 16:14,10/8/2024 14:13,Fracture,Urgent,Chest X-ray,General Ward,7,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P284,10/10/2024 12:02,10/18/2024 17:04,Diabetes,Elective,Blood Test,ICU,13,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P285,10/26/2024 9:34,10/23/2024 10:09,Diabetes,Elective,MRI,General Ward,11,"Mask, Gown",MRI Machine,1 Nurse,Ibuprofen,Abnormal
-P286,10/13/2024 6:34,10/28/2024 4:31,Diabetes,Urgent,MRI,General Ward,3,"Mask, Gown",MRI Machine,1 Nurse,Penicillin,Inconclusive
-P287,10/11/2024 19:47,10/29/2024 7:06,Diabetes,Urgent,Chest X-ray,General Ward,4,"Mask, Gown",MRI Machine,1 Nurse,Penicillin,Normal
-P288,10/23/2024 8:46,10/27/2024 3:13,Fracture,Emergency,Appendectomy,General Ward,8,"Gloves, IV",X-ray Machine,1 Nurse,Lipitor,Inconclusive
-P289,10/26/2024 10:52,10/11/2024 1:13,Fracture,Emergency,Blood Test,ICU,9,"Mask, Gown",X-ray Machine,2 Surgeons,Ibuprofen,Inconclusive
-P290,10/20/2024 6:37,10/15/2024 9:49,Diabetes,Elective,Chest X-ray,ICU,11,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P291,10/24/2024 11:33,10/11/2024 2:15,Pneumonia,Emergency,Appendectomy,General Ward,2,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Lipitor,Inconclusive
-P292,10/8/2024 3:52,10/14/2024 19:54,Appendicitis,Emergency,Appendectomy,ICU,12,"Gown, IV",MRI Machine,1 Nurse,Lipitor,Abnormal
-P293,10/20/2024 10:19,10/31/2024 12:51,Fracture,Elective,Chest X-ray,ICU,7,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Normal
-P294,10/23/2024 3:18,10/8/2024 0:04,Fracture,Elective,Chest X-ray,ICU,9,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Aspirin,Inconclusive
-P295,10/3/2024 19:03,10/29/2024 17:30,Fracture,Emergency,Appendectomy,ICU,6,"Gloves, IV",Surgical Table,2 Surgeons,Penicillin,Abnormal
-P296,10/14/2024 12:02,10/24/2024 18:19,Fracture,Emergency,Appendectomy,General Ward,5,"Mask, Gown",Surgical Table,2 Surgeons,Paracetamol,Abnormal
-P297,10/27/2024 15:51,10/25/2024 0:56,Diabetes,Elective,Chest X-ray,ICU,3,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P298,10/3/2024 7:50,10/5/2024 14:35,Pneumonia,Elective,Chest X-ray,ICU,2,"Gown, IV",X-ray Machine,2 Surgeons,Lipitor,Abnormal
-P299,10/25/2024 17:56,10/5/2024 7:58,Fracture,Emergency,Appendectomy,ICU,5,"Gown, IV",X-ray Machine,1 Nurse,Paracetamol,Inconclusive
-P300,10/3/2024 0:38,10/15/2024 19:21,Appendicitis,Emergency,MRI,General Ward,11,"Mask, Gown",Surgical Table,2 Surgeons,Lipitor,Abnormal
-P301,10/8/2024 4:57,10/26/2024 20:20,Diabetes,Emergency,Appendectomy,General Ward,9,"Gown, IV",MRI Machine,2 Surgeons,Penicillin,Abnormal
-P302,10/21/2024 1:48,10/20/2024 10:41,Diabetes,Urgent,Blood Test,General Ward,8,"Gown, IV",MRI Machine,1 Nurse,Penicillin,Abnormal
-P303,10/8/2024 6:56,10/17/2024 4:34,Appendicitis,Emergency,Blood Test,ICU,3,"Mask, Gown",Surgical Table,1 Nurse,Ibuprofen,Abnormal
-P304,10/24/2024 4:28,10/15/2024 20:49,Fracture,Emergency,Chest X-ray,General Ward,6,"Gloves, IV",Surgical Table,2 Surgeons,Aspirin,Abnormal
-P305,10/15/2024 23:57,10/14/2024 15:44,Fracture,Urgent,MRI,General Ward,3,"Gown, IV",Surgical Table,2 Surgeons,Lipitor,Inconclusive
-P306,10/28/2024 18:29,10/23/2024 1:24,Fracture,Elective,Chest X-ray,ICU,2,"Gloves, IV",X-ray Machine,2 Surgeons,Ibuprofen,Inconclusive
-P307,10/17/2024 1:41,10/11/2024 4:14,Appendicitis,Elective,MRI,ICU,12,"Gown, IV",Surgical Table,2 Surgeons,Paracetamol,Inconclusive
-P308,10/20/2024 1:32,10/15/2024 23:46,Pneumonia,Emergency,Appendectomy,ICU,5,"Gown, IV",X-ray Machine,1 Nurse,Ibuprofen,Inconclusive
-P309,10/2/2024 21:11,10/20/2024 12:35,Pneumonia,Urgent,MRI,ICU,14,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Lipitor,Inconclusive
-P310,10/28/2024 19:16,10/19/2024 2:44,Pneumonia,Urgent,Appendectomy,General Ward,13,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Lipitor,Inconclusive
-P311,10/18/2024 15:53,10/26/2024 22:56,Appendicitis,Elective,Chest X-ray,General Ward,3,"Gloves, IV",Surgical Table,1 Nurse,Ibuprofen,Normal
-P312,10/6/2024 10:08,10/31/2024 13:43,Appendicitis,Emergency,Chest X-ray,ICU,2,"Mask, Gown",X-ray Machine,2 Surgeons,Aspirin,Abnormal
-P313,10/24/2024 10:28,10/11/2024 13:33,Pneumonia,Elective,Chest X-ray,General Ward,4,"Gown, IV",MRI Machine,2 Surgeons,Aspirin,Inconclusive
-P314,10/5/2024 15:57,10/18/2024 10:17,Fracture,Elective,Chest X-ray,General Ward,11,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Lipitor,Abnormal
-P315,10/23/2024 6:06,10/11/2024 13:45,Fracture,Urgent,Appendectomy,ICU,13,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Penicillin,Inconclusive
-P316,10/11/2024 22:17,10/26/2024 19:13,Pneumonia,Elective,MRI,ICU,11,"Gown, IV",MRI Machine,2 Surgeons,Ibuprofen,Inconclusive
-P317,10/14/2024 14:00,10/21/2024 0:20,Pneumonia,Emergency,Blood Test,General Ward,8,"Mask, Gown",Surgical Table,1 Nurse,Penicillin,Inconclusive
-P318,10/9/2024 10:11,10/6/2024 22:44,Appendicitis,Urgent,Blood Test,General Ward,1,"Gloves, IV",X-ray Machine,1 Nurse,Paracetamol,Inconclusive
-P319,10/14/2024 22:58,10/22/2024 13:29,Appendicitis,Elective,Chest X-ray,ICU,6,"Gloves, IV",X-ray Machine,1 Nurse,Ibuprofen,Normal
-P320,10/8/2024 8:53,10/5/2024 11:59,Diabetes,Elective,Chest X-ray,ICU,7,"Gloves, IV",MRI Machine,2 Surgeons,Aspirin,Normal
-P321,10/1/2024 23:28,10/9/2024 14:27,Appendicitis,Elective,Blood Test,ICU,4,"Mask, Gown",Surgical Table,2 Surgeons,Paracetamol,Normal
-P322,10/20/2024 19:14,10/10/2024 14:22,Diabetes,Urgent,Appendectomy,General Ward,11,"Gloves, IV",X-ray Machine,2 Surgeons,Lipitor,Abnormal
-P323,10/25/2024 17:06,10/12/2024 18:02,Pneumonia,Elective,Appendectomy,General Ward,2,"Gloves, IV",Surgical Table,2 Surgeons,Paracetamol,Abnormal
-P324,10/1/2024 2:53,10/9/2024 3:40,Pneumonia,Urgent,MRI,General Ward,6,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Abnormal
-P325,10/19/2024 2:08,10/23/2024 1:36,Fracture,Urgent,MRI,ICU,5,"Mask, Gown",Surgical Table,1 Nurse,Ibuprofen,Inconclusive
-P326,10/18/2024 16:28,10/13/2024 15:35,Diabetes,Urgent,Chest X-ray,ICU,6,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Penicillin,Abnormal
-P327,10/28/2024 1:50,10/28/2024 4:17,Appendicitis,Emergency,Chest X-ray,General Ward,9,"Gown, IV",MRI Machine,2 Surgeons,Lipitor,Abnormal
-P328,10/25/2024 19:43,10/23/2024 10:24,Fracture,Emergency,Blood Test,General Ward,2,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Penicillin,Inconclusive
-P329,10/16/2024 2:35,10/12/2024 18:34,Fracture,Emergency,MRI,ICU,13,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P330,10/12/2024 4:12,10/17/2024 23:58,Diabetes,Elective,Chest X-ray,General Ward,1,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P331,10/12/2024 22:06,10/7/2024 22:42,Fracture,Elective,Blood Test,General Ward,8,"Gown, IV",X-ray Machine,1 Nurse,Ibuprofen,Inconclusive
-P332,10/8/2024 18:23,10/23/2024 21:58,Diabetes,Urgent,Appendectomy,General Ward,5,"Mask, Gown",X-ray Machine,2 Surgeons,Aspirin,Inconclusive
-P333,10/18/2024 11:52,10/25/2024 8:59,Diabetes,Urgent,MRI,General Ward,4,"Gown, IV",MRI Machine,2 Surgeons,Lipitor,Abnormal
-P334,10/3/2024 3:58,10/20/2024 13:23,Appendicitis,Emergency,Chest X-ray,General Ward,3,"Mask, Gown",MRI Machine,1 Nurse,Ibuprofen,Normal
-P335,10/26/2024 8:44,10/19/2024 1:47,Pneumonia,Urgent,MRI,General Ward,13,"Gown, IV",MRI Machine,1 Nurse,Penicillin,Inconclusive
-P336,10/5/2024 2:16,10/26/2024 22:18,Appendicitis,Emergency,MRI,General Ward,1,"Mask, Gown",Surgical Table,1 Nurse,Paracetamol,Abnormal
-P337,10/12/2024 5:45,10/31/2024 12:22,Diabetes,Emergency,Blood Test,General Ward,4,"Gloves, IV",MRI Machine,1 Nurse,Lipitor,Normal
-P338,10/8/2024 19:24,10/18/2024 5:57,Diabetes,Urgent,Chest X-ray,ICU,3,"Mask, Gown",X-ray Machine,2 Surgeons,Penicillin,Inconclusive
-P339,10/9/2024 8:21,10/20/2024 23:32,Appendicitis,Urgent,MRI,ICU,4,"Gown, IV",MRI Machine,1 Nurse,Lipitor,Inconclusive
-P340,10/17/2024 6:49,10/20/2024 20:45,Appendicitis,Elective,MRI,General Ward,10,"Gown, IV",X-ray Machine,2 Surgeons,Paracetamol,Inconclusive
-P341,10/17/2024 12:28,10/12/2024 16:48,Fracture,Urgent,Chest X-ray,ICU,14,"Mask, Gown",MRI Machine,1 Nurse,Penicillin,Inconclusive
-P342,10/27/2024 5:05,10/8/2024 15:24,Fracture,Urgent,MRI,General Ward,2,"Gloves, IV",Surgical Table,2 Surgeons,Penicillin,Abnormal
-P343,10/29/2024 10:57,10/27/2024 8:42,Fracture,Emergency,Blood Test,ICU,3,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Aspirin,Abnormal
-P344,10/8/2024 23:45,10/22/2024 14:44,Pneumonia,Elective,MRI,ICU,7,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Aspirin,Normal
-P345,10/26/2024 18:22,10/19/2024 7:56,Pneumonia,Urgent,Chest X-ray,ICU,10,"Gloves, IV",X-ray Machine,1 Nurse,Paracetamol,Inconclusive
-P346,10/6/2024 17:43,10/8/2024 5:43,Pneumonia,Elective,Blood Test,General Ward,11,"Gown, IV",MRI Machine,1 Nurse,Penicillin,Inconclusive
-P347,10/13/2024 15:04,10/22/2024 6:45,Pneumonia,Elective,MRI,General Ward,7,"Gown, IV",Surgical Table,2 Surgeons,Aspirin,Inconclusive
-P348,10/18/2024 3:25,10/6/2024 6:12,Appendicitis,Urgent,Chest X-ray,General Ward,6,"Gloves, IV",X-ray Machine,2 Surgeons,Penicillin,Inconclusive
-P349,10/3/2024 18:51,10/28/2024 4:54,Diabetes,Emergency,Chest X-ray,ICU,2,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Lipitor,Inconclusive
-P350,10/3/2024 9:15,10/29/2024 11:02,Fracture,Elective,Chest X-ray,ICU,14,"Mask, Gown",X-ray Machine,2 Surgeons,Lipitor,Normal
-P351,10/15/2024 15:51,10/8/2024 3:29,Fracture,Elective,MRI,ICU,8,"Gloves, IV",X-ray Machine,1 Nurse,Penicillin,Inconclusive
-P352,10/15/2024 11:49,10/21/2024 13:53,Diabetes,Urgent,Blood Test,General Ward,6,"Mask, Gown",Surgical Table,2 Surgeons,Lipitor,Normal
-P353,10/15/2024 5:34,10/6/2024 7:48,Appendicitis,Emergency,MRI,General Ward,10,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Lipitor,Normal
-P354,10/22/2024 19:54,10/23/2024 11:32,Diabetes,Emergency,Chest X-ray,General Ward,10,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Ibuprofen,Inconclusive
-P355,10/19/2024 7:18,10/7/2024 17:10,Appendicitis,Emergency,Appendectomy,ICU,3,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P356,10/11/2024 6:00,10/29/2024 17:25,Diabetes,Elective,Blood Test,ICU,7,"Mask, Gown",Surgical Table,2 Surgeons,Paracetamol,Inconclusive
-P357,10/4/2024 23:22,10/7/2024 3:25,Diabetes,Elective,Appendectomy,ICU,13,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Lipitor,Abnormal
-P358,10/4/2024 15:01,10/6/2024 13:46,Fracture,Elective,Appendectomy,ICU,8,"Gown, IV",MRI Machine,1 Nurse,Aspirin,Normal
-P359,10/8/2024 10:28,10/9/2024 23:33,Diabetes,Urgent,Blood Test,General Ward,5,"Gloves, IV",Surgical Table,1 Nurse,Penicillin,Normal
-P360,10/8/2024 6:04,10/8/2024 11:33,Fracture,Urgent,Blood Test,ICU,2,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Aspirin,Inconclusive
-P361,10/16/2024 17:33,10/12/2024 2:10,Pneumonia,Emergency,MRI,ICU,13,"Mask, Gown",X-ray Machine,2 Surgeons,Penicillin,Normal
-P362,10/17/2024 1:32,10/12/2024 4:10,Pneumonia,Elective,Appendectomy,General Ward,4,"Mask, Gown",Surgical Table,1 Nurse,Penicillin,Inconclusive
-P363,10/1/2024 13:03,10/6/2024 2:11,Appendicitis,Elective,MRI,General Ward,10,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Lipitor,Inconclusive
-P364,10/17/2024 0:02,10/21/2024 13:37,Fracture,Elective,MRI,ICU,12,"Gown, IV",Surgical Table,2 Surgeons,Paracetamol,Normal
-P365,10/11/2024 23:02,10/11/2024 18:31,Diabetes,Emergency,MRI,ICU,5,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Inconclusive
-P366,10/2/2024 9:37,10/6/2024 19:33,Fracture,Elective,Blood Test,ICU,3,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Penicillin,Abnormal
-P367,10/21/2024 22:01,10/6/2024 23:54,Pneumonia,Elective,Appendectomy,General Ward,14,"Mask, Gown",X-ray Machine,2 Surgeons,Ibuprofen,Inconclusive
-P368,10/23/2024 4:49,10/20/2024 1:17,Pneumonia,Emergency,Chest X-ray,General Ward,14,"Gown, IV",MRI Machine,2 Surgeons,Ibuprofen,Inconclusive
-P369,10/1/2024 13:46,10/24/2024 11:20,Fracture,Emergency,Blood Test,ICU,7,"Gown, IV",Surgical Table,2 Surgeons,Penicillin,Abnormal
-P370,10/12/2024 14:38,10/15/2024 16:58,Appendicitis,Emergency,Blood Test,General Ward,1,"Mask, Gown",MRI Machine,2 Surgeons,Lipitor,Inconclusive
-P371,10/4/2024 22:32,10/30/2024 19:44,Diabetes,Urgent,Appendectomy,ICU,11,"Gloves, IV",MRI Machine,1 Nurse,Ibuprofen,Abnormal
-P372,10/18/2024 10:02,10/12/2024 15:38,Pneumonia,Emergency,Appendectomy,ICU,3,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P373,10/23/2024 1:24,10/10/2024 13:54,Fracture,Elective,Appendectomy,ICU,6,"Gloves, IV",X-ray Machine,2 Surgeons,Lipitor,Normal
-P374,10/8/2024 8:24,10/24/2024 19:18,Appendicitis,Emergency,Appendectomy,ICU,6,"Gown, IV",MRI Machine,2 Surgeons,Ibuprofen,Abnormal
-P375,10/29/2024 3:19,10/17/2024 14:33,Fracture,Urgent,Appendectomy,General Ward,13,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P376,10/22/2024 9:41,10/19/2024 20:56,Diabetes,Elective,Chest X-ray,General Ward,11,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Aspirin,Inconclusive
-P377,10/15/2024 19:35,10/13/2024 6:56,Diabetes,Urgent,MRI,General Ward,6,"Mask, Gown",Surgical Table,2 Surgeons,Aspirin,Normal
-P378,10/1/2024 7:13,10/7/2024 9:22,Diabetes,Emergency,MRI,ICU,6,"Mask, Gown",Surgical Table,1 Nurse,Paracetamol,Abnormal
-P379,10/21/2024 22:24,10/12/2024 6:56,Fracture,Urgent,Blood Test,General Ward,5,"Mask, Gown",X-ray Machine,2 Surgeons,Ibuprofen,Inconclusive
-P380,10/1/2024 6:06,10/13/2024 9:15,Fracture,Urgent,MRI,ICU,1,"Mask, Gown",MRI Machine,1 Nurse,Paracetamol,Abnormal
-P381,10/14/2024 17:22,10/15/2024 5:03,Diabetes,Elective,MRI,ICU,13,"Gown, IV",X-ray Machine,1 Nurse,Lipitor,Normal
-P382,10/21/2024 21:30,10/21/2024 23:34,Appendicitis,Emergency,MRI,ICU,12,"Mask, Gown",Surgical Table,2 Surgeons,Ibuprofen,Abnormal
-P383,10/13/2024 7:41,10/25/2024 20:17,Appendicitis,Urgent,Chest X-ray,General Ward,8,"Mask, Gown",MRI Machine,2 Surgeons,Aspirin,Normal
-P384,10/7/2024 4:54,10/28/2024 11:28,Diabetes,Emergency,Chest X-ray,General Ward,5,"Gloves, IV",X-ray Machine,1 Nurse,Ibuprofen,Inconclusive
-P385,10/10/2024 22:33,10/18/2024 12:05,Fracture,Elective,MRI,ICU,4,"Gown, IV",MRI Machine,2 Surgeons,Ibuprofen,Inconclusive
-P386,10/19/2024 22:51,10/20/2024 19:02,Fracture,Elective,Appendectomy,ICU,3,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Lipitor,Inconclusive
-P387,10/4/2024 6:04,10/19/2024 0:12,Appendicitis,Elective,MRI,ICU,11,"Gown, IV",MRI Machine,2 Surgeons,Penicillin,Normal
-P388,10/19/2024 1:24,10/26/2024 17:37,Diabetes,Urgent,Appendectomy,ICU,8,"Gown, IV",X-ray Machine,2 Surgeons,Paracetamol,Inconclusive
-P389,10/14/2024 0:35,10/30/2024 1:40,Fracture,Emergency,Blood Test,ICU,12,"Gown, IV",MRI Machine,2 Surgeons,Penicillin,Inconclusive
-P390,10/15/2024 6:18,10/30/2024 0:57,Fracture,Elective,Appendectomy,ICU,3,"Gown, IV",Surgical Table,2 Surgeons,Paracetamol,Normal
-P391,10/6/2024 2:32,10/15/2024 4:43,Appendicitis,Emergency,Chest X-ray,General Ward,2,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P392,10/15/2024 7:33,10/21/2024 10:29,Pneumonia,Urgent,Blood Test,General Ward,1,"Mask, Gown",X-ray Machine,1 Nurse,Paracetamol,Abnormal
-P393,10/11/2024 2:07,10/31/2024 4:27,Diabetes,Urgent,Chest X-ray,General Ward,14,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Ibuprofen,Abnormal
-P394,10/11/2024 8:27,10/28/2024 21:07,Appendicitis,Urgent,Chest X-ray,ICU,7,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Penicillin,Normal
-P395,10/1/2024 10:07,10/8/2024 7:38,Pneumonia,Urgent,Chest X-ray,ICU,5,"Gloves, IV",X-ray Machine,2 Surgeons,Penicillin,Inconclusive
-P396,10/22/2024 10:35,10/16/2024 21:01,Pneumonia,Emergency,MRI,General Ward,1,"Gloves, IV",MRI Machine,2 Surgeons,Ibuprofen,Inconclusive
-P397,10/11/2024 5:48,10/21/2024 15:55,Appendicitis,Elective,Chest X-ray,ICU,11,"Gloves, IV",Surgical Table,2 Surgeons,Penicillin,Normal
-P398,10/20/2024 6:03,10/24/2024 19:59,Pneumonia,Emergency,Chest X-ray,General Ward,9,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Lipitor,Abnormal
-P399,10/13/2024 21:27,10/22/2024 5:11,Diabetes,Emergency,Chest X-ray,General Ward,10,"Gown, IV",Surgical Table,2 Surgeons,Lipitor,Abnormal
-P400,10/27/2024 6:07,10/26/2024 7:13,Fracture,Emergency,MRI,ICU,2,"Mask, Gown",MRI Machine,2 Surgeons,Lipitor,Inconclusive
-P401,10/6/2024 14:18,10/6/2024 21:20,Appendicitis,Elective,MRI,General Ward,13,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Lipitor,Normal
-P402,10/1/2024 14:12,10/7/2024 5:26,Diabetes,Emergency,Chest X-ray,ICU,11,"Mask, Gown",X-ray Machine,1 Nurse,Ibuprofen,Abnormal
-P403,10/29/2024 17:13,10/25/2024 23:16,Pneumonia,Urgent,Chest X-ray,General Ward,3,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P404,10/23/2024 22:23,10/17/2024 6:32,Pneumonia,Urgent,Blood Test,ICU,2,"Gloves, IV",X-ray Machine,2 Surgeons,Ibuprofen,Normal
-P405,10/9/2024 15:02,10/24/2024 14:37,Appendicitis,Elective,Chest X-ray,General Ward,8,"Gown, IV",X-ray Machine,1 Nurse,Ibuprofen,Normal
-P406,10/28/2024 23:37,10/11/2024 9:43,Appendicitis,Urgent,Appendectomy,ICU,12,"Gown, IV",Surgical Table,2 Surgeons,Lipitor,Abnormal
-P407,10/11/2024 18:10,10/22/2024 14:05,Fracture,Elective,MRI,ICU,1,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Penicillin,Normal
-P408,10/16/2024 16:48,10/17/2024 1:04,Pneumonia,Emergency,Blood Test,ICU,2,"Mask, Gown",X-ray Machine,1 Nurse,Aspirin,Abnormal
-P409,10/12/2024 7:56,10/19/2024 6:01,Appendicitis,Urgent,Appendectomy,General Ward,9,"Gloves, IV",Surgical Table,2 Surgeons,Paracetamol,Abnormal
-P410,10/13/2024 1:45,10/15/2024 19:22,Pneumonia,Elective,Chest X-ray,General Ward,5,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Inconclusive
-P411,10/27/2024 0:04,10/19/2024 3:57,Pneumonia,Urgent,Blood Test,General Ward,2,"Gloves, IV",X-ray Machine,2 Surgeons,Ibuprofen,Normal
-P412,10/28/2024 5:39,10/7/2024 18:43,Pneumonia,Urgent,Blood Test,General Ward,6,"Gloves, IV",MRI Machine,2 Surgeons,Aspirin,Abnormal
-P413,10/7/2024 23:51,10/10/2024 7:37,Appendicitis,Elective,MRI,General Ward,13,"Gloves, IV",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P414,10/27/2024 6:29,10/14/2024 11:33,Diabetes,Urgent,Appendectomy,General Ward,12,"Gloves, IV",MRI Machine,1 Nurse,Lipitor,Abnormal
-P415,10/11/2024 13:09,10/5/2024 17:52,Fracture,Elective,Blood Test,ICU,12,"Gown, IV",X-ray Machine,1 Nurse,Lipitor,Normal
-P416,10/2/2024 17:58,10/27/2024 21:39,Diabetes,Elective,MRI,ICU,11,"Gloves, IV",Surgical Table,1 Nurse,Lipitor,Inconclusive
-P417,10/7/2024 16:19,10/12/2024 8:43,Pneumonia,Urgent,Appendectomy,General Ward,5,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Paracetamol,Inconclusive
-P418,10/24/2024 7:19,10/11/2024 14:10,Appendicitis,Elective,MRI,ICU,10,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P419,10/28/2024 15:17,10/8/2024 10:22,Pneumonia,Emergency,MRI,ICU,9,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Normal
-P420,10/19/2024 9:32,10/12/2024 1:45,Fracture,Urgent,Blood Test,ICU,9,"Gloves, IV",MRI Machine,2 Surgeons,Penicillin,Abnormal
-P421,10/24/2024 16:58,10/22/2024 19:52,Pneumonia,Elective,MRI,General Ward,13,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Inconclusive
-P422,10/26/2024 7:01,10/29/2024 14:37,Fracture,Emergency,Blood Test,ICU,10,"Mask, Gown",Surgical Table,1 Nurse,Paracetamol,Normal
-P423,10/12/2024 21:11,10/15/2024 16:58,Appendicitis,Elective,Chest X-ray,ICU,3,"Gown, IV",Surgical Table,2 Surgeons,Penicillin,Normal
-P424,10/25/2024 16:46,10/15/2024 0:03,Appendicitis,Elective,Chest X-ray,General Ward,4,"Mask, Gown",Surgical Table,2 Surgeons,Lipitor,Abnormal
-P425,10/2/2024 15:03,10/23/2024 0:14,Diabetes,Elective,Chest X-ray,ICU,12,"Gown, IV",X-ray Machine,1 Nurse,Aspirin,Abnormal
-P426,10/8/2024 8:39,10/12/2024 16:21,Appendicitis,Urgent,Chest X-ray,ICU,3,"Mask, Gown",X-ray Machine,1 Nurse,Lipitor,Inconclusive
-P427,10/18/2024 17:00,10/25/2024 5:34,Pneumonia,Emergency,Appendectomy,ICU,14,"Gown, IV",MRI Machine,1 Nurse,Ibuprofen,Inconclusive
-P428,10/28/2024 0:39,10/6/2024 11:06,Fracture,Elective,Blood Test,General Ward,2,"Gloves, IV",MRI Machine,2 Surgeons,Lipitor,Abnormal
-P429,10/26/2024 18:09,10/7/2024 20:22,Pneumonia,Emergency,Blood Test,ICU,7,"Gown, IV",X-ray Machine,1 Nurse,Lipitor,Inconclusive
-P430,10/29/2024 10:57,10/27/2024 0:34,Fracture,Emergency,Chest X-ray,General Ward,9,"Mask, Gown",X-ray Machine,1 Nurse,Aspirin,Inconclusive
-P431,10/6/2024 18:20,10/15/2024 11:07,Appendicitis,Elective,MRI,ICU,9,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Inconclusive
-P432,10/1/2024 18:11,10/22/2024 0:58,Diabetes,Elective,Blood Test,General Ward,14,"Gloves, IV",MRI Machine,2 Surgeons,Ibuprofen,Inconclusive
-P433,10/25/2024 18:40,10/8/2024 2:54,Pneumonia,Elective,Chest X-ray,General Ward,6,"Mask, Gown",X-ray Machine,2 Surgeons,Aspirin,Abnormal
-P434,10/13/2024 20:27,10/26/2024 4:56,Appendicitis,Elective,MRI,General Ward,9,"Gown, IV",X-ray Machine,1 Nurse,Ibuprofen,Inconclusive
-P435,10/15/2024 21:00,10/20/2024 18:33,Diabetes,Elective,Chest X-ray,General Ward,2,"Gloves, IV",MRI Machine,1 Nurse,Penicillin,Inconclusive
-P436,10/8/2024 13:49,10/28/2024 10:01,Diabetes,Emergency,Blood Test,General Ward,10,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Inconclusive
-P437,10/22/2024 9:32,10/30/2024 17:20,Appendicitis,Elective,Chest X-ray,ICU,8,"Mask, Gown",X-ray Machine,2 Surgeons,Aspirin,Abnormal
-P438,10/25/2024 4:39,10/26/2024 13:29,Fracture,Emergency,MRI,General Ward,5,"Gown, IV",Surgical Table,2 Surgeons,Ibuprofen,Inconclusive
-P439,10/12/2024 15:25,10/22/2024 7:05,Fracture,Elective,Appendectomy,ICU,7,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Penicillin,Abnormal
-P440,10/19/2024 21:13,10/26/2024 0:41,Fracture,Urgent,Chest X-ray,General Ward,5,"Gown, IV",X-ray Machine,1 Nurse,Penicillin,Abnormal
-P441,10/10/2024 14:31,10/19/2024 16:50,Pneumonia,Urgent,Chest X-ray,General Ward,3,"Gown, IV",MRI Machine,2 Surgeons,Aspirin,Normal
-P442,10/20/2024 14:25,10/30/2024 7:10,Appendicitis,Urgent,Appendectomy,General Ward,11,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Ibuprofen,Inconclusive
-P443,10/8/2024 9:43,10/7/2024 16:32,Pneumonia,Elective,MRI,General Ward,1,"Gown, IV",MRI Machine,1 Nurse,Paracetamol,Normal
-P444,10/4/2024 18:06,10/21/2024 4:34,Fracture,Elective,Chest X-ray,ICU,8,"Gloves, IV",Surgical Table,2 Surgeons,Aspirin,Abnormal
-P445,10/9/2024 6:57,10/22/2024 5:01,Fracture,Emergency,Chest X-ray,General Ward,2,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Inconclusive
-P446,10/9/2024 22:16,10/17/2024 21:57,Fracture,Urgent,MRI,ICU,13,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Lipitor,Abnormal
-P447,10/8/2024 8:30,10/10/2024 16:06,Appendicitis,Elective,Chest X-ray,ICU,1,"Gown, IV",MRI Machine,1 Nurse,Penicillin,Abnormal
-P448,10/1/2024 2:58,10/18/2024 21:12,Appendicitis,Urgent,MRI,General Ward,14,"Mask, Gown",Surgical Table,2 Surgeons,Paracetamol,Abnormal
-P449,10/13/2024 1:57,10/11/2024 0:11,Diabetes,Emergency,Appendectomy,ICU,13,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Normal
-P450,10/24/2024 1:14,10/14/2024 1:09,Diabetes,Emergency,MRI,General Ward,2,"Gloves, IV",Surgical Table,1 Nurse,Ibuprofen,Abnormal
-P451,10/27/2024 3:30,10/8/2024 14:49,Diabetes,Urgent,Chest X-ray,ICU,2,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Paracetamol,Abnormal
-P452,10/22/2024 10:40,10/27/2024 17:02,Fracture,Urgent,MRI,General Ward,3,"Mask, Gown",MRI Machine,1 Nurse,Aspirin,Normal
-P453,10/20/2024 7:00,10/21/2024 5:12,Diabetes,Elective,Chest X-ray,ICU,14,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P454,10/3/2024 17:50,10/8/2024 12:07,Appendicitis,Emergency,Blood Test,ICU,2,"Gloves, IV",Surgical Table,2 Surgeons,Lipitor,Abnormal
-P455,10/24/2024 19:20,10/25/2024 7:11,Appendicitis,Emergency,Appendectomy,General Ward,2,"Mask, Gown",MRI Machine,2 Surgeons,Penicillin,Inconclusive
-P456,10/21/2024 5:59,10/12/2024 11:15,Diabetes,Elective,Appendectomy,General Ward,6,"Gown, IV",Surgical Table,1 Nurse,Ibuprofen,Abnormal
-P457,10/19/2024 18:17,10/17/2024 9:28,Pneumonia,Elective,MRI,ICU,6,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Ibuprofen,Normal
-P458,10/6/2024 17:07,10/21/2024 6:30,Pneumonia,Elective,Appendectomy,General Ward,6,"Mask, Gown",MRI Machine,1 Nurse,Penicillin,Inconclusive
-P459,10/21/2024 13:11,10/5/2024 9:43,Diabetes,Elective,Chest X-ray,General Ward,8,"Gloves, IV",Surgical Table,1 Nurse,Aspirin,Inconclusive
-P460,10/29/2024 14:50,10/11/2024 1:31,Fracture,Elective,Appendectomy,ICU,9,"Gown, IV",MRI Machine,1 Nurse,Aspirin,Inconclusive
-P461,10/26/2024 4:36,10/15/2024 2:18,Fracture,Elective,Appendectomy,ICU,10,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Penicillin,Abnormal
-P462,10/9/2024 4:44,10/26/2024 21:36,Diabetes,Elective,Chest X-ray,ICU,7,"Gown, IV",Surgical Table,1 Nurse,Lipitor,Inconclusive
-P463,10/3/2024 8:23,10/19/2024 13:43,Appendicitis,Urgent,Blood Test,General Ward,8,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Inconclusive
-P464,10/17/2024 1:12,10/7/2024 11:25,Pneumonia,Elective,MRI,ICU,12,"Gown, IV",MRI Machine,1 Nurse,Aspirin,Inconclusive
-P465,10/19/2024 15:03,10/5/2024 4:27,Pneumonia,Elective,Appendectomy,ICU,9,"Gloves, IV",MRI Machine,1 Nurse,Aspirin,Abnormal
-P466,10/11/2024 5:36,10/14/2024 12:46,Fracture,Emergency,Appendectomy,General Ward,14,"Mask, Gown",X-ray Machine,2 Surgeons,Lipitor,Inconclusive
-P467,10/26/2024 9:17,10/10/2024 8:05,Diabetes,Urgent,Appendectomy,General Ward,8,"Mask, Gown",Surgical Table,2 Surgeons,Penicillin,Abnormal
-P468,10/14/2024 12:30,10/14/2024 0:46,Diabetes,Urgent,Appendectomy,General Ward,6,"Mask, Gown",MRI Machine,1 Nurse,Penicillin,Normal
-P469,10/16/2024 10:25,10/5/2024 8:44,Pneumonia,Elective,Chest X-ray,General Ward,11,"Mask, Gown",X-ray Machine,2 Surgeons,Paracetamol,Abnormal
-P470,10/24/2024 11:18,10/8/2024 1:04,Appendicitis,Elective,Appendectomy,General Ward,7,"Gown, IV",MRI Machine,1 Nurse,Lipitor,Normal
-P471,10/17/2024 9:11,10/24/2024 13:41,Pneumonia,Elective,Chest X-ray,ICU,9,"Mask, Gown",MRI Machine,2 Surgeons,Ibuprofen,Abnormal
-P472,10/2/2024 17:47,10/31/2024 2:18,Diabetes,Elective,MRI,General Ward,1,"Gloves, IV",X-ray Machine,1 Nurse,Paracetamol,Abnormal
-P473,10/18/2024 20:06,10/5/2024 3:50,Diabetes,Emergency,Chest X-ray,ICU,10,"Gown, IV",X-ray Machine,2 Surgeons,Ibuprofen,Inconclusive
-P474,10/14/2024 6:29,10/11/2024 9:18,Pneumonia,Emergency,MRI,General Ward,9,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Lipitor,Normal
-P475,10/12/2024 21:19,10/22/2024 6:28,Fracture,Elective,Blood Test,General Ward,13,"Mask, Gown",Surgical Table,1 Nurse,Penicillin,Abnormal
-P476,10/6/2024 0:39,10/8/2024 7:21,Pneumonia,Urgent,Appendectomy,General Ward,12,"Gloves, IV",Surgical Table,1 Nurse,Ibuprofen,Abnormal
-P477,10/9/2024 12:07,10/12/2024 19:09,Fracture,Elective,Appendectomy,ICU,14,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Lipitor,Inconclusive
-P478,10/16/2024 17:39,10/28/2024 21:22,Fracture,Urgent,Appendectomy,ICU,13,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Penicillin,Normal
-P479,10/18/2024 13:16,10/18/2024 2:50,Pneumonia,Elective,Blood Test,ICU,11,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Penicillin,Inconclusive
-P480,10/19/2024 10:55,10/13/2024 23:15,Fracture,Emergency,Appendectomy,General Ward,6,"Gown, IV",MRI Machine,"1 Nurse, 1 Doctor",Lipitor,Normal
-P481,10/18/2024 11:28,10/17/2024 7:53,Appendicitis,Urgent,MRI,ICU,12,"Mask, Gown",MRI Machine,"1 Nurse, 1 Doctor",Lipitor,Abnormal
-P482,10/10/2024 6:09,10/17/2024 0:48,Diabetes,Elective,Chest X-ray,ICU,10,"Gloves, IV",X-ray Machine,2 Surgeons,Penicillin,Normal
-P483,10/5/2024 0:33,10/12/2024 9:51,Diabetes,Elective,Appendectomy,General Ward,4,"Mask, Gown",X-ray Machine,2 Surgeons,Lipitor,Normal
-P484,10/7/2024 6:29,10/17/2024 21:37,Fracture,Urgent,Blood Test,General Ward,10,"Mask, Gown",X-ray Machine,2 Surgeons,Lipitor,Abnormal
-P485,10/26/2024 10:35,10/5/2024 4:31,Fracture,Elective,Appendectomy,ICU,9,"Mask, Gown",Surgical Table,2 Surgeons,Aspirin,Inconclusive
-P486,10/2/2024 18:22,10/23/2024 19:48,Pneumonia,Emergency,Blood Test,General Ward,2,"Gown, IV",Surgical Table,2 Surgeons,Lipitor,Inconclusive
-P487,10/8/2024 18:02,10/12/2024 5:01,Diabetes,Elective,Appendectomy,General Ward,3,"Gown, IV",X-ray Machine,"1 Nurse, 1 Doctor",Aspirin,Normal
-P488,10/10/2024 19:08,10/6/2024 1:27,Diabetes,Urgent,Blood Test,General Ward,5,"Gown, IV",X-ray Machine,1 Nurse,Aspirin,Normal
-P489,10/11/2024 6:25,10/9/2024 17:26,Pneumonia,Emergency,Appendectomy,ICU,4,"Gown, IV",X-ray Machine,2 Surgeons,Penicillin,Inconclusive
-P490,10/13/2024 21:31,10/15/2024 11:52,Fracture,Urgent,Appendectomy,General Ward,5,"Gown, IV",Surgical Table,1 Nurse,Paracetamol,Abnormal
-P491,10/10/2024 12:36,10/30/2024 23:12,Fracture,Emergency,MRI,ICU,7,"Gloves, IV",Surgical Table,"1 Nurse, 1 Doctor",Lipitor,Abnormal
-P492,10/21/2024 22:27,10/19/2024 23:26,Fracture,Emergency,Blood Test,ICU,6,"Gloves, IV",MRI Machine,1 Nurse,Aspirin,Normal
-P493,10/4/2024 16:10,10/25/2024 16:00,Diabetes,Urgent,MRI,General Ward,14,"Mask, Gown",X-ray Machine,"1 Nurse, 1 Doctor",Aspirin,Abnormal
-P494,10/17/2024 15:22,10/19/2024 6:43,Appendicitis,Urgent,Appendectomy,General Ward,5,"Gloves, IV",X-ray Machine,1 Nurse,Ibuprofen,Abnormal
-P495,10/2/2024 15:58,10/21/2024 15:30,Pneumonia,Elective,Blood Test,General Ward,6,"Gown, IV",Surgical Table,1 Nurse,Penicillin,Abnormal
-P496,10/1/2024 12:54,10/6/2024 14:31,Diabetes,Urgent,MRI,ICU,13,"Mask, Gown",Surgical Table,"1 Nurse, 1 Doctor",Paracetamol,Inconclusive
-P497,10/22/2024 7:37,10/13/2024 12:31,Appendicitis,Elective,Appendectomy,ICU,14,"Gloves, IV",MRI Machine,"1 Nurse, 1 Doctor",Lipitor,Normal
-P498,10/28/2024 3:12,10/10/2024 8:11,Pneumonia,Elective,MRI,General Ward,13,"Mask, Gown",X-ray Machine,2 Surgeons,Lipitor,Abnormal
-P499,10/4/2024 22:02,10/12/2024 3:45,Diabetes,Elective,Chest X-ray,General Ward,1,"Gown, IV",Surgical Table,"1 Nurse, 1 Doctor",Lipitor,Normal
-P500,10/27/2024 15:41,10/31/2024 10:12,Pneumonia,Elective,Blood Test,General Ward,11,"Gown, IV",X-ray Machine,2 Surgeons,Paracetamol,Abnormal
+Patient_ID,Admission_Date,Discharge_Date,Primary_Diagnosis,Admission_Type,Procedure_Performed,Room_Type,Bed_Days,Supplies_Used,Equipment_Used,Nurse-to-Patient Ratio,Medication,Patient_Outcome,Time to Registration (min),Time to Triage (min),Time to Medical Professional (min),Total Wait Time (min),Patient Satisfaction
+P002,10/24/2024 11:07,11/3/2024 23:29,Fracture,Elective,Appendectomy,ICU,10,"Gown, IV",MRI Machine,3,Paracetamol,Admitted,12,18,40,70,2
+P006,10/12/2024 9:33,10/18/2024 6:42,Diabetes,Elective,MRI,General Ward,5,"Gown, IV",Surgical Table,3,Ibuprofen,Discharged,8,9,18,35,3
+P014,10/24/2024 14:38,10/31/2024 1:09,Diabetes,Elective,MRI,General Ward,6,"Gloves, IV",MRI Machine,4,Aspirin,Admitted,5,21,30,56,3
+P016,10/12/2024 22:31,10/16/2024 13:58,Diabetes,Elective,Blood Test,ICU,3,"Gown, IV",Surgical Table,3,Aspirin,Admitted,7,21,23,51,3
+P017,10/13/2024 8:19,10/16/2024 12:40,Appendicitis,Elective,Chest X-ray,ICU,3,"Gown, IV",X-ray Machine,3,Paracetamol,Discharged,12,25,24,61,3
+P020,10/12/2024 10:00,10/19/2024 12:38,Fracture,Elective,Appendectomy,ICU,7,"Gown, IV",MRI Machine,3,Penicillin,Admitted,6,19,41,66,2
+P021,10/11/2024 15:29,10/12/2024 17:22,Pneumonia,Elective,Blood Test,ICU,1,"Gloves, IV",Surgical Table,3,Aspirin,Admitted,22,39,59,120,1
+P024,10/14/2024 15:33,10/18/2024 21:17,Pneumonia,Elective,Blood Test,General Ward,4,"Mask, Gown",MRI Machine,4,Penicillin,Admitted,14,11,45,70,3
+P027,10/25/2024 20:39,11/1/2024 2:46,Pneumonia,Elective,Chest X-ray,General Ward,6,"Mask, Gown",Surgical Table,3,Aspirin,Discharged,13,20,23,56,4
+P030,10/5/2024 13:10,10/7/2024 19:33,Fracture,Elective,MRI,ICU,2,"Gloves, IV",MRI Machine,3,Penicillin,Discharged,8,29,50,87,2
+P031,10/29/2024 16:59,11/7/2024 21:30,Fracture,Elective,Appendectomy,General Ward,9,"Mask, Gown",MRI Machine,3,Paracetamol,Admitted,12,17,71,100,2
+P032,10/14/2024 3:54,10/20/2024 18:12,Appendicitis,Elective,Appendectomy,ICU,6,"Mask, Gown",Surgical Table,4,Ibuprofen,Left Without Being Seen,33,42,96,171,1
+P037,10/14/2024 1:51,10/16/2024 23:52,Pneumonia,Elective,Chest X-ray,General Ward,2,"Mask, Gown",X-ray Machine,3,Ibuprofen,Admitted,8,23,56,87,3
+P038,10/29/2024 2:21,10/30/2024 15:15,Diabetes,Elective,Blood Test,ICU,1,"Mask, Gown",X-ray Machine,3,Paracetamol,Admitted,14,32,58,104,2
+P046,10/25/2024 22:51,11/4/2024 4:40,Pneumonia,Elective,MRI,ICU,9,"Mask, Gown",X-ray Machine,3,Lipitor,Admitted,11,19,26,56,3
+P049,10/29/2024 16:44,10/31/2024 15:53,Pneumonia,Elective,Blood Test,General Ward,1,"Gloves, IV",MRI Machine,3,Paracetamol,Discharged,6,18,19,43,3
+P050,10/21/2024 22:04,10/24/2024 6:48,Fracture,Elective,Appendectomy,ICU,2,"Gloves, IV",X-ray Machine,4,Aspirin,Admitted,12,42,40,94,2
+P062,10/9/2024 1:59,10/23/2024 19:38,Pneumonia,Elective,MRI,General Ward,14,"Gloves, IV",Surgical Table,4,Ibuprofen,Discharged,21,38,73,132,1
+P065,10/29/2024 14:56,11/6/2024 6:27,Fracture,Elective,Blood Test,General Ward,7,"Mask, Gown",X-ray Machine,3,Paracetamol,Discharged,19,14,63,96,2
+P073,10/14/2024 16:28,10/24/2024 8:03,Fracture,Elective,Blood Test,ICU,9,"Gown, IV",Surgical Table,4,Aspirin,Admitted,12,18,24,54,3
+P074,10/17/2024 1:31,10/19/2024 13:38,Diabetes,Elective,Blood Test,General Ward,2,"Gown, IV",MRI Machine,3,Paracetamol,Discharged,17,39,90,146,1
+P078,10/15/2024 10:00,10/30/2024 4:00,Fracture,Elective,Appendectomy,ICU,14,"Mask, Gown",X-ray Machine,4,Ibuprofen,Discharged,13,21,32,66,3
+P081,10/21/2024 16:00,11/4/2024 21:00,Pneumonia,Elective,Appendectomy,ICU,14,"Gown, IV",Surgical Table,4,Aspirin,Discharged,20,21,43,84,2
+P086,10/20/2024 17:09,10/30/2024 13:36,Appendicitis,Elective,MRI,General Ward,9,"Gown, IV",Surgical Table,4,Aspirin,Discharged,11,26,43,80,2
+P087,10/19/2024 19:14,10/25/2024 3:18,Pneumonia,Elective,Chest X-ray,ICU,5,"Gloves, IV",Surgical Table,4,Paracetamol,Left Without Being Seen,15,42,71,128,1
+P088,10/12/2024 17:39,10/26/2024 16:52,Appendicitis,Elective,Appendectomy,General Ward,13,"Gloves, IV",X-ray Machine,4,Penicillin,Discharged,12,47,67,126,1
+P089,10/17/2024 1:32,10/31/2024 14:58,Appendicitis,Elective,Blood Test,General Ward,14,"Gloves, IV",Surgical Table,3,Aspirin,Discharged,20,23,33,76,3
+P091,10/21/2024 21:37,11/4/2024 10:42,Pneumonia,Elective,Blood Test,General Ward,13,"Gloves, IV",X-ray Machine,4,Penicillin,Discharged,16,52,50,118,1
+P092,10/3/2024 6:29,10/13/2024 0:23,Fracture,Elective,Chest X-ray,General Ward,9,"Gown, IV",MRI Machine,3,Lipitor,Discharged,5,21,33,59,3
+P093,10/2/2024 10:31,10/5/2024 16:01,Pneumonia,Elective,Chest X-ray,ICU,3,"Gloves, IV",X-ray Machine,3,Ibuprofen,Discharged,24,38,85,147,1
+P095,10/13/2024 17:56,10/24/2024 4:48,Diabetes,Elective,Chest X-ray,General Ward,10,"Gown, IV",MRI Machine,4,Lipitor,Discharged,14,41,79,134,1
+P096,10/1/2024 19:22,10/15/2024 13:08,Appendicitis,Elective,Appendectomy,ICU,13,"Gown, IV",X-ray Machine,3,Ibuprofen,Admitted,15,32,31,78,3
+P100,10/23/2024 9:45,10/26/2024 7:06,Fracture,Elective,Chest X-ray,General Ward,2,"Gloves, IV",Surgical Table,3,Lipitor,Admitted,14,31,72,117,1
+P101,10/2/2024 8:18,10/15/2024 7:42,Appendicitis,Elective,Blood Test,ICU,12,"Gown, IV",Surgical Table,3,Ibuprofen,Admitted,12,20,39,71,3
+P102,10/10/2024 7:17,10/17/2024 13:13,Appendicitis,Elective,Chest X-ray,ICU,7,"Gown, IV",X-ray Machine,3,Penicillin,Discharged,8,17,26,51,3
+P104,10/6/2024 6:32,10/9/2024 1:30,Appendicitis,Elective,Blood Test,ICU,2,"Mask, Gown",MRI Machine,3,Ibuprofen,Admitted,14,20,27,61,3
+P105,10/2/2024 2:19,10/15/2024 18:28,Diabetes,Elective,Chest X-ray,General Ward,13,"Gown, IV",MRI Machine,3,Paracetamol,Discharged,17,27,76,120,1
+P106,10/10/2024 23:20,10/23/2024 2:58,Diabetes,Elective,MRI,ICU,12,"Mask, Gown",MRI Machine,3,Paracetamol,Discharged,29,41,64,134,1
+P107,10/9/2024 20:05,10/14/2024 22:52,Pneumonia,Elective,Appendectomy,General Ward,5,"Mask, Gown",MRI Machine,3,Ibuprofen,Discharged,13,47,71,131,1
+P108,10/16/2024 18:19,10/30/2024 2:13,Diabetes,Elective,MRI,ICU,13,"Gloves, IV",X-ray Machine,3,Aspirin,Discharged,10,21,40,71,2
+P109,10/18/2024 10:23,10/23/2024 10:24,Pneumonia,Elective,Chest X-ray,General Ward,5,"Gown, IV",MRI Machine,3,Ibuprofen,Admitted,9,21,44,74,3
+P110,10/25/2024 1:10,11/3/2024 10:28,Appendicitis,Elective,Appendectomy,General Ward,9,"Mask, Gown",X-ray Machine,4,Lipitor,Discharged,17,32,89,138,1
+P111,10/23/2024 6:38,10/29/2024 23:37,Pneumonia,Elective,Chest X-ray,General Ward,6,"Gloves, IV",Surgical Table,3,Ibuprofen,Discharged,20,27,71,118,1
+P113,10/1/2024 23:29,10/6/2024 18:19,Fracture,Elective,Chest X-ray,ICU,4,"Gown, IV",Surgical Table,3,Penicillin,Admitted,17,22,64,103,2
+P117,10/20/2024 2:41,10/29/2024 3:13,Appendicitis,Elective,Chest X-ray,General Ward,9,"Mask, Gown",X-ray Machine,4,Aspirin,Discharged,22,20,38,80,3
+P119,10/4/2024 4:35,10/18/2024 22:26,Pneumonia,Elective,Chest X-ray,ICU,14,"Gloves, IV",Surgical Table,4,Ibuprofen,Admitted,14,24,42,80,2
+P122,10/6/2024 9:33,10/13/2024 13:42,Pneumonia,Elective,Appendectomy,ICU,7,"Mask, Gown",MRI Machine,4,Penicillin,Discharged,6,18,36,60,3
+P123,10/3/2024 20:03,10/16/2024 21:19,Appendicitis,Elective,Chest X-ray,General Ward,13,"Gown, IV",X-ray Machine,3,Ibuprofen,Discharged,10,10,27,47,4
+P125,10/11/2024 23:34,10/16/2024 11:54,Diabetes,Elective,Chest X-ray,General Ward,4,"Mask, Gown",MRI Machine,3,Lipitor,Admitted,20,16,37,73,3
+P126,10/9/2024 16:13,10/15/2024 9:32,Pneumonia,Elective,Blood Test,ICU,5,"Gloves, IV",X-ray Machine,4,Paracetamol,Discharged,27,29,78,134,1
+P128,10/27/2024 0:57,11/3/2024 11:06,Appendicitis,Elective,MRI,ICU,7,"Gloves, IV",X-ray Machine,3,Lipitor,Discharged,18,23,51,92,2
+P129,10/23/2024 4:00,10/30/2024 8:10,Appendicitis,Elective,Chest X-ray,ICU,7,"Gown, IV",MRI Machine,3,Paracetamol,Discharged,11,8,31,50,3
+P131,10/2/2024 14:30,10/13/2024 9:36,Appendicitis,Elective,MRI,General Ward,10,"Gloves, IV",Surgical Table,3,Ibuprofen,Discharged,17,33,59,109,2
+P132,10/6/2024 15:01,10/14/2024 3:21,Pneumonia,Elective,MRI,ICU,7,"Gown, IV",X-ray Machine,3,Penicillin,Discharged,6,23,31,60,3
+P139,10/6/2024 8:13,10/17/2024 19:45,Fracture,Elective,MRI,General Ward,11,"Mask, Gown",Surgical Table,3,Paracetamol,Admitted,13,23,57,93,2
+P140,10/7/2024 12:27,10/17/2024 19:21,Appendicitis,Elective,Chest X-ray,ICU,10,"Mask, Gown",X-ray Machine,3,Penicillin,Discharged,10,29,62,101,2
+P142,10/3/2024 8:20,10/13/2024 19:56,Fracture,Elective,MRI,ICU,10,"Gloves, IV",X-ray Machine,4,Aspirin,Discharged,9,28,51,88,2
+P146,10/10/2024 9:25,10/17/2024 8:31,Appendicitis,Elective,Blood Test,General Ward,6,"Gloves, IV",MRI Machine,3,Penicillin,Admitted,16,21,50,87,2
+P150,10/12/2024 7:08,10/15/2024 17:51,Pneumonia,Elective,Appendectomy,ICU,3,"Gown, IV",X-ray Machine,3,Ibuprofen,Admitted,11,11,37,59,3
+P156,10/25/2024 1:49,10/26/2024 21:09,Fracture,Elective,Appendectomy,General Ward,1,"Mask, Gown",MRI Machine,4,Aspirin,Discharged,8,42,49,99,2
+P159,10/6/2024 0:37,10/14/2024 18:10,Diabetes,Elective,Chest X-ray,ICU,8,"Mask, Gown",X-ray Machine,4,Penicillin,Admitted,20,26,41,87,2
+P161,10/9/2024 14:16,10/12/2024 10:45,Pneumonia,Elective,MRI,General Ward,2,"Mask, Gown",MRI Machine,4,Aspirin,Discharged,22,56,86,164,1
+P163,10/26/2024 16:40,11/4/2024 14:25,Fracture,Elective,Blood Test,ICU,8,"Gloves, IV",MRI Machine,3,Lipitor,Admitted,10,17,36,63,3
+P170,10/29/2024 9:36,11/9/2024 7:59,Appendicitis,Elective,Chest X-ray,General Ward,10,"Gown, IV",Surgical Table,4,Lipitor,Admitted,15,20,36,71,3
+P172,10/22/2024 1:50,11/1/2024 21:55,Pneumonia,Elective,Blood Test,ICU,10,"Gloves, IV",X-ray Machine,3,Aspirin,Discharged,21,62,128,211,1
+P177,10/9/2024 7:45,10/15/2024 8:44,Fracture,Elective,MRI,General Ward,6,"Gloves, IV",MRI Machine,3,Penicillin,Discharged,21,20,68,109,1
+P179,10/9/2024 22:45,10/17/2024 10:24,Pneumonia,Elective,Blood Test,ICU,7,"Gown, IV",MRI Machine,3,Aspirin,Admitted,9,8,26,43,4
+P182,10/4/2024 2:44,10/7/2024 21:19,Appendicitis,Elective,Appendectomy,General Ward,3,"Gown, IV",MRI Machine,3,Ibuprofen,Admitted,11,26,57,94,2
+P184,10/25/2024 8:48,10/31/2024 10:56,Pneumonia,Elective,Chest X-ray,ICU,6,"Gown, IV",Surgical Table,3,Ibuprofen,Discharged,17,26,32,75,3
+P186,10/24/2024 20:35,11/1/2024 17:49,Fracture,Elective,Chest X-ray,ICU,7,"Mask, Gown",X-ray Machine,3,Penicillin,Discharged,14,40,42,96,2
+P188,10/21/2024 23:18,11/2/2024 20:29,Diabetes,Elective,Blood Test,General Ward,11,"Gloves, IV",MRI Machine,4,Paracetamol,Discharged,10,18,21,49,3
+P190,10/6/2024 11:56,10/16/2024 5:46,Appendicitis,Elective,MRI,General Ward,9,"Gloves, IV",MRI Machine,4,Ibuprofen,Discharged,16,21,39,76,2
+P192,10/3/2024 18:58,10/9/2024 22:18,Fracture,Elective,Appendectomy,General Ward,6,"Gloves, IV",Surgical Table,3,Lipitor,Admitted,5,12,48,65,3
+P194,10/16/2024 21:48,10/20/2024 13:41,Appendicitis,Elective,Chest X-ray,ICU,3,"Mask, Gown",MRI Machine,4,Lipitor,Discharged,28,24,107,159,1
+P195,10/17/2024 2:26,10/28/2024 22:33,Diabetes,Elective,MRI,ICU,11,"Gloves, IV",MRI Machine,4,Ibuprofen,Discharged,11,22,55,88,2
+P196,10/11/2024 2:09,10/22/2024 4:29,Diabetes,Elective,MRI,ICU,11,"Gloves, IV",MRI Machine,3,Lipitor,Discharged,4,18,40,62,2
+P198,10/24/2024 0:56,10/25/2024 2:51,Diabetes,Elective,MRI,ICU,1,"Gloves, IV",Surgical Table,3,Lipitor,Discharged,16,32,44,92,2
+P200,10/24/2024 1:11,11/7/2024 2:30,Appendicitis,Elective,Appendectomy,ICU,14,"Gown, IV",Surgical Table,4,Lipitor,Admitted,15,34,68,117,1
+P201,10/20/2024 20:51,10/31/2024 6:02,Diabetes,Elective,MRI,General Ward,10,"Gloves, IV",MRI Machine,3,Aspirin,Discharged,5,22,24,51,3
+P202,10/23/2024 22:39,10/28/2024 3:29,Diabetes,Elective,Appendectomy,General Ward,4,"Gloves, IV",X-ray Machine,3,Ibuprofen,Admitted,6,12,22,40,3
+P204,10/3/2024 14:30,10/17/2024 6:02,Appendicitis,Elective,MRI,ICU,13,"Gown, IV",MRI Machine,4,Ibuprofen,Discharged,6,18,44,68,3
+P206,10/22/2024 4:06,10/29/2024 0:40,Diabetes,Elective,MRI,ICU,6,"Gloves, IV",MRI Machine,4,Penicillin,Discharged,14,32,104,150,1
+P208,10/14/2024 11:43,10/28/2024 9:07,Pneumonia,Elective,Chest X-ray,ICU,13,"Gown, IV",MRI Machine,3,Aspirin,Admitted,6,21,30,57,3
+P210,10/1/2024 15:59,10/16/2024 7:31,Diabetes,Elective,Appendectomy,General Ward,14,"Mask, Gown",Surgical Table,3,Aspirin,Discharged,15,19,33,67,3
+P212,10/14/2024 16:05,10/22/2024 4:23,Pneumonia,Elective,Blood Test,ICU,7,"Gown, IV",X-ray Machine,3,Lipitor,Admitted,16,25,45,86,2
+P213,10/26/2024 1:20,10/31/2024 2:40,Diabetes,Elective,MRI,General Ward,5,"Mask, Gown",Surgical Table,4,Penicillin,Admitted,6,19,34,59,3
+P214,10/9/2024 16:40,10/12/2024 8:54,Fracture,Elective,Appendectomy,ICU,2,"Gloves, IV",Surgical Table,3,Ibuprofen,Admitted,18,27,25,70,3
+P219,10/5/2024 23:48,10/20/2024 4:08,Fracture,Elective,Appendectomy,ICU,14,"Mask, Gown",Surgical Table,4,Ibuprofen,Left Without Being Seen,14,38,77,129,1
+P222,10/21/2024 12:59,11/2/2024 8:43,Diabetes,Elective,Appendectomy,ICU,11,"Gloves, IV",X-ray Machine,4,Ibuprofen,Discharged,18,33,65,116,1
+P225,10/17/2024 0:29,10/20/2024 2:44,Appendicitis,Elective,Appendectomy,General Ward,3,"Mask, Gown",MRI Machine,4,Paracetamol,Admitted,16,28,75,119,1
+P228,10/17/2024 20:46,10/20/2024 18:57,Pneumonia,Elective,Appendectomy,ICU,2,"Gloves, IV",Surgical Table,3,Aspirin,Discharged,9,33,44,86,2
+P230,10/14/2024 5:08,10/19/2024 20:54,Appendicitis,Elective,MRI,General Ward,5,"Gown, IV",X-ray Machine,4,Paracetamol,Discharged,19,19,50,88,2
+P234,10/20/2024 5:16,10/24/2024 18:27,Appendicitis,Elective,Chest X-ray,ICU,4,"Gloves, IV",Surgical Table,3,Paracetamol,Discharged,20,29,40,89,2
+P239,10/1/2024 19:13,10/14/2024 23:22,Appendicitis,Elective,MRI,ICU,13,"Gloves, IV",MRI Machine,4,Ibuprofen,Admitted,15,13,34,62,3
+P241,10/10/2024 15:36,10/22/2024 0:58,Pneumonia,Elective,Blood Test,ICU,11,"Gown, IV",X-ray Machine,4,Penicillin,Admitted,4,15,32,51,3
+P243,10/7/2024 15:36,10/20/2024 18:19,Appendicitis,Elective,MRI,General Ward,13,"Gloves, IV",X-ray Machine,4,Paracetamol,Discharged,13,19,41,73,2
+P248,10/5/2024 4:27,10/18/2024 11:22,Appendicitis,Elective,Blood Test,ICU,13,"Gown, IV",X-ray Machine,3,Lipitor,Admitted,15,29,30,74,3
+P250,10/2/2024 11:38,10/9/2024 6:08,Appendicitis,Elective,Chest X-ray,General Ward,6,"Gown, IV",X-ray Machine,3,Ibuprofen,Admitted,18,26,33,77,2
+P256,10/6/2024 21:59,10/12/2024 4:40,Appendicitis,Elective,Appendectomy,ICU,5,"Gloves, IV",MRI Machine,3,Lipitor,Discharged,18,18,47,83,2
+P258,10/7/2024 15:14,10/20/2024 3:52,Fracture,Medium,Appendectomy,ICU,12,"Gown, IV",X-ray Machine,4,Paracetamol,Discharged,17,22,66,105,1
+P261,10/12/2024 9:04,10/19/2024 1:47,Fracture,Medium,Chest X-ray,ICU,6,"Gown, IV",Surgical Table,4,Aspirin,Discharged,9,30,30,69,3
+P263,10/7/2024 1:50,10/16/2024 15:40,Pneumonia,Low,Blood Test,General Ward,9,"Gown, IV",Surgical Table,5,Penicillin,Discharged,38,40,125,203,1
+P266,10/2/2024 19:59,10/14/2024 9:00,Appendicitis,High,Appendectomy,General Ward,11,"Gown, IV",Surgical Table,4,Ibuprofen,Discharged,8,16,64,88,2
+P270,10/13/2024 4:47,10/20/2024 9:35,Diabetes,Low,Appendectomy,General Ward,7,"Gloves, IV",Surgical Table,4,Paracetamol,Discharged,26,29,63,118,1
+P272,10/19/2024 4:35,10/24/2024 19:29,Pneumonia,Medium,Appendectomy,ICU,5,"Gown, IV",MRI Machine,3,Paracetamol,Discharged,12,15,36,63,3
+P274,10/24/2024 6:18,11/7/2024 7:14,Fracture,Medium,Appendectomy,General Ward,14,"Mask, Gown",Surgical Table,4,Ibuprofen,Admitted,22,37,57,116,1
+P275,10/14/2024 10:35,10/21/2024 18:53,Diabetes,Medium,MRI,ICU,7,"Gloves, IV",X-ray Machine,3,Paracetamol,Admitted,8,25,48,81,2
+P276,10/12/2024 10:31,10/23/2024 23:29,Diabetes,Medium,MRI,ICU,11,"Gown, IV",MRI Machine,4,Paracetamol,Discharged,16,27,35,78,2
+P279,10/28/2024 15:52,11/1/2024 5:56,Diabetes,Critical,Appendectomy,General Ward,3,"Gown, IV",Surgical Table,1,Lipitor,Admitted,3,3,5,11,5
+P281,10/12/2024 21:36,10/26/2024 7:11,Fracture,Medium,MRI,ICU,13,"Gown, IV",Surgical Table,4,Lipitor,Admitted,15,21,70,106,2
+P284,10/10/2024 12:02,10/23/2024 20:53,Diabetes,Medium,Blood Test,ICU,13,"Gloves, IV",MRI Machine,4,Paracetamol,Discharged,25,28,70,123,1
+P285,10/26/2024 9:34,11/6/2024 10:27,Diabetes,Low,MRI,General Ward,11,"Mask, Gown",MRI Machine,5,Ibuprofen,Discharged,24,69,115,208,1
+P290,10/20/2024 6:37,10/31/2024 22:17,Diabetes,Critical,Chest X-ray,ICU,11,"Gown, IV",X-ray Machine,2,Ibuprofen,Discharged,1,9,12,22,5
+P293,10/20/2024 10:19,10/27/2024 20:15,Fracture,Medium,Chest X-ray,ICU,7,"Mask, Gown",MRI Machine,4,Penicillin,Discharged,13,30,40,83,2
+P294,10/23/2024 3:18,11/1/2024 15:12,Fracture,Medium,Chest X-ray,ICU,9,"Mask, Gown",Surgical Table,4,Aspirin,Discharged,30,55,55,140,1
+P297,10/27/2024 15:51,10/31/2024 5:59,Diabetes,High,Chest X-ray,ICU,3,"Mask, Gown",MRI Machine,3,Ibuprofen,Admitted,2,7,9,18,4
+P298,10/3/2024 7:50,10/5/2024 21:19,Pneumonia,Critical,Chest X-ray,ICU,2,"Gown, IV",X-ray Machine,1,Lipitor,Discharged,2,3,11,16,5
+P306,10/28/2024 18:29,10/31/2024 10:41,Fracture,High,Chest X-ray,ICU,2,"Gloves, IV",X-ray Machine,3,Ibuprofen,Discharged,2,7,14,23,4
+P307,10/17/2024 1:41,10/29/2024 4:18,Appendicitis,Medium,MRI,ICU,12,"Gown, IV",Surgical Table,3,Paracetamol,Admitted,6,11,47,64,3
+P311,10/18/2024 15:53,10/22/2024 0:45,Appendicitis,Critical,Chest X-ray,General Ward,3,"Gloves, IV",Surgical Table,2,Ibuprofen,Discharged,2,4,10,16,5
+P313,10/24/2024 10:28,10/28/2024 17:09,Pneumonia,Medium,Chest X-ray,General Ward,4,"Gown, IV",MRI Machine,3,Aspirin,Discharged,11,26,45,82,3
+P314,10/5/2024 15:57,10/16/2024 22:05,Fracture,Critical,Chest X-ray,General Ward,11,"Gown, IV",Surgical Table,2,Lipitor,Admitted,2,5,8,15,4
+P316,10/11/2024 22:17,10/22/2024 23:26,Pneumonia,High,MRI,ICU,11,"Gown, IV",MRI Machine,3,Ibuprofen,Discharged,2,9,21,32,4
+P319,10/14/2024 22:58,10/21/2024 17:43,Appendicitis,Medium,Chest X-ray,ICU,6,"Gloves, IV",X-ray Machine,4,Ibuprofen,Admitted,10,19,42,71,3
+P320,10/8/2024 8:53,10/16/2024 5:22,Diabetes,Critical,Chest X-ray,ICU,7,"Gloves, IV",MRI Machine,2,Aspirin,Discharged,3,6,24,33,4
+P321,10/1/2024 23:28,10/6/2024 21:48,Appendicitis,High,Blood Test,ICU,4,"Mask, Gown",Surgical Table,4,Paracetamol,Discharged,5,17,19,41,4
+P323,10/25/2024 17:06,10/27/2024 21:37,Pneumonia,High,Appendectomy,General Ward,2,"Gloves, IV",Surgical Table,3,Paracetamol,Discharged,6,6,18,30,4
+P330,10/12/2024 4:12,10/13/2024 6:23,Diabetes,Medium,Chest X-ray,General Ward,1,"Mask, Gown",Surgical Table,3,Paracetamol,Discharged,9,35,59,103,1
+P331,10/12/2024 22:06,10/21/2024 19:34,Fracture,High,Blood Test,General Ward,8,"Gown, IV",X-ray Machine,4,Ibuprofen,Admitted,4,10,16,30,4
+P340,10/17/2024 6:49,10/27/2024 17:47,Appendicitis,High,MRI,General Ward,10,"Gown, IV",X-ray Machine,3,Paracetamol,Admitted,8,14,27,49,3
+P344,10/8/2024 23:45,10/15/2024 23:45,Pneumonia,Critical,MRI,ICU,7,"Gloves, IV",Surgical Table,2,Aspirin,Admitted,2,3,8,13,4
+P346,10/6/2024 17:43,10/18/2024 15:55,Pneumonia,High,Blood Test,General Ward,11,"Gown, IV",MRI Machine,3,Penicillin,Discharged,6,9,26,41,3
+P347,10/13/2024 15:04,10/21/2024 1:26,Pneumonia,High,MRI,General Ward,7,"Gown, IV",Surgical Table,4,Aspirin,Admitted,3,7,15,25,4
+P350,10/3/2024 9:15,10/17/2024 12:01,Fracture,Critical,Chest X-ray,ICU,14,"Mask, Gown",X-ray Machine,1,Lipitor,Admitted,1,2,9,12,5
+P351,10/15/2024 15:51,10/24/2024 7:32,Fracture,High,MRI,ICU,8,"Gloves, IV",X-ray Machine,4,Penicillin,Discharged,3,5,19,27,4
+P356,10/11/2024 6:00,10/19/2024 3:34,Diabetes,High,Blood Test,ICU,7,"Mask, Gown",Surgical Table,3,Paracetamol,Discharged,3,4,17,24,4
+P357,10/4/2024 23:22,10/18/2024 3:39,Diabetes,Medium,Appendectomy,ICU,13,"Gown, IV",Surgical Table,4,Lipitor,Discharged,21,24,31,76,3
+P358,10/4/2024 15:01,10/13/2024 12:46,Fracture,Low,Appendectomy,ICU,8,"Gown, IV",MRI Machine,5,Aspirin,Discharged,18,78,74,170,1
+P362,10/17/2024 1:32,10/21/2024 10:21,Pneumonia,Medium,Appendectomy,General Ward,4,"Mask, Gown",Surgical Table,3,Penicillin,Admitted,6,15,22,43,4
+P363,10/1/2024 13:03,10/11/2024 14:47,Appendicitis,Low,MRI,General Ward,10,"Gown, IV",X-ray Machine,5,Lipitor,Discharged,31,52,111,194,1
+P364,10/17/2024 0:02,10/29/2024 3:25,Fracture,Low,MRI,ICU,12,"Gown, IV",Surgical Table,4,Paracetamol,Discharged,24,83,104,211,1
+P366,10/2/2024 9:37,10/6/2024 3:46,Fracture,High,Blood Test,ICU,3,"Mask, Gown",X-ray Machine,3,Penicillin,Admitted,3,6,18,27,4
+P367,10/21/2024 22:01,11/5/2024 6:04,Pneumonia,Medium,Appendectomy,General Ward,14,"Mask, Gown",X-ray Machine,4,Ibuprofen,Discharged,5,21,41,67,3
+P373,10/23/2024 1:24,10/29/2024 9:12,Fracture,Critical,Appendectomy,ICU,6,"Gloves, IV",X-ray Machine,1,Lipitor,Discharged,0,3,7,10,5
+P376,10/22/2024 9:41,11/3/2024 3:34,Diabetes,High,Chest X-ray,General Ward,11,"Gown, IV",Surgical Table,3,Aspirin,Admitted,8,15,54,77,3
+P381,10/14/2024 17:22,10/28/2024 3:26,Diabetes,Low,MRI,ICU,13,"Gown, IV",X-ray Machine,5,Lipitor,Discharged,15,32,55,102,2
+P385,10/10/2024 22:33,10/15/2024 13:08,Fracture,High,MRI,ICU,4,"Gown, IV",MRI Machine,4,Ibuprofen,Admitted,11,25,34,70,2
+P386,10/19/2024 22:51,10/23/2024 13:17,Fracture,Low,Appendectomy,ICU,3,"Mask, Gown",MRI Machine,4,Lipitor,Discharged,18,30,86,134,1
+P387,10/4/2024 6:04,10/15/2024 11:13,Appendicitis,High,MRI,ICU,11,"Gown, IV",MRI Machine,4,Penicillin,Admitted,3,5,14,22,4
+P390,10/15/2024 6:18,10/19/2024 5:04,Fracture,High,Appendectomy,ICU,3,"Gown, IV",Surgical Table,4,Paracetamol,Discharged,5,6,20,31,4
+P397,10/11/2024 5:48,10/22/2024 7:11,Appendicitis,High,Chest X-ray,ICU,11,"Gloves, IV",Surgical Table,4,Penicillin,Admitted,8,11,24,43,4
+P401,10/6/2024 14:18,10/20/2024 4:37,Appendicitis,Critical,MRI,General Ward,13,"Gloves, IV",MRI Machine,1,Lipitor,Discharged,1,6,22,29,4
+P405,10/9/2024 15:02,10/18/2024 1:36,Appendicitis,Medium,Chest X-ray,General Ward,8,"Gown, IV",X-ray Machine,4,Ibuprofen,Discharged,9,15,62,86,2
+P407,10/11/2024 18:10,10/13/2024 13:19,Fracture,Medium,MRI,ICU,1,"Gloves, IV",X-ray Machine,4,Penicillin,Discharged,11,36,75,122,1
+P410,10/13/2024 1:45,10/18/2024 6:20,Pneumonia,High,Chest X-ray,General Ward,5,"Mask, Gown",X-ray Machine,4,Paracetamol,Discharged,8,10,34,52,3
+P413,10/7/2024 23:51,10/21/2024 1:29,Appendicitis,Medium,MRI,General Ward,13,"Gloves, IV",X-ray Machine,4,Paracetamol,Admitted,15,28,46,89,2
+P415,10/11/2024 13:09,10/23/2024 15:46,Fracture,Critical,Blood Test,ICU,12,"Gown, IV",X-ray Machine,2,Lipitor,Admitted,4,7,10,21,5
+P416,10/2/2024 17:58,10/14/2024 3:49,Diabetes,High,MRI,ICU,11,"Gloves, IV",Surgical Table,3,Lipitor,Admitted,9,18,37,64,3
+P418,10/24/2024 7:19,11/3/2024 8:35,Appendicitis,Medium,MRI,ICU,10,"Mask, Gown",Surgical Table,4,Paracetamol,Left Without Being Seen,28,39,58,125,1
+P421,10/24/2024 16:58,11/7/2024 14:38,Pneumonia,High,MRI,General Ward,13,"Gown, IV",MRI Machine,4,Paracetamol,Discharged,7,16,34,57,3
+P423,10/12/2024 21:11,10/16/2024 14:29,Appendicitis,High,Chest X-ray,ICU,3,"Gown, IV",Surgical Table,3,Penicillin,Admitted,3,10,28,41,4
+P424,10/25/2024 16:46,10/30/2024 0:46,Appendicitis,High,Chest X-ray,General Ward,4,"Mask, Gown",Surgical Table,3,Lipitor,Admitted,4,12,38,54,3
+P425,10/2/2024 15:03,10/15/2024 12:39,Diabetes,Medium,Chest X-ray,ICU,12,"Gown, IV",X-ray Machine,4,Aspirin,Discharged,14,46,81,141,1
+P428,10/28/2024 0:39,10/30/2024 16:10,Fracture,Critical,Blood Test,General Ward,2,"Gloves, IV",MRI Machine,2,Lipitor,Discharged,2,5,10,17,5
+P431,10/6/2024 18:20,10/16/2024 7:47,Appendicitis,Low,MRI,ICU,9,"Mask, Gown",X-ray Machine,5,Ibuprofen,Discharged,35,82,187,304,1
+P432,10/1/2024 18:11,10/16/2024 5:02,Diabetes,Critical,Blood Test,General Ward,14,"Gloves, IV",MRI Machine,2,Ibuprofen,Discharged,3,3,16,22,4
+P433,10/25/2024 18:40,11/1/2024 18:02,Pneumonia,High,Chest X-ray,General Ward,6,"Mask, Gown",X-ray Machine,4,Aspirin,Admitted,6,12,50,68,3
+P434,10/13/2024 20:27,10/22/2024 22:50,Appendicitis,Critical,MRI,General Ward,9,"Gown, IV",X-ray Machine,2,Ibuprofen,Admitted,1,5,8,14,4
+P435,10/15/2024 21:00,10/18/2024 18:50,Diabetes,Medium,Chest X-ray,General Ward,2,"Gloves, IV",MRI Machine,4,Penicillin,Discharged,15,38,76,129,1
+P437,10/22/2024 9:32,10/30/2024 14:34,Appendicitis,Medium,Chest X-ray,ICU,8,"Mask, Gown",X-ray Machine,4,Aspirin,Discharged,25,25,82,132,1
+P439,10/12/2024 15:25,10/19/2024 21:45,Fracture,Medium,Appendectomy,ICU,7,"Gown, IV",X-ray Machine,4,Penicillin,Admitted,5,17,37,59,3
+P443,10/8/2024 9:43,10/9/2024 14:01,Pneumonia,Low,MRI,General Ward,1,"Gown, IV",MRI Machine,5,Paracetamol,Left Without Being Seen,23,80,97,200,1
+P444,10/4/2024 18:06,10/13/2024 5:23,Fracture,Medium,Chest X-ray,ICU,8,"Gloves, IV",Surgical Table,3,Aspirin,Admitted,14,22,41,77,2
+P447,10/8/2024 8:30,10/10/2024 3:46,Appendicitis,High,Chest X-ray,ICU,1,"Gown, IV",MRI Machine,4,Penicillin,Discharged,6,6,32,44,3
+P453,10/20/2024 7:00,11/3/2024 10:44,Diabetes,Medium,Chest X-ray,ICU,14,"Gloves, IV",MRI Machine,3,Ibuprofen,Discharged,6,16,65,87,2
+P456,10/21/2024 5:59,10/27/2024 7:46,Diabetes,High,Appendectomy,General Ward,6,"Gown, IV",Surgical Table,4,Ibuprofen,Admitted,9,16,38,63,3
+P457,10/19/2024 18:17,10/26/2024 16:57,Pneumonia,Low,MRI,ICU,6,"Gown, IV",Surgical Table,5,Ibuprofen,Discharged,38,47,99,184,1
+P458,10/6/2024 17:07,10/12/2024 20:52,Pneumonia,High,Appendectomy,General Ward,6,"Mask, Gown",MRI Machine,3,Penicillin,Admitted,3,8,12,23,4
+P459,10/21/2024 13:11,10/29/2024 15:02,Diabetes,Medium,Chest X-ray,General Ward,8,"Gloves, IV",Surgical Table,4,Aspirin,Discharged,9,14,25,48,4
+P460,10/29/2024 14:50,11/7/2024 15:49,Fracture,Low,Appendectomy,ICU,9,"Gown, IV",MRI Machine,5,Aspirin,Left Without Being Seen,35,95,123,253,1
+P461,10/26/2024 4:36,11/5/2024 18:13,Fracture,Low,Appendectomy,ICU,10,"Mask, Gown",Surgical Table,4,Penicillin,Discharged,27,44,87,158,1
+P462,10/9/2024 4:44,10/16/2024 14:02,Diabetes,Medium,Chest X-ray,ICU,7,"Gown, IV",Surgical Table,4,Lipitor,Discharged,11,37,39,87,2
+P464,10/17/2024 1:12,10/29/2024 21:01,Pneumonia,Critical,MRI,ICU,12,"Gown, IV",MRI Machine,2,Aspirin,Discharged,1,4,6,11,5
+P465,10/19/2024 15:03,10/29/2024 4:22,Pneumonia,Critical,Appendectomy,ICU,9,"Gloves, IV",MRI Machine,1,Aspirin,Discharged,1,1,9,11,5
+P469,10/16/2024 10:25,10/27/2024 19:40,Pneumonia,Low,Chest X-ray,General Ward,11,"Mask, Gown",X-ray Machine,4,Paracetamol,Left Without Being Seen,18,80,118,216,1
+P470,10/24/2024 11:18,11/1/2024 6:54,Appendicitis,High,Appendectomy,General Ward,7,"Gown, IV",MRI Machine,4,Lipitor,Discharged,12,15,61,88,2
+P471,10/17/2024 9:11,10/27/2024 1:48,Pneumonia,Low,Chest X-ray,ICU,9,"Mask, Gown",MRI Machine,5,Ibuprofen,Discharged,38,56,127,221,1
+P472,10/2/2024 17:47,10/3/2024 18:38,Diabetes,Low,MRI,General Ward,1,"Gloves, IV",X-ray Machine,5,Paracetamol,Left Without Being Seen,26,51,52,129,1
+P475,10/12/2024 21:19,10/26/2024 4:00,Fracture,Low,Blood Test,General Ward,13,"Mask, Gown",Surgical Table,5,Penicillin,Discharged,16,42,72,130,1
+P477,10/9/2024 12:07,10/24/2024 3:09,Fracture,Medium,Appendectomy,ICU,14,"Gloves, IV",MRI Machine,3,Lipitor,Admitted,9,18,58,85,2
+P479,10/18/2024 13:16,10/29/2024 21:01,Pneumonia,Medium,Blood Test,ICU,11,"Mask, Gown",MRI Machine,3,Penicillin,Admitted,15,12,36,63,3
+P482,10/10/2024 6:09,10/21/2024 5:48,Diabetes,Low,Chest X-ray,ICU,10,"Gloves, IV",X-ray Machine,4,Penicillin,Discharged,28,59,114,201,1
+P483,10/5/2024 0:33,10/9/2024 6:07,Diabetes,Low,Appendectomy,General Ward,4,"Mask, Gown",X-ray Machine,4,Lipitor,Discharged,19,59,62,140,1
+P485,10/26/2024 10:35,11/4/2024 10:50,Fracture,Low,Appendectomy,ICU,9,"Mask, Gown",Surgical Table,4,Aspirin,Left Without Being Seen,24,75,93,192,1
+P487,10/8/2024 18:02,10/11/2024 23:09,Diabetes,Medium,Appendectomy,General Ward,3,"Gown, IV",X-ray Machine,3,Aspirin,Admitted,7,20,34,61,3
+P495,10/2/2024 15:58,10/9/2024 12:19,Pneumonia,High,Blood Test,General Ward,6,"Gown, IV",Surgical Table,4,Penicillin,Admitted,4,11,15,30,4
+P497,10/22/2024 7:37,11/5/2024 11:12,Appendicitis,Medium,Appendectomy,ICU,14,"Gloves, IV",MRI Machine,4,Lipitor,Discharged,6,22,53,81,2
+P498,10/28/2024 3:12,11/10/2024 9:10,Pneumonia,Low,MRI,General Ward,13,"Mask, Gown",X-ray Machine,5,Lipitor,Discharged,21,67,135,223,1
+P499,10/4/2024 22:02,10/6/2024 15:19,Diabetes,Critical,Chest X-ray,General Ward,1,"Gown, IV",Surgical Table,2,Lipitor,Discharged,0,3,5,8,5
+P500,10/27/2024 15:41,11/8/2024 10:37,Pneumonia,Low,Blood Test,General Ward,11,"Gown, IV",X-ray Machine,5,Paracetamol,Left Without Being Seen,16,82,72,170,1
+P001,10/6/2024 5:30,10/8/2024 11:47,Diabetes,Medium,Appendectomy,General Ward,2,"Gloves, IV",Surgical Table,3,Ibuprofen,Admitted,9,43,41,93,2
+P004,10/5/2024 17:04,10/16/2024 23:17,Diabetes,Medium,Chest X-ray,ICU,11,"Gloves, IV",X-ray Machine,3,Aspirin,Discharged,10,10,18,38,4
+P007,10/19/2024 6:35,10/21/2024 1:15,Diabetes,Critical,Appendectomy,General Ward,1,"Gown, IV",X-ray Machine,2,Paracetamol,Admitted,3,3,10,16,4
+P010,10/22/2024 11:32,10/29/2024 15:32,Diabetes,Low,Chest X-ray,General Ward,7,"Mask, Gown",Surgical Table,4,Penicillin,Discharged,20,44,107,171,1
+P012,10/18/2024 19:35,10/29/2024 20:13,Appendicitis,Low,Blood Test,General Ward,11,"Gloves, IV",Surgical Table,4,Paracetamol,Discharged,39,90,134,263,1
+P018,10/26/2024 0:39,11/4/2024 9:38,Diabetes,High,MRI,General Ward,9,"Gown, IV",Surgical Table,3,Paracetamol,Admitted,3,5,17,25,5
+P025,10/28/2024 10:21,10/31/2024 4:53,Diabetes,Low,Appendectomy,ICU,2,"Gloves, IV",Surgical Table,4,Lipitor,Discharged,31,84,119,234,1
+P029,10/18/2024 11:12,10/22/2024 6:56,Diabetes,Medium,Blood Test,ICU,3,"Gown, IV",MRI Machine,3,Penicillin,Admitted,23,27,46,96,1
+P034,10/26/2024 13:17,10/30/2024 3:52,Appendicitis,Medium,MRI,ICU,3,"Mask, Gown",X-ray Machine,3,Penicillin,Admitted,19,26,54,99,1
+P035,10/23/2024 14:01,11/3/2024 15:27,Fracture,High,Chest X-ray,ICU,11,"Gloves, IV",Surgical Table,4,Paracetamol,Admitted,4,11,15,30,4
+P039,10/22/2024 21:36,11/4/2024 9:10,Diabetes,Low,Blood Test,General Ward,12,"Gown, IV",Surgical Table,5,Lipitor,Admitted,16,35,34,85,3
+P042,10/1/2024 3:54,10/8/2024 9:38,Fracture,High,MRI,ICU,7,"Mask, Gown",X-ray Machine,3,Penicillin,Admitted,4,9,16,29,4
+P043,10/5/2024 6:55,10/13/2024 13:05,Fracture,Critical,MRI,General Ward,8,"Gown, IV",MRI Machine,2,Ibuprofen,Admitted,1,1,10,12,5
+P045,10/4/2024 14:26,10/6/2024 18:47,Fracture,Critical,Chest X-ray,ICU,2,"Mask, Gown",Surgical Table,2,Ibuprofen,Admitted,3,2,9,14,5
+P048,10/18/2024 17:03,10/25/2024 6:05,Diabetes,High,Appendectomy,General Ward,6,"Mask, Gown",X-ray Machine,4,Lipitor,Discharged,8,8,32,48,4
+P052,10/18/2024 4:33,10/23/2024 23:46,Fracture,Medium,Blood Test,General Ward,5,"Gown, IV",X-ray Machine,4,Aspirin,Admitted,11,21,65,97,2
+P054,10/29/2024 22:28,11/12/2024 2:55,Appendicitis,Critical,MRI,General Ward,13,"Gloves, IV",Surgical Table,2,Ibuprofen,Discharged,2,9,11,22,4
+P056,10/11/2024 10:24,10/13/2024 21:45,Fracture,High,MRI,General Ward,2,"Mask, Gown",X-ray Machine,4,Penicillin,Discharged,9,20,29,58,3
+P057,10/21/2024 5:02,10/26/2024 21:10,Fracture,Medium,Chest X-ray,General Ward,5,"Gloves, IV",X-ray Machine,4,Ibuprofen,Discharged,32,32,54,118,1
+P058,10/18/2024 8:22,10/20/2024 6:01,Appendicitis,High,MRI,General Ward,1,"Gloves, IV",Surgical Table,4,Paracetamol,Discharged,8,19,51,78,2
+P061,10/8/2024 9:52,10/18/2024 12:29,Diabetes,High,Appendectomy,ICU,10,"Gloves, IV",X-ray Machine,3,Lipitor,Admitted,2,9,9,20,4
+P064,10/21/2024 23:33,11/2/2024 20:55,Pneumonia,High,Appendectomy,General Ward,11,"Gloves, IV",X-ray Machine,3,Ibuprofen,Admitted,1,4,12,17,5
+P066,10/16/2024 18:04,10/29/2024 4:19,Appendicitis,Critical,MRI,General Ward,12,"Mask, Gown",X-ray Machine,2,Aspirin,Admitted,3,3,13,19,4
+P067,10/24/2024 7:13,11/8/2024 3:20,Fracture,Medium,Blood Test,General Ward,14,"Mask, Gown",MRI Machine,3,Aspirin,Discharged,6,20,37,63,3
+P070,10/18/2024 5:41,10/20/2024 12:11,Pneumonia,Medium,Chest X-ray,ICU,2,"Mask, Gown",X-ray Machine,4,Ibuprofen,Admitted,12,9,30,51,3
+P075,10/25/2024 2:50,10/27/2024 6:23,Pneumonia,Medium,Blood Test,General Ward,2,"Mask, Gown",MRI Machine,3,Penicillin,Discharged,11,22,26,59,3
+P076,10/3/2024 6:30,10/11/2024 18:18,Appendicitis,Critical,Chest X-ray,General Ward,8,"Mask, Gown",X-ray Machine,1,Paracetamol,Discharged,2,2,8,12,5
+P080,10/5/2024 0:57,10/15/2024 17:59,Appendicitis,Critical,MRI,General Ward,10,"Gloves, IV",X-ray Machine,2,Ibuprofen,Discharged,3,5,7,15,5
+P082,10/26/2024 14:36,11/5/2024 8:56,Fracture,Critical,Chest X-ray,ICU,9,"Mask, Gown",X-ray Machine,2,Paracetamol,Admitted,1,2,14,17,5
+P090,10/26/2024 13:17,11/7/2024 1:41,Diabetes,Medium,Chest X-ray,ICU,11,"Gloves, IV",MRI Machine,4,Paracetamol,Discharged,7,18,65,90,2
+P098,10/13/2024 1:36,10/22/2024 0:59,Diabetes,Low,Appendectomy,ICU,8,"Mask, Gown",X-ray Machine,5,Paracetamol,Discharged,19,50,93,162,1
+P099,10/7/2024 20:15,10/15/2024 4:43,Diabetes,Low,Chest X-ray,General Ward,7,"Gloves, IV",MRI Machine,4,Ibuprofen,Left Without Being Seen,21,45,82,148,1
+P103,10/6/2024 2:09,10/13/2024 7:24,Fracture,Critical,Chest X-ray,General Ward,7,"Mask, Gown",Surgical Table,2,Paracetamol,Admitted,6,8,10,24,4
+P114,10/12/2024 0:07,10/16/2024 12:16,Appendicitis,Critical,Blood Test,ICU,4,"Gown, IV",Surgical Table,1,Lipitor,Admitted,1,2,4,7,5
+P118,10/7/2024 14:16,10/21/2024 11:14,Pneumonia,Medium,Chest X-ray,General Ward,13,"Gown, IV",MRI Machine,4,Paracetamol,Left Without Being Seen,15,33,85,133,1
+P120,10/23/2024 5:23,10/27/2024 23:45,Pneumonia,Critical,MRI,General Ward,4,"Gloves, IV",X-ray Machine,2,Penicillin,Admitted,6,10,24,40,4
+P121,10/17/2024 1:55,10/20/2024 0:10,Diabetes,Medium,Appendectomy,ICU,2,"Gown, IV",Surgical Table,3,Aspirin,Admitted,18,21,52,91,2
+P124,10/8/2024 17:05,10/10/2024 9:06,Diabetes,Medium,Chest X-ray,General Ward,1,"Gown, IV",X-ray Machine,4,Penicillin,Discharged,20,30,98,148,1
+P127,10/5/2024 13:09,10/12/2024 12:42,Diabetes,Medium,Blood Test,ICU,6,"Gloves, IV",X-ray Machine,4,Penicillin,Discharged,18,15,42,75,3
+P130,10/7/2024 16:22,10/19/2024 5:09,Fracture,High,Chest X-ray,ICU,11,"Gown, IV",MRI Machine,4,Aspirin,Discharged,4,8,16,28,4
+P133,10/5/2024 2:40,10/10/2024 1:03,Fracture,Medium,Chest X-ray,ICU,4,"Gloves, IV",X-ray Machine,3,Penicillin,Admitted,8,21,43,72,2
+P134,10/6/2024 19:43,10/18/2024 12:59,Diabetes,Low,Chest X-ray,ICU,11,"Gloves, IV",X-ray Machine,5,Aspirin,Discharged,41,79,135,255,1
+P135,10/18/2024 11:38,10/23/2024 11:26,Fracture,Medium,Blood Test,General Ward,4,"Gown, IV",Surgical Table,4,Aspirin,Discharged,10,42,71,123,1
+P137,10/4/2024 21:48,10/15/2024 14:19,Appendicitis,High,Appendectomy,ICU,10,"Mask, Gown",Surgical Table,3,Lipitor,Discharged,8,12,22,42,4
+P141,10/11/2024 5:35,10/26/2024 0:44,Appendicitis,High,MRI,ICU,14,"Gloves, IV",Surgical Table,4,Aspirin,Discharged,10,16,46,72,3
+P145,10/27/2024 9:50,11/8/2024 17:13,Diabetes,High,MRI,General Ward,12,"Gown, IV",MRI Machine,3,Penicillin,Admitted,2,3,13,18,4
+P155,10/3/2024 21:18,10/13/2024 17:24,Pneumonia,Low,Chest X-ray,ICU,9,"Mask, Gown",Surgical Table,4,Ibuprofen,Discharged,44,121,111,276,1
+P160,10/21/2024 8:38,10/23/2024 4:50,Fracture,Low,MRI,General Ward,1,"Gloves, IV",X-ray Machine,5,Ibuprofen,Discharged,22,107,111,240,1
+P162,10/14/2024 22:38,10/23/2024 17:17,Pneumonia,Critical,Blood Test,ICU,8,"Mask, Gown",Surgical Table,1,Lipitor,Admitted,1,5,11,17,4
+P164,10/16/2024 10:59,10/24/2024 0:28,Pneumonia,Low,Blood Test,ICU,7,"Mask, Gown",MRI Machine,4,Penicillin,Discharged,38,53,139,230,1
+P167,10/1/2024 9:26,10/13/2024 9:09,Pneumonia,Medium,MRI,ICU,11,"Mask, Gown",Surgical Table,4,Ibuprofen,Discharged,7,12,42,61,3
+P169,10/8/2024 5:24,10/11/2024 11:20,Fracture,Medium,Blood Test,ICU,3,"Gown, IV",X-ray Machine,4,Aspirin,Discharged,26,53,79,158,1
+P171,10/16/2024 20:10,10/20/2024 13:42,Pneumonia,Low,MRI,ICU,3,"Gown, IV",MRI Machine,4,Penicillin,Discharged,39,59,149,247,1
+P173,10/17/2024 13:46,10/21/2024 11:23,Pneumonia,Low,Appendectomy,ICU,3,"Gloves, IV",MRI Machine,5,Aspirin,Admitted,14,25,50,89,2
+P174,10/11/2024 20:42,10/17/2024 19:26,Pneumonia,High,MRI,ICU,5,"Mask, Gown",MRI Machine,3,Paracetamol,Discharged,7,13,26,46,3
+P175,10/24/2024 15:43,11/4/2024 3:18,Fracture,Critical,Appendectomy,General Ward,10,"Mask, Gown",Surgical Table,2,Ibuprofen,Admitted,3,9,29,41,4
+P176,10/3/2024 13:13,10/17/2024 0:36,Pneumonia,Critical,Blood Test,ICU,13,"Gown, IV",X-ray Machine,1,Ibuprofen,Admitted,4,5,12,21,4
+P178,10/21/2024 1:03,11/1/2024 19:34,Fracture,High,Chest X-ray,General Ward,11,"Mask, Gown",Surgical Table,4,Paracetamol,Discharged,4,7,15,26,5
+P181,10/27/2024 5:02,11/8/2024 12:38,Diabetes,High,Chest X-ray,General Ward,12,"Gloves, IV",Surgical Table,3,Aspirin,Discharged,6,7,35,48,3
+P185,10/15/2024 6:16,10/23/2024 1:56,Appendicitis,Critical,Blood Test,General Ward,7,"Mask, Gown",X-ray Machine,1,Paracetamol,Discharged,1,2,5,8,4
+P187,10/10/2024 15:42,10/23/2024 14:40,Appendicitis,Low,Blood Test,ICU,12,"Gloves, IV",X-ray Machine,5,Paracetamol,Discharged,24,53,104,181,1
+P189,10/26/2024 9:58,10/28/2024 13:14,Fracture,High,Appendectomy,General Ward,2,"Gloves, IV",Surgical Table,3,Paracetamol,Admitted,2,5,16,23,5
+P191,10/6/2024 20:13,10/8/2024 23:01,Diabetes,High,Blood Test,ICU,2,"Gown, IV",X-ray Machine,3,Lipitor,Admitted,7,12,43,62,3
+P197,10/7/2024 13:02,10/9/2024 9:31,Fracture,Critical,MRI,General Ward,1,"Gown, IV",Surgical Table,1,Lipitor,Discharged,1,6,20,27,4
+P203,10/22/2024 0:00,10/23/2024 4:49,Diabetes,Low,MRI,ICU,1,"Gown, IV",MRI Machine,4,Aspirin,Discharged,21,73,111,205,1
+P211,10/5/2024 19:43,10/11/2024 4:37,Appendicitis,High,MRI,ICU,5,"Gloves, IV",MRI Machine,4,Paracetamol,Admitted,11,18,46,75,2
+P215,10/20/2024 12:24,10/21/2024 15:05,Appendicitis,Critical,Chest X-ray,ICU,1,"Gloves, IV",X-ray Machine,2,Paracetamol,Admitted,2,1,5,8,4
+P216,10/22/2024 13:16,10/25/2024 8:17,Appendicitis,Medium,Appendectomy,ICU,2,"Gown, IV",X-ray Machine,3,Lipitor,Admitted,9,20,56,85,2
+P221,10/27/2024 23:57,11/11/2024 4:12,Diabetes,Critical,Blood Test,ICU,14,"Gown, IV",MRI Machine,2,Lipitor,Discharged,2,10,25,37,4
+P226,10/4/2024 19:38,10/16/2024 23:11,Fracture,Medium,Appendectomy,General Ward,12,"Gloves, IV",Surgical Table,3,Penicillin,Discharged,24,32,55,111,2
+P236,10/29/2024 20:31,11/11/2024 7:24,Pneumonia,Low,Appendectomy,ICU,12,"Gloves, IV",X-ray Machine,5,Ibuprofen,Discharged,22,52,57,131,1
+P237,10/11/2024 3:58,10/15/2024 2:40,Fracture,Low,Appendectomy,General Ward,3,"Mask, Gown",Surgical Table,5,Ibuprofen,Discharged,31,71,68,170,1
+P245,10/25/2024 23:45,10/27/2024 3:33,Appendicitis,Low,Chest X-ray,ICU,1,"Gloves, IV",Surgical Table,5,Lipitor,Discharged,14,32,83,129,1
+P249,10/23/2024 11:24,10/24/2024 19:21,Fracture,Low,Chest X-ray,General Ward,1,"Gloves, IV",Surgical Table,4,Lipitor,Discharged,11,22,49,82,2
+P251,10/15/2024 2:08,10/24/2024 19:53,Pneumonia,Low,Chest X-ray,General Ward,9,"Gloves, IV",X-ray Machine,4,Ibuprofen,Discharged,26,128,182,336,1
+P255,10/18/2024 15:39,10/28/2024 1:48,Diabetes,Critical,Chest X-ray,ICU,9,"Mask, Gown",Surgical Table,2,Aspirin,Discharged,2,2,17,21,4
+P257,10/18/2024 15:28,10/29/2024 4:53,Diabetes,High,Chest X-ray,General Ward,10,"Gloves, IV",MRI Machine,3,Penicillin,Admitted,3,7,19,29,4
+P259,10/12/2024 4:32,10/26/2024 8:45,Diabetes,Low,Blood Test,General Ward,14,"Gloves, IV",X-ray Machine,5,Ibuprofen,Discharged,19,50,104,173,1
+P260,10/10/2024 4:42,10/13/2024 13:43,Diabetes,Critical,Chest X-ray,ICU,3,"Mask, Gown",MRI Machine,1,Aspirin,Admitted,0,2,6,8,5
+P262,10/22/2024 20:21,11/1/2024 18:47,Fracture,Critical,Appendectomy,ICU,9,"Mask, Gown",MRI Machine,1,Aspirin,Admitted,2,3,13,18,4
+P267,10/3/2024 9:02,10/18/2024 6:46,Fracture,Critical,Appendectomy,ICU,14,"Mask, Gown",Surgical Table,1,Aspirin,Discharged,2,1,13,16,4
+P268,10/9/2024 23:14,10/23/2024 6:16,Fracture,Critical,MRI,General Ward,13,"Gloves, IV",X-ray Machine,1,Paracetamol,Discharged,3,5,12,20,4
+P271,10/1/2024 10:47,10/3/2024 21:28,Diabetes,Medium,Blood Test,General Ward,2,"Mask, Gown",X-ray Machine,3,Aspirin,Admitted,21,14,42,77,2
+P277,10/22/2024 7:40,11/3/2024 0:19,Pneumonia,Low,MRI,General Ward,11,"Gown, IV",Surgical Table,5,Aspirin,Discharged,33,59,97,189,1
+P280,10/10/2024 17:50,10/22/2024 0:52,Diabetes,High,Blood Test,ICU,11,"Mask, Gown",X-ray Machine,4,Lipitor,Admitted,5,6,24,35,4
+P282,10/6/2024 9:10,10/12/2024 14:20,Fracture,Critical,Blood Test,ICU,6,"Mask, Gown",X-ray Machine,1,Penicillin,Discharged,4,10,10,24,4
+P288,10/23/2024 8:46,10/31/2024 22:16,Fracture,High,Appendectomy,General Ward,8,"Gloves, IV",X-ray Machine,4,Lipitor,Discharged,7,9,15,31,4
+P289,10/26/2024 10:52,11/4/2024 13:30,Fracture,Critical,Blood Test,ICU,9,"Mask, Gown",X-ray Machine,1,Ibuprofen,Admitted,1,3,6,10,4
+P291,10/24/2024 11:33,10/27/2024 6:06,Pneumonia,Medium,Appendectomy,General Ward,2,"Gown, IV",X-ray Machine,4,Lipitor,Discharged,10,23,59,92,2
+P292,10/8/2024 3:52,10/20/2024 7:25,Appendicitis,Low,Appendectomy,ICU,12,"Gown, IV",MRI Machine,4,Lipitor,Discharged,30,50,116,196,1
+P295,10/3/2024 19:03,10/9/2024 22:41,Fracture,High,Appendectomy,ICU,6,"Gloves, IV",Surgical Table,4,Penicillin,Discharged,8,11,25,44,4
+P296,10/14/2024 12:02,10/19/2024 17:14,Fracture,Low,Appendectomy,General Ward,5,"Mask, Gown",Surgical Table,5,Paracetamol,Discharged,32,114,107,253,1
+P299,10/25/2024 17:56,10/30/2024 21:28,Fracture,Low,Appendectomy,ICU,5,"Gown, IV",X-ray Machine,4,Paracetamol,Discharged,30,66,93,189,1
+P300,10/3/2024 0:38,10/14/2024 5:34,Appendicitis,Low,MRI,General Ward,11,"Mask, Gown",Surgical Table,4,Lipitor,Discharged,26,72,83,181,1
+P301,10/8/2024 4:57,10/18/2024 0:28,Diabetes,Critical,Appendectomy,General Ward,9,"Gown, IV",MRI Machine,1,Penicillin,Admitted,0,2,11,13,5
+P303,10/8/2024 6:56,10/11/2024 14:03,Appendicitis,Critical,Blood Test,ICU,3,"Mask, Gown",Surgical Table,1,Ibuprofen,Discharged,4,4,9,17,5
+P304,10/24/2024 4:28,10/31/2024 4:04,Fracture,Medium,Chest X-ray,General Ward,6,"Gloves, IV",Surgical Table,4,Aspirin,Discharged,20,30,74,124,1
+P308,10/20/2024 1:32,10/25/2024 18:58,Pneumonia,Critical,Appendectomy,ICU,5,"Gown, IV",X-ray Machine,2,Ibuprofen,Discharged,4,4,23,31,3
+P312,10/6/2024 10:08,10/8/2024 20:00,Appendicitis,High,Chest X-ray,ICU,2,"Mask, Gown",X-ray Machine,4,Aspirin,Admitted,10,20,27,57,3
+P317,10/14/2024 14:00,10/23/2024 9:48,Pneumonia,Critical,Blood Test,General Ward,8,"Mask, Gown",Surgical Table,2,Penicillin,Admitted,1,7,23,31,4
+P327,10/28/2024 1:50,11/6/2024 14:05,Appendicitis,Low,Chest X-ray,General Ward,9,"Gown, IV",MRI Machine,4,Lipitor,Discharged,22,36,86,144,1
+P328,10/25/2024 19:43,10/27/2024 22:52,Fracture,Medium,Blood Test,General Ward,2,"Gloves, IV",X-ray Machine,3,Penicillin,Admitted,18,15,44,77,3
+P329,10/16/2024 2:35,10/29/2024 22:57,Fracture,Critical,MRI,ICU,13,"Gloves, IV",X-ray Machine,1,Ibuprofen,Admitted,1,5,13,19,4
+P334,10/3/2024 3:58,10/7/2024 1:45,Appendicitis,Low,Chest X-ray,General Ward,3,"Mask, Gown",MRI Machine,5,Ibuprofen,Admitted,18,32,49,99,1
+P336,10/5/2024 2:16,10/6/2024 13:50,Appendicitis,High,MRI,General Ward,1,"Mask, Gown",Surgical Table,3,Paracetamol,Discharged,8,12,17,37,4
+P337,10/12/2024 5:45,10/16/2024 10:33,Diabetes,Low,Blood Test,General Ward,4,"Gloves, IV",MRI Machine,5,Lipitor,Discharged,10,25,36,71,3
+P343,10/29/2024 10:57,11/2/2024 10:46,Fracture,Medium,Blood Test,ICU,3,"Gloves, IV",X-ray Machine,4,Aspirin,Admitted,19,23,74,116,1
+P349,10/3/2024 18:51,10/6/2024 4:13,Diabetes,Critical,Chest X-ray,ICU,2,"Gloves, IV",Surgical Table,2,Lipitor,Admitted,1,8,9,18,4
+P353,10/15/2024 5:34,10/25/2024 13:44,Appendicitis,High,MRI,General Ward,10,"Gloves, IV",X-ray Machine,4,Lipitor,Admitted,4,16,17,37,4
+P354,10/22/2024 19:54,11/2/2024 6:14,Diabetes,Low,Chest X-ray,General Ward,10,"Gown, IV",Surgical Table,4,Ibuprofen,Discharged,19,54,48,121,1
+P355,10/19/2024 7:18,10/22/2024 23:19,Appendicitis,Critical,Appendectomy,ICU,3,"Gloves, IV",Surgical Table,2,Paracetamol,Discharged,2,2,10,14,5
+P361,10/16/2024 17:33,10/30/2024 15:53,Pneumonia,Low,MRI,ICU,13,"Mask, Gown",X-ray Machine,4,Penicillin,Discharged,26,75,122,223,1
+P365,10/11/2024 23:02,10/17/2024 8:47,Diabetes,Low,MRI,ICU,5,"Gloves, IV",MRI Machine,4,Penicillin,Discharged,36,54,89,179,1
+P368,10/23/2024 4:49,11/6/2024 11:26,Pneumonia,Low,Chest X-ray,General Ward,14,"Gown, IV",MRI Machine,5,Ibuprofen,Discharged,30,69,132,231,1
+P369,10/1/2024 13:46,10/9/2024 9:51,Fracture,Low,Blood Test,ICU,7,"Gown, IV",Surgical Table,5,Penicillin,Discharged,35,142,152,329,1
+P370,10/12/2024 14:38,10/13/2024 16:11,Appendicitis,Low,Blood Test,General Ward,1,"Mask, Gown",MRI Machine,4,Lipitor,Discharged,15,49,64,128,1
+P372,10/18/2024 10:02,10/22/2024 1:29,Pneumonia,Low,Appendectomy,ICU,3,"Gloves, IV",MRI Machine,5,Ibuprofen,Discharged,21,37,82,140,1
+P374,10/8/2024 8:24,10/14/2024 18:40,Appendicitis,Medium,Appendectomy,ICU,6,"Gown, IV",MRI Machine,3,Ibuprofen,Discharged,15,40,103,158,1
+P378,10/1/2024 7:13,10/7/2024 23:24,Diabetes,High,MRI,ICU,6,"Mask, Gown",Surgical Table,4,Paracetamol,Discharged,8,14,37,59,3
+P382,10/21/2024 21:30,11/3/2024 10:29,Appendicitis,Medium,MRI,ICU,12,"Mask, Gown",Surgical Table,4,Ibuprofen,Discharged,26,18,87,131,1
+P384,10/7/2024 4:54,10/12/2024 6:01,Diabetes,Medium,Chest X-ray,General Ward,5,"Gloves, IV",X-ray Machine,4,Ibuprofen,Discharged,31,26,120,177,1
+P389,10/14/2024 0:35,10/26/2024 16:31,Fracture,High,Blood Test,ICU,12,"Gown, IV",MRI Machine,4,Penicillin,Admitted,5,9,19,33,4
+P391,10/6/2024 2:32,10/8/2024 21:25,Appendicitis,Low,Chest X-ray,General Ward,2,"Gloves, IV",X-ray Machine,4,Ibuprofen,Left Without Being Seen,24,83,77,184,1
+P396,10/22/2024 10:35,10/23/2024 23:56,Pneumonia,Medium,MRI,General Ward,1,"Gloves, IV",MRI Machine,3,Ibuprofen,Admitted,19,22,33,74,3
+P398,10/20/2024 6:03,10/29/2024 22:20,Pneumonia,High,Chest X-ray,General Ward,9,"Gown, IV",Surgical Table,4,Lipitor,Admitted,6,10,43,59,3
+P399,10/13/2024 21:27,10/24/2024 4:07,Diabetes,Low,Chest X-ray,General Ward,10,"Gown, IV",Surgical Table,5,Lipitor,Discharged,35,51,81,167,1
+P400,10/27/2024 6:07,10/29/2024 22:54,Fracture,Critical,MRI,ICU,2,"Mask, Gown",MRI Machine,2,Lipitor,Discharged,4,8,19,31,4
+P402,10/1/2024 14:12,10/13/2024 6:23,Diabetes,Low,Chest X-ray,ICU,11,"Mask, Gown",X-ray Machine,4,Ibuprofen,Discharged,25,27,77,129,1
+P408,10/16/2024 16:48,10/19/2024 4:28,Pneumonia,High,Blood Test,ICU,2,"Mask, Gown",X-ray Machine,3,Aspirin,Admitted,5,15,40,60,3
+P419,10/28/2024 15:17,11/7/2024 2:39,Pneumonia,Low,MRI,ICU,9,"Mask, Gown",MRI Machine,4,Penicillin,Discharged,41,74,89,204,1
+P422,10/26/2024 7:01,11/5/2024 23:15,Fracture,Medium,Blood Test,ICU,10,"Mask, Gown",Surgical Table,3,Paracetamol,Discharged,17,23,56,96,2
+P427,10/18/2024 17:00,11/2/2024 11:43,Pneumonia,High,Appendectomy,ICU,14,"Gown, IV",MRI Machine,3,Ibuprofen,Admitted,6,12,15,33,4
+P429,10/26/2024 18:09,11/3/2024 13:50,Pneumonia,Medium,Blood Test,ICU,7,"Gown, IV",X-ray Machine,4,Lipitor,Discharged,20,20,42,82,3
+P430,10/29/2024 10:57,11/8/2024 10:17,Fracture,Medium,Chest X-ray,General Ward,9,"Mask, Gown",X-ray Machine,3,Aspirin,Discharged,18,34,55,107,1
+P436,10/8/2024 13:49,10/19/2024 4:08,Diabetes,Medium,Blood Test,General Ward,10,"Mask, Gown",X-ray Machine,4,Ibuprofen,Discharged,11,11,37,59,3
+P438,10/25/2024 4:39,10/30/2024 12:03,Fracture,High,MRI,General Ward,5,"Gown, IV",Surgical Table,4,Ibuprofen,Discharged,11,28,72,111,1
+P445,10/9/2024 6:57,10/11/2024 21:47,Fracture,Medium,Chest X-ray,General Ward,2,"Gloves, IV",Surgical Table,4,Paracetamol,Discharged,21,23,39,83,2
+P449,10/13/2024 1:57,10/26/2024 18:50,Diabetes,Low,Appendectomy,ICU,13,"Mask, Gown",MRI Machine,5,Paracetamol,Left Without Being Seen,31,89,108,228,1
+P450,10/24/2024 1:14,10/26/2024 20:52,Diabetes,Low,MRI,General Ward,2,"Gloves, IV",Surgical Table,5,Ibuprofen,Discharged,22,40,93,155,1
+P454,10/3/2024 17:50,10/6/2024 15:10,Appendicitis,Low,Blood Test,ICU,2,"Gloves, IV",Surgical Table,4,Lipitor,Discharged,27,45,67,139,1
+P455,10/24/2024 19:20,10/27/2024 1:50,Appendicitis,Medium,Appendectomy,General Ward,2,"Mask, Gown",MRI Machine,3,Penicillin,Discharged,14,26,87,127,1
+P466,10/11/2024 5:36,10/25/2024 14:08,Fracture,High,Appendectomy,General Ward,14,"Mask, Gown",X-ray Machine,3,Lipitor,Admitted,6,9,32,47,3
+P473,10/18/2024 20:06,10/29/2024 11:43,Diabetes,Medium,Chest X-ray,ICU,10,"Gown, IV",X-ray Machine,3,Ibuprofen,Admitted,5,22,33,60,3
+P474,10/14/2024 6:29,10/23/2024 19:38,Pneumonia,Medium,MRI,General Ward,9,"Gown, IV",X-ray Machine,3,Lipitor,Admitted,8,18,37,63,3
+P480,10/19/2024 10:55,10/26/2024 5:21,Fracture,Medium,Appendectomy,General Ward,6,"Gown, IV",MRI Machine,3,Lipitor,Left Without Being Seen,17,35,69,121,1
+P486,10/2/2024 18:22,10/5/2024 6:21,Pneumonia,Critical,Blood Test,General Ward,2,"Gown, IV",Surgical Table,2,Lipitor,Discharged,1,2,4,7,4
+P489,10/11/2024 6:25,10/15/2024 11:37,Pneumonia,High,Appendectomy,ICU,4,"Gown, IV",X-ray Machine,4,Penicillin,Admitted,7,9,18,34,4
+P491,10/10/2024 12:36,10/18/2024 4:32,Fracture,Medium,MRI,ICU,7,"Gloves, IV",Surgical Table,4,Lipitor,Discharged,24,46,95,165,1
+P492,10/21/2024 22:27,10/28/2024 7:49,Fracture,Critical,Blood Test,ICU,6,"Gloves, IV",MRI Machine,2,Aspirin,Admitted,0,3,7,10,4
+P003,10/22/2024 21:43,11/2/2024 17:11,Fracture,High,Chest X-ray,ICU,10,"Gloves, IV",X-ray Machine,4,Lipitor,Admitted,10,19,26,55,3
+P005,10/21/2024 17:04,10/24/2024 1:43,Appendicitis,Critical,MRI,ICU,2,"Gloves, IV",X-ray Machine,2,Paracetamol,Admitted,4,5,21,30,4
+P008,10/12/2024 16:50,10/24/2024 9:06,Fracture,Critical,MRI,General Ward,11,"Gown, IV",X-ray Machine,1,Penicillin,Admitted,0,2,5,7,4
+P009,10/19/2024 14:43,10/30/2024 8:50,Diabetes,Critical,Appendectomy,ICU,10,"Gloves, IV",MRI Machine,2,Lipitor,Admitted,4,5,8,17,4
+P011,10/25/2024 18:24,11/7/2024 9:39,Appendicitis,Medium,Appendectomy,ICU,12,"Gloves, IV",Surgical Table,4,Penicillin,Admitted,11,15,55,81,2
+P013,10/5/2024 17:31,10/8/2024 21:15,Pneumonia,Critical,Chest X-ray,ICU,3,"Mask, Gown",Surgical Table,1,Ibuprofen,Discharged,1,4,9,14,5
+P015,10/14/2024 4:08,10/22/2024 13:04,Diabetes,Critical,Appendectomy,ICU,8,"Gown, IV",Surgical Table,1,Paracetamol,Admitted,0,2,4,6,5
+P019,10/10/2024 5:43,10/24/2024 19:43,Appendicitis,Medium,Chest X-ray,General Ward,14,"Mask, Gown",Surgical Table,4,Paracetamol,Discharged,27,44,87,158,1
+P022,10/29/2024 21:02,11/13/2024 13:57,Pneumonia,Low,Appendectomy,ICU,14,"Gloves, IV",Surgical Table,4,Lipitor,Admitted,13,43,56,112,1
+P023,10/5/2024 18:44,10/9/2024 17:32,Diabetes,High,Appendectomy,General Ward,3,"Gown, IV",MRI Machine,4,Aspirin,Discharged,4,4,10,18,4
+P026,10/15/2024 1:52,10/22/2024 1:05,Appendicitis,Critical,MRI,ICU,6,"Mask, Gown",MRI Machine,2,Paracetamol,Discharged,1,8,8,17,4
+P028,10/8/2024 10:23,10/19/2024 18:33,Pneumonia,High,MRI,General Ward,11,"Gown, IV",X-ray Machine,3,Lipitor,Admitted,5,10,32,47,3
+P033,10/12/2024 6:02,10/23/2024 18:20,Appendicitis,Critical,Appendectomy,General Ward,11,"Gown, IV",X-ray Machine,1,Penicillin,Discharged,4,2,9,15,4
+P036,10/21/2024 5:02,10/25/2024 4:01,Pneumonia,Medium,MRI,General Ward,3,"Gown, IV",MRI Machine,4,Lipitor,Discharged,12,33,36,81,2
+P040,10/28/2024 7:09,11/8/2024 6:44,Pneumonia,High,Chest X-ray,General Ward,10,"Gown, IV",MRI Machine,3,Ibuprofen,Admitted,9,10,34,53,4
+P041,10/11/2024 21:16,10/24/2024 1:55,Fracture,High,Blood Test,General Ward,12,"Gown, IV",MRI Machine,3,Penicillin,Discharged,4,11,26,41,3
+P044,10/16/2024 2:37,10/20/2024 10:05,Diabetes,High,Chest X-ray,ICU,4,"Gloves, IV",Surgical Table,4,Paracetamol,Discharged,9,15,23,47,4
+P047,10/10/2024 16:07,10/19/2024 21:10,Diabetes,High,MRI,ICU,9,"Gown, IV",Surgical Table,3,Ibuprofen,Admitted,7,16,44,67,3
+P051,10/7/2024 5:00,10/17/2024 12:44,Diabetes,Critical,Chest X-ray,General Ward,10,"Mask, Gown",Surgical Table,1,Penicillin,Admitted,1,2,12,15,5
+P053,10/8/2024 22:24,10/11/2024 12:56,Pneumonia,Critical,Appendectomy,ICU,2,"Gown, IV",MRI Machine,1,Ibuprofen,Admitted,0,4,8,12,4
+P055,10/24/2024 9:00,11/6/2024 8:26,Appendicitis,High,Chest X-ray,General Ward,12,"Mask, Gown",MRI Machine,3,Penicillin,Discharged,7,9,20,36,4
+P059,10/6/2024 11:16,10/20/2024 13:50,Fracture,High,MRI,General Ward,14,"Gloves, IV",MRI Machine,3,Aspirin,Discharged,4,10,12,26,4
+P060,10/23/2024 0:24,10/27/2024 15:38,Appendicitis,High,MRI,General Ward,4,"Mask, Gown",MRI Machine,4,Ibuprofen,Discharged,8,12,28,48,3
+P063,10/24/2024 12:25,11/2/2024 4:48,Diabetes,Critical,Appendectomy,General Ward,8,"Gown, IV",MRI Machine,2,Aspirin,Admitted,1,4,11,16,4
+P068,10/15/2024 17:31,10/20/2024 10:08,Fracture,Medium,Appendectomy,ICU,4,"Gloves, IV",MRI Machine,4,Paracetamol,Admitted,22,17,46,85,2
+P069,10/20/2024 11:38,10/26/2024 8:23,Diabetes,Critical,Appendectomy,General Ward,5,"Mask, Gown",X-ray Machine,1,Paracetamol,Admitted,1,6,19,26,4
+P071,10/5/2024 19:29,10/19/2024 3:47,Appendicitis,Low,Blood Test,General Ward,13,"Gloves, IV",MRI Machine,4,Lipitor,Discharged,21,26,77,124,1
+P072,10/28/2024 3:13,11/1/2024 9:44,Appendicitis,Low,Appendectomy,General Ward,4,"Gloves, IV",Surgical Table,5,Ibuprofen,Discharged,10,36,52,98,1
+P077,10/23/2024 9:37,11/6/2024 18:51,Appendicitis,High,MRI,General Ward,14,"Gloves, IV",Surgical Table,3,Ibuprofen,Admitted,4,8,14,26,4
+P079,10/6/2024 4:48,10/13/2024 22:26,Pneumonia,High,Appendectomy,ICU,7,"Gown, IV",MRI Machine,4,Ibuprofen,Admitted,6,16,48,70,3
+P083,10/17/2024 7:16,10/21/2024 22:31,Fracture,Medium,Chest X-ray,General Ward,4,"Gown, IV",X-ray Machine,3,Penicillin,Discharged,22,21,35,78,2
+P084,10/24/2024 21:15,11/5/2024 16:36,Diabetes,Medium,MRI,ICU,11,"Mask, Gown",X-ray Machine,3,Aspirin,Admitted,18,18,53,89,2
+P085,10/1/2024 5:42,10/13/2024 7:03,Diabetes,Low,MRI,General Ward,12,"Mask, Gown",MRI Machine,5,Ibuprofen,Admitted,22,38,50,110,1
+P094,10/1/2024 17:40,10/3/2024 2:51,Pneumonia,Low,MRI,ICU,1,"Gloves, IV",X-ray Machine,4,Paracetamol,Discharged,24,46,72,142,1
+P097,10/25/2024 10:42,10/31/2024 19:45,Fracture,Critical,Chest X-ray,ICU,6,"Gloves, IV",MRI Machine,1,Paracetamol,Discharged,0,4,9,13,4
+P112,10/20/2024 6:55,11/2/2024 17:49,Appendicitis,Critical,Appendectomy,ICU,13,"Gloves, IV",Surgical Table,2,Penicillin,Discharged,7,13,21,41,4
+P115,10/17/2024 12:32,10/20/2024 15:04,Fracture,Low,Chest X-ray,ICU,3,"Gown, IV",MRI Machine,4,Paracetamol,Discharged,12,28,44,84,2
+P116,10/15/2024 0:42,10/20/2024 5:52,Appendicitis,Medium,Appendectomy,ICU,5,"Mask, Gown",MRI Machine,3,Penicillin,Admitted,7,29,50,86,2
+P136,10/18/2024 4:07,10/24/2024 6:10,Fracture,Critical,Appendectomy,General Ward,6,"Gloves, IV",Surgical Table,2,Ibuprofen,Admitted,3,5,19,27,4
+P138,10/2/2024 9:11,10/13/2024 23:48,Pneumonia,Medium,Appendectomy,General Ward,11,"Gloves, IV",Surgical Table,3,Ibuprofen,Discharged,25,22,78,125,1
+P143,10/4/2024 5:06,10/18/2024 21:29,Pneumonia,Medium,Blood Test,General Ward,14,"Gown, IV",Surgical Table,4,Paracetamol,Left Without Being Seen,14,43,80,137,1
+P144,10/29/2024 19:22,11/1/2024 7:29,Diabetes,Medium,Appendectomy,General Ward,2,"Mask, Gown",Surgical Table,3,Penicillin,Discharged,9,23,58,90,2
+P147,10/10/2024 14:24,10/18/2024 21:46,Diabetes,Medium,Chest X-ray,General Ward,8,"Mask, Gown",X-ray Machine,4,Penicillin,Admitted,9,13,55,77,2
+P148,10/29/2024 6:53,11/2/2024 15:24,Fracture,Low,Chest X-ray,General Ward,4,"Gloves, IV",X-ray Machine,4,Penicillin,Discharged,30,69,108,207,1
+P149,10/14/2024 15:46,10/16/2024 10:57,Appendicitis,High,MRI,ICU,1,"Gown, IV",MRI Machine,3,Lipitor,Discharged,2,7,13,22,5
+P151,10/29/2024 15:21,11/9/2024 18:33,Pneumonia,Critical,MRI,General Ward,11,"Gown, IV",X-ray Machine,2,Lipitor,Discharged,3,3,6,12,4
+P152,10/25/2024 4:45,10/31/2024 13:56,Pneumonia,High,Chest X-ray,ICU,6,"Gloves, IV",Surgical Table,4,Ibuprofen,Admitted,5,6,14,25,4
+P153,10/5/2024 12:14,10/10/2024 21:22,Pneumonia,High,Appendectomy,ICU,5,"Gloves, IV",MRI Machine,4,Penicillin,Discharged,5,16,16,37,4
+P154,10/6/2024 12:54,10/18/2024 3:56,Appendicitis,Low,Blood Test,ICU,11,"Gown, IV",Surgical Table,5,Ibuprofen,Discharged,33,49,133,215,1
+P157,10/6/2024 18:12,10/8/2024 23:34,Pneumonia,High,Appendectomy,ICU,2,"Gloves, IV",MRI Machine,3,Paracetamol,Admitted,3,5,9,17,5
+P158,10/19/2024 23:35,10/31/2024 0:26,Pneumonia,High,MRI,ICU,11,"Gown, IV",Surgical Table,4,Paracetamol,Discharged,5,10,25,40,4
+P165,10/12/2024 11:17,10/19/2024 0:36,Appendicitis,Medium,MRI,ICU,6,"Gloves, IV",X-ray Machine,4,Ibuprofen,Discharged,22,42,121,185,1
+P166,10/21/2024 17:56,10/23/2024 2:30,Appendicitis,Medium,Chest X-ray,ICU,1,"Mask, Gown",Surgical Table,3,Aspirin,Admitted,17,35,29,81,2
+P168,10/11/2024 13:03,10/19/2024 6:04,Appendicitis,Critical,Chest X-ray,General Ward,7,"Gloves, IV",Surgical Table,1,Paracetamol,Admitted,0,1,4,5,5
+P180,10/22/2024 20:13,10/29/2024 4:05,Appendicitis,Critical,MRI,General Ward,6,"Gloves, IV",MRI Machine,1,Aspirin,Discharged,2,5,17,24,4
+P183,10/21/2024 2:32,10/27/2024 10:17,Appendicitis,Low,Appendectomy,General Ward,6,"Mask, Gown",X-ray Machine,5,Paracetamol,Left Without Being Seen,22,60,63,145,1
+P193,10/23/2024 13:12,10/27/2024 18:18,Appendicitis,High,Appendectomy,ICU,4,"Gloves, IV",MRI Machine,3,Ibuprofen,Admitted,5,11,31,47,3
+P199,10/25/2024 18:00,11/5/2024 14:32,Appendicitis,Low,MRI,ICU,10,"Gloves, IV",Surgical Table,5,Penicillin,Left Without Being Seen,17,46,77,140,1
+P205,10/5/2024 2:20,10/7/2024 21:51,Diabetes,Low,Appendectomy,ICU,2,"Gloves, IV",Surgical Table,5,Ibuprofen,Discharged,18,29,59,106,1
+P207,10/22/2024 22:01,10/30/2024 3:44,Pneumonia,High,Blood Test,ICU,7,"Gown, IV",MRI Machine,3,Aspirin,Discharged,3,5,18,26,4
+P209,10/18/2024 15:31,10/20/2024 21:51,Appendicitis,Medium,Blood Test,General Ward,2,"Gown, IV",Surgical Table,4,Paracetamol,Discharged,12,17,47,76,2
+P217,10/22/2024 18:54,10/24/2024 15:10,Diabetes,Medium,MRI,ICU,1,"Mask, Gown",MRI Machine,3,Lipitor,Admitted,14,10,46,70,3
+P218,10/6/2024 6:56,10/9/2024 15:24,Fracture,Critical,Appendectomy,ICU,3,"Gown, IV",MRI Machine,1,Ibuprofen,Discharged,1,3,11,15,4
+P220,10/21/2024 8:07,10/29/2024 10:39,Fracture,Critical,MRI,General Ward,8,"Mask, Gown",X-ray Machine,2,Ibuprofen,Discharged,1,5,16,22,4
+P223,10/17/2024 13:43,10/20/2024 22:54,Diabetes,Medium,Appendectomy,General Ward,3,"Gloves, IV",X-ray Machine,3,Aspirin,Discharged,15,16,49,80,2
+P224,10/29/2024 2:25,11/12/2024 21:45,Diabetes,High,MRI,ICU,14,"Gloves, IV",Surgical Table,4,Penicillin,Discharged,8,17,24,49,3
+P227,10/12/2024 5:06,10/16/2024 16:45,Fracture,Medium,Appendectomy,ICU,4,"Mask, Gown",X-ray Machine,3,Lipitor,Admitted,24,32,60,116,1
+P229,10/14/2024 0:40,10/21/2024 0:51,Fracture,Low,Blood Test,ICU,7,"Gown, IV",Surgical Table,5,Ibuprofen,Discharged,26,104,150,280,1
+P231,10/3/2024 2:15,10/7/2024 19:49,Appendicitis,Medium,Chest X-ray,ICU,4,"Mask, Gown",MRI Machine,3,Lipitor,Admitted,8,24,34,66,3
+P232,10/13/2024 12:14,10/26/2024 9:28,Pneumonia,High,Chest X-ray,General Ward,12,"Mask, Gown",X-ray Machine,4,Ibuprofen,Discharged,3,8,14,25,4
+P233,10/17/2024 4:20,10/30/2024 13:09,Diabetes,Critical,Chest X-ray,ICU,13,"Gloves, IV",Surgical Table,2,Ibuprofen,Admitted,1,5,14,20,5
+P235,10/26/2024 5:38,10/31/2024 19:20,Appendicitis,Low,Blood Test,ICU,5,"Mask, Gown",MRI Machine,5,Paracetamol,Discharged,17,50,86,153,1
+P238,10/29/2024 18:39,11/4/2024 21:54,Fracture,Low,Blood Test,ICU,6,"Gloves, IV",X-ray Machine,5,Ibuprofen,Left Without Being Seen,20,34,71,125,1
+P240,10/14/2024 5:09,10/21/2024 16:55,Diabetes,High,Chest X-ray,General Ward,7,"Mask, Gown",X-ray Machine,4,Ibuprofen,Admitted,4,14,38,56,3
+P242,10/1/2024 18:32,10/4/2024 8:35,Fracture,Critical,Blood Test,ICU,2,"Gown, IV",Surgical Table,2,Penicillin,Discharged,3,2,9,14,4
+P244,10/12/2024 17:02,10/18/2024 13:27,Fracture,High,MRI,ICU,5,"Mask, Gown",MRI Machine,4,Paracetamol,Admitted,10,19,49,78,2
+P246,10/22/2024 3:39,11/3/2024 18:13,Fracture,Medium,Blood Test,General Ward,12,"Gloves, IV",MRI Machine,3,Penicillin,Admitted,18,21,34,73,2
+P247,10/1/2024 12:14,10/8/2024 12:59,Fracture,Medium,Appendectomy,General Ward,7,"Gown, IV",X-ray Machine,4,Paracetamol,Discharged,13,26,93,132,1
+P252,10/23/2024 20:30,11/2/2024 8:34,Fracture,High,MRI,General Ward,9,"Gown, IV",MRI Machine,4,Lipitor,Discharged,7,11,46,64,2
+P253,10/20/2024 9:16,11/3/2024 19:07,Diabetes,Critical,Blood Test,ICU,14,"Gloves, IV",X-ray Machine,2,Lipitor,Discharged,5,5,25,35,4
+P254,10/11/2024 1:42,10/14/2024 17:41,Pneumonia,Low,MRI,ICU,3,"Gown, IV",Surgical Table,5,Penicillin,Discharged,37,108,163,308,1
+P264,10/8/2024 2:30,10/19/2024 20:33,Fracture,Medium,Appendectomy,ICU,11,"Gown, IV",Surgical Table,3,Aspirin,Admitted,13,32,66,111,1
+P265,10/26/2024 3:32,11/9/2024 14:29,Fracture,Low,Blood Test,ICU,14,"Gown, IV",MRI Machine,4,Ibuprofen,Discharged,42,84,128,254,1
+P269,10/13/2024 5:23,10/19/2024 3:19,Pneumonia,Medium,Chest X-ray,ICU,5,"Mask, Gown",X-ray Machine,4,Aspirin,Discharged,18,37,71,126,1
+P273,10/5/2024 23:41,10/11/2024 13:29,Diabetes,Critical,Blood Test,General Ward,5,"Gown, IV",X-ray Machine,2,Lipitor,Admitted,3,3,20,26,4
+P278,10/16/2024 8:20,10/20/2024 22:07,Diabetes,Critical,Chest X-ray,ICU,4,"Gown, IV",X-ray Machine,2,Aspirin,Discharged,7,7,33,47,4
+P283,10/5/2024 16:14,10/13/2024 9:24,Fracture,Critical,Chest X-ray,General Ward,7,"Gloves, IV",MRI Machine,1,Paracetamol,Discharged,3,5,15,23,4
+P286,10/13/2024 6:34,10/17/2024 2:35,Diabetes,Medium,MRI,General Ward,3,"Mask, Gown",MRI Machine,3,Penicillin,Discharged,17,17,86,120,1
+P287,10/11/2024 19:47,10/16/2024 2:52,Diabetes,Low,Chest X-ray,General Ward,4,"Mask, Gown",MRI Machine,5,Penicillin,Discharged,26,45,74,145,1
+P302,10/21/2024 1:48,10/29/2024 20:59,Diabetes,Critical,Blood Test,General Ward,8,"Gown, IV",MRI Machine,2,Penicillin,Discharged,1,7,23,31,4
+P305,10/15/2024 23:57,10/19/2024 2:43,Fracture,High,MRI,General Ward,3,"Gown, IV",Surgical Table,4,Lipitor,Discharged,4,11,17,32,4
+P309,10/2/2024 21:11,10/17/2024 15:57,Pneumonia,High,MRI,ICU,14,"Gown, IV",MRI Machine,3,Lipitor,Admitted,2,4,8,14,5
+P310,10/28/2024 19:16,11/10/2024 22:43,Pneumonia,Low,Appendectomy,General Ward,13,"Gown, IV",X-ray Machine,4,Lipitor,Discharged,15,45,89,149,1
+P315,10/23/2024 6:06,11/5/2024 15:20,Fracture,Critical,Appendectomy,ICU,13,"Gown, IV",Surgical Table,2,Penicillin,Admitted,1,2,8,11,4
+P318,10/9/2024 10:11,10/10/2024 19:15,Appendicitis,Medium,Blood Test,General Ward,1,"Gloves, IV",X-ray Machine,4,Paracetamol,Admitted,15,21,30,66,3
+P322,10/20/2024 19:14,11/1/2024 1:06,Diabetes,Low,Appendectomy,General Ward,11,"Gloves, IV",X-ray Machine,5,Lipitor,Left Without Being Seen,22,38,77,137,1
+P324,10/1/2024 2:53,10/7/2024 10:17,Pneumonia,Medium,MRI,General Ward,6,"Mask, Gown",MRI Machine,3,Penicillin,Admitted,5,17,25,47,3
+P325,10/19/2024 2:08,10/24/2024 4:43,Fracture,Low,MRI,ICU,5,"Mask, Gown",Surgical Table,5,Ibuprofen,Discharged,41,62,136,239,1
+P326,10/18/2024 16:28,10/25/2024 13:44,Diabetes,High,Chest X-ray,ICU,6,"Mask, Gown",Surgical Table,4,Penicillin,Discharged,5,12,22,39,4
+P332,10/8/2024 18:23,10/14/2024 3:28,Diabetes,High,Appendectomy,General Ward,5,"Mask, Gown",X-ray Machine,3,Aspirin,Discharged,4,11,40,55,3
+P333,10/18/2024 11:52,10/22/2024 11:57,Diabetes,Low,MRI,General Ward,4,"Gown, IV",MRI Machine,5,Lipitor,Discharged,39,80,104,223,1
+P335,10/26/2024 8:44,11/8/2024 19:17,Pneumonia,Critical,MRI,General Ward,13,"Gown, IV",MRI Machine,1,Penicillin,Discharged,1,4,15,20,5
+P338,10/8/2024 19:24,10/12/2024 16:05,Diabetes,High,Chest X-ray,ICU,3,"Mask, Gown",X-ray Machine,4,Penicillin,Admitted,5,6,14,25,5
+P339,10/9/2024 8:21,10/13/2024 23:27,Appendicitis,Critical,MRI,ICU,4,"Gown, IV",MRI Machine,2,Lipitor,Admitted,2,3,4,9,5
+P341,10/17/2024 12:28,11/1/2024 11:25,Fracture,Low,Chest X-ray,ICU,14,"Mask, Gown",MRI Machine,4,Penicillin,Discharged,28,49,165,242,1
+P342,10/27/2024 5:05,10/29/2024 16:21,Fracture,Low,MRI,General Ward,2,"Gloves, IV",Surgical Table,5,Penicillin,Discharged,15,71,75,161,1
+P345,10/26/2024 18:22,11/5/2024 22:28,Pneumonia,Medium,Chest X-ray,ICU,10,"Gloves, IV",X-ray Machine,4,Paracetamol,Discharged,6,14,22,42,4
+P348,10/18/2024 3:25,10/24/2024 9:10,Appendicitis,Medium,Chest X-ray,General Ward,6,"Gloves, IV",X-ray Machine,3,Penicillin,Discharged,8,18,48,74,3
+P352,10/15/2024 11:49,10/22/2024 7:13,Diabetes,Critical,Blood Test,General Ward,6,"Mask, Gown",Surgical Table,1,Lipitor,Discharged,3,3,15,21,5
+P359,10/8/2024 10:28,10/14/2024 10:12,Diabetes,Low,Blood Test,General Ward,5,"Gloves, IV",Surgical Table,5,Penicillin,Discharged,25,81,109,215,1
+P360,10/8/2024 6:04,10/10/2024 20:16,Fracture,Critical,Blood Test,ICU,2,"Mask, Gown",Surgical Table,2,Aspirin,Admitted,2,4,9,15,4
+P371,10/4/2024 22:32,10/16/2024 0:08,Diabetes,Critical,Appendectomy,ICU,11,"Gloves, IV",MRI Machine,2,Ibuprofen,Admitted,4,5,21,30,4
+P375,10/29/2024 3:19,11/11/2024 23:02,Fracture,Critical,Appendectomy,General Ward,13,"Gloves, IV",X-ray Machine,2,Paracetamol,Discharged,2,10,20,32,4
+P377,10/15/2024 19:35,10/21/2024 22:31,Diabetes,High,MRI,General Ward,6,"Mask, Gown",Surgical Table,4,Aspirin,Admitted,7,8,36,51,3
+P379,10/21/2024 22:24,10/27/2024 6:45,Fracture,Low,Blood Test,General Ward,5,"Mask, Gown",X-ray Machine,4,Ibuprofen,Discharged,32,64,75,171,1
+P380,10/1/2024 6:06,10/2/2024 19:40,Fracture,Medium,MRI,ICU,1,"Mask, Gown",MRI Machine,3,Paracetamol,Discharged,26,28,77,131,1
+P383,10/13/2024 7:41,10/21/2024 11:38,Appendicitis,Medium,Chest X-ray,General Ward,8,"Mask, Gown",MRI Machine,4,Aspirin,Discharged,17,35,76,128,1
+P388,10/19/2024 1:24,10/27/2024 10:13,Diabetes,Medium,Appendectomy,ICU,8,"Gown, IV",X-ray Machine,3,Paracetamol,Discharged,15,21,88,124,1
+P392,10/15/2024 7:33,10/16/2024 22:14,Pneumonia,High,Blood Test,General Ward,1,"Mask, Gown",X-ray Machine,3,Paracetamol,Discharged,7,12,27,46,4
+P393,10/11/2024 2:07,10/25/2024 22:49,Diabetes,Medium,Chest X-ray,General Ward,14,"Mask, Gown",Surgical Table,3,Ibuprofen,Discharged,14,23,84,121,1
+P394,10/11/2024 8:27,10/19/2024 0:00,Appendicitis,Medium,Chest X-ray,ICU,7,"Gown, IV",Surgical Table,4,Penicillin,Admitted,21,20,59,100,1
+P395,10/1/2024 10:07,10/6/2024 11:09,Pneumonia,High,Chest X-ray,ICU,5,"Gloves, IV",X-ray Machine,3,Penicillin,Discharged,4,6,29,39,3
+P403,10/29/2024 17:13,11/1/2024 21:30,Pneumonia,Medium,Chest X-ray,General Ward,3,"Mask, Gown",MRI Machine,3,Paracetamol,Admitted,7,15,62,84,2
+P404,10/23/2024 22:23,10/26/2024 10:40,Pneumonia,High,Blood Test,ICU,2,"Gloves, IV",X-ray Machine,3,Ibuprofen,Discharged,6,8,17,31,4
+P406,10/28/2024 23:37,11/10/2024 18:21,Appendicitis,Medium,Appendectomy,ICU,12,"Gown, IV",Surgical Table,4,Lipitor,Left Without Being Seen,17,35,130,182,1
+P409,10/12/2024 7:56,10/21/2024 16:18,Appendicitis,High,Appendectomy,General Ward,9,"Gloves, IV",Surgical Table,4,Paracetamol,Discharged,8,21,30,59,3
+P411,10/27/2024 0:04,10/29/2024 10:28,Pneumonia,Low,Blood Test,General Ward,2,"Gloves, IV",X-ray Machine,5,Ibuprofen,Discharged,18,47,87,152,1
+P412,10/28/2024 5:39,11/3/2024 11:22,Pneumonia,Medium,Blood Test,General Ward,6,"Gloves, IV",MRI Machine,4,Aspirin,Discharged,13,38,38,89,3
+P414,10/27/2024 6:29,11/9/2024 3:31,Diabetes,Critical,Appendectomy,General Ward,12,"Gloves, IV",MRI Machine,2,Lipitor,Admitted,1,1,11,13,5
+P417,10/7/2024 16:19,10/13/2024 3:18,Pneumonia,Medium,Appendectomy,General Ward,5,"Mask, Gown",X-ray Machine,4,Paracetamol,Discharged,18,15,24,57,3
+P420,10/19/2024 9:32,10/28/2024 20:27,Fracture,Low,Blood Test,ICU,9,"Gloves, IV",MRI Machine,5,Penicillin,Discharged,21,83,99,203,1
+P426,10/8/2024 8:39,10/11/2024 16:53,Appendicitis,Critical,Chest X-ray,ICU,3,"Mask, Gown",X-ray Machine,1,Lipitor,Admitted,4,4,14,22,5
+P440,10/19/2024 21:13,10/24/2024 22:25,Fracture,High,Chest X-ray,General Ward,5,"Gown, IV",X-ray Machine,4,Penicillin,Admitted,5,13,24,42,4
+P441,10/10/2024 14:31,10/14/2024 4:04,Pneumonia,Critical,Chest X-ray,General Ward,3,"Gown, IV",MRI Machine,1,Aspirin,Discharged,3,4,10,17,5
+P442,10/20/2024 14:25,10/31/2024 21:06,Appendicitis,Critical,Appendectomy,General Ward,11,"Mask, Gown",X-ray Machine,1,Ibuprofen,Admitted,2,4,13,19,5
+P446,10/9/2024 22:16,10/22/2024 23:34,Fracture,Medium,MRI,ICU,13,"Mask, Gown",X-ray Machine,3,Lipitor,Discharged,31,39,54,124,1
+P448,10/1/2024 2:58,10/15/2024 5:42,Appendicitis,High,MRI,General Ward,14,"Mask, Gown",Surgical Table,4,Paracetamol,Admitted,3,13,17,33,4
+P451,10/27/2024 3:30,10/29/2024 16:38,Diabetes,Low,Chest X-ray,ICU,2,"Gown, IV",MRI Machine,4,Paracetamol,Left Without Being Seen,55,98,141,294,1
+P452,10/22/2024 10:40,10/26/2024 0:46,Fracture,Critical,MRI,General Ward,3,"Mask, Gown",MRI Machine,2,Aspirin,Discharged,1,1,7,9,5
+P463,10/3/2024 8:23,10/11/2024 14:58,Appendicitis,Low,Blood Test,General Ward,8,"Mask, Gown",MRI Machine,5,Penicillin,Discharged,27,51,93,171,1
+P467,10/26/2024 9:17,11/3/2024 14:28,Diabetes,High,Appendectomy,General Ward,8,"Mask, Gown",Surgical Table,4,Penicillin,Admitted,8,17,49,74,2
+P468,10/14/2024 12:30,10/20/2024 21:28,Diabetes,Low,Appendectomy,General Ward,6,"Mask, Gown",MRI Machine,4,Penicillin,Discharged,27,106,110,243,1
+P476,10/6/2024 0:39,10/18/2024 1:15,Pneumonia,Low,Appendectomy,General Ward,12,"Gloves, IV",Surgical Table,4,Ibuprofen,Discharged,30,75,95,200,1
+P478,10/16/2024 17:39,10/29/2024 17:53,Fracture,Critical,Appendectomy,ICU,13,"Gown, IV",X-ray Machine,2,Penicillin,Admitted,3,2,13,18,4
+P481,10/18/2024 11:28,10/30/2024 12:33,Appendicitis,Medium,MRI,ICU,12,"Mask, Gown",MRI Machine,4,Lipitor,Admitted,15,17,24,56,3
+P484,10/7/2024 6:29,10/17/2024 15:58,Fracture,Critical,Blood Test,General Ward,10,"Mask, Gown",X-ray Machine,1,Lipitor,Discharged,1,2,12,15,4
+P488,10/10/2024 19:08,10/16/2024 9:41,Diabetes,Critical,Blood Test,General Ward,5,"Gown, IV",X-ray Machine,2,Aspirin,Admitted,3,3,26,32,4
+P490,10/13/2024 21:31,10/19/2024 8:27,Fracture,Critical,Appendectomy,General Ward,5,"Gown, IV",Surgical Table,1,Paracetamol,Discharged,2,3,15,20,4
+P493,10/4/2024 16:10,10/18/2024 21:53,Diabetes,Medium,MRI,General Ward,14,"Mask, Gown",X-ray Machine,3,Aspirin,Admitted,11,20,45,76,3
+P494,10/17/2024 15:22,10/22/2024 22:21,Appendicitis,Low,Appendectomy,General Ward,5,"Gloves, IV",X-ray Machine,4,Ibuprofen,Admitted,11,39,48,98,1
+P496,10/1/2024 12:54,10/14/2024 21:17,Diabetes,High,MRI,ICU,13,"Mask, Gown",Surgical Table,3,Paracetamol,Admitted,4,11,28,43,3

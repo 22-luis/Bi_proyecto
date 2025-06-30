@@ -6,9 +6,9 @@ from prefect.logging import get_run_logger
 from prefect.cache_policies import TASK_SOURCE, INPUTS
 
 @task
-def format_test_result(fmt_rows: list[list[str]]) -> Tuple[dict, list]:
-    dim_test_result = {"name": "dim_test_result",
-                "fields": ["test_result"],
+def format_patient_outcome(fmt_rows: list[list[str]]) -> Tuple[dict, list]:
+    dim_patient_outcome = {"name": "dim_patient_outcome",
+                "fields": ["patient_outcome"],
                 "rows": []}
     reg_ids: dict[str, int] = {}
     id_bind = []
@@ -19,14 +19,14 @@ def format_test_result(fmt_rows: list[list[str]]) -> Tuple[dict, list]:
                 id_bind.append(reg_ids[fmt_row[0]])
                 continue
             reg_ids[fmt_row[0]] = len(reg_ids) + 1
-            dim_test_result["rows"].append(fmt_row)
+            dim_patient_outcome["rows"].append(fmt_row)
             id_bind.append(reg_ids[fmt_row[0]])
         except Exception as e:
             logger.error(f"FORMAT ERROR on row {i}: {e}")
-    return dim_test_result, id_bind
+    return dim_patient_outcome, id_bind
 
 
 @flow
-def transform_test_result(fmt_rows: list[list[str]]) -> Tuple[dict, list]:
-    dim_test_result, id_bind = format_test_result(fmt_rows)
-    return {"dim_test_result": dim_test_result}, id_bind
+def transform_patient_outcome(fmt_rows: list[list[str]]) -> Tuple[dict, list]:
+    dim_patient_outcome, id_bind = format_patient_outcome(fmt_rows)
+    return {"dim_patient_outcome": dim_patient_outcome}, id_bind
