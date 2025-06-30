@@ -2,7 +2,7 @@
   "version": "4.0",
   "datasetReference": {
     "byPath": {
-      "path": "../Reportes Hospitalarios.SemanticModel"
+      "path": "../Reporte Admisiones.SemanticModel"
     }
   }
 }

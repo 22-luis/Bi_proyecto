@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.63\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2},\"customTheme\":{\"name\":\"Innovate\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "config": "{\"version\":\"5.63\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2},\"customTheme\":{\"name\":\"Innovate\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -122,13 +122,13 @@
           "z": 8000.00
         },
         {
-          "config": "{\"name\":\"c9a4ea4ad3a04b0e0007\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24.83427647534357,\"y\":23.79951495553759,\"z\":9001,\"width\":587.7445432497979,\"height\":63.12045270816491,\"tabOrder\":9001}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Reporte de Admisiones\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]}]}}]}}}",
+          "config": "{\"name\":\"c9a4ea4ad3a04b0e0007\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24.83427647534357,\"y\":23.79951495553759,\"z\":10000,\"width\":587.7445432497979,\"height\":63.12045270816491,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Reporte de Admisiones\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]}]}}]}}}",
           "filters": "[]",
           "height": 63.12,
           "width": 587.74,
           "x": 24.83,
           "y": 23.80,
-          "z": 9001.00
+          "z": 10000.00
         }
       ],
       "width": 1280.00
