@@ -1,0 +1,104 @@
+table fact_staff_shift
+	lineageTag: 607ec36d-2296-4c8d-b100-5a4fa969670b
+
+	column shift_id
+		dataType: int64
+		formatString: 0
+		lineageTag: d6520570-14a3-4c29-acb7-a2403d4fff41
+		summarizeBy: sum
+		sourceColumn: shift_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column staff_id
+		dataType: string
+		lineageTag: 815dc18a-3b45-4483-99b0-bbdc0c1850d4
+		summarizeBy: none
+		sourceColumn: staff_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column shift_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ec145b3c-feea-4016-b749-2be255e9cd5a
+		summarizeBy: none
+		sourceColumn: shift_date
+
+		variation Variation
+			isDefault
+			relationship: 514571f7-1d9f-4e11-a218-42675c53aba5
+			defaultHierarchy: LocalDateTable_bb8d25a6-2325-494b-a5f5-313d371da5e1.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column shift_start_time
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: cadd1b86-b7f3-49e0-9055-7ff88e28e92c
+		summarizeBy: none
+		sourceColumn: shift_start_time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column shift_end_time
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 8649242f-3923-4d13-8398-177635632dcd
+		summarizeBy: none
+		sourceColumn: shift_end_time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column current_assignment
+		dataType: string
+		lineageTag: 74d02e98-71f8-4dbc-b866-6baf05356b2b
+		summarizeBy: none
+		sourceColumn: current_assignment
+
+		annotation SummarizationSetBy = Automatic
+
+	column hours_worked
+		dataType: int64
+		formatString: 0
+		lineageTag: 9cbbe213-c4de-414b-ac38-ce4109d667e3
+		summarizeBy: sum
+		sourceColumn: hours_worked
+
+		annotation SummarizationSetBy = Automatic
+
+	column patients_assigned
+		dataType: int64
+		formatString: 0
+		lineageTag: 28e95d33-2f35-4813-a1a2-ee72e0e7be1c
+		summarizeBy: sum
+		sourceColumn: patients_assigned
+
+		annotation SummarizationSetBy = Automatic
+
+	column overtime_hours
+		dataType: int64
+		formatString: 0
+		lineageTag: b75ce6f8-e54e-403d-a30e-7949fa95dfa8
+		summarizeBy: sum
+		sourceColumn: overtime_hours
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_staff_shift = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("DESKTOP-1JBH24U\TESTDW", "DW"),
+				    dbo_fact_staff_shift = Source{[Schema="dbo",Item="fact_staff_shift"]}[Data]
+				in
+				    dbo_fact_staff_shift
+
+	annotation PBI_ResultType = Table
+

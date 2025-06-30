@@ -1,0 +1,31 @@
+table dim_medication
+	lineageTag: 964422a4-3e47-4450-8f1e-cb999ae7846a
+
+	column medication_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 790c6b70-756c-4fbf-a668-e8d4bda36f39
+		summarizeBy: none
+		sourceColumn: medication_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column medication_name
+		dataType: string
+		lineageTag: 24f614dd-d2a1-436f-9e93-ad3b93e2816e
+		summarizeBy: none
+		sourceColumn: medication_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_medication = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("DESKTOP-1JBH24U\TESTDW", "DW"),
+				    dbo_dim_medication = Source{[Schema="dbo",Item="dim_medication"]}[Data]
+				in
+				    dbo_dim_medication
+
+	annotation PBI_ResultType = Table
+

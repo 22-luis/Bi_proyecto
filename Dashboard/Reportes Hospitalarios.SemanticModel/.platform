@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Reportes Hospitalarios"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "049c1d8c-f198-4e54-a336-ea39df791e57"
+  }
+}

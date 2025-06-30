@@ -1,0 +1,89 @@
+table dim_vendor
+	lineageTag: 5887fca5-2468-4b03-a7d7-ad043821b3b1
+
+	column vendor_id
+		dataType: string
+		lineageTag: d1731f4e-a6f8-49bc-b504-fcef982115c8
+		summarizeBy: none
+		sourceColumn: vendor_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column vendor_name
+		dataType: string
+		lineageTag: ed37565a-1040-48b5-976d-6925777b61bf
+		summarizeBy: none
+		sourceColumn: vendor_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column item_supplied
+		dataType: string
+		lineageTag: 4b2b582f-ebe1-4b82-b009-e6da3a32e241
+		summarizeBy: none
+		sourceColumn: item_supplied
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_lead_time_days
+		dataType: int64
+		formatString: 0
+		lineageTag: e7727134-b77d-48f5-b814-7313131972f8
+		summarizeBy: sum
+		sourceColumn: avg_lead_time_days
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_per_item
+		dataType: double
+		lineageTag: c9d9b87d-6324-4569-88a4-ca433a7245da
+		summarizeBy: sum
+		sourceColumn: cost_per_item
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column last_order_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e30f38a6-0fd2-44db-bda0-8cdc060ee315
+		summarizeBy: none
+		sourceColumn: last_order_date
+
+		variation Variation
+			isDefault
+			relationship: 78bd20c6-5a07-40d9-afff-6876818b6a7f
+			defaultHierarchy: LocalDateTable_bfc79361-f8a3-43fb-aa33-cf141024d391.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column next_delivery_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 20be44a2-0420-4f1e-babb-2995d956b12a
+		summarizeBy: none
+		sourceColumn: next_delivery_date
+
+		variation Variation
+			isDefault
+			relationship: b075f214-c5e9-43e0-8830-2faf179784a2
+			defaultHierarchy: LocalDateTable_01247875-7783-4370-b43b-c201771ee6fe.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition dim_vendor = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("DESKTOP-1JBH24U\TESTDW", "DW"),
+				    dbo_dim_vendor = Source{[Schema="dbo",Item="dim_vendor"]}[Data]
+				in
+				    dbo_dim_vendor
+
+	annotation PBI_ResultType = Table
+

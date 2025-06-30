@@ -1,0 +1,33 @@
+table metric_admission_type
+	lineageTag: d05f8158-dd04-4b46-8afb-d1b2863d74fc
+
+	column admission_type
+		dataType: string
+		lineageTag: 24c7b72c-ab8e-4d46-88f5-b3445df5aeff
+		summarizeBy: none
+		sourceColumn: admission_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column wait_time_target
+		dataType: int64
+		formatString: 0
+		lineageTag: 24c7f528-d6d4-4716-a850-c6b5fd78cfd7
+		summarizeBy: sum
+		sourceColumn: wait_time_target
+
+		annotation SummarizationSetBy = Automatic
+
+	partition metric_admission_type = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45Wci7KLMlMTsxR0lEyMlCK1YlW8shMzwDyjCE839SUzNJcIN8EwvfJLwdyTCEc15zU5JLMslSoSCwA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [admission_type = _t, wait_time_target = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"admission_type", type text}, {"wait_time_target", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

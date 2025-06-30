@@ -1,0 +1,138 @@
+{
+  "config": "{\"version\":\"5.63\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2},\"customTheme\":{\"name\":\"Innovate\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          },
+          {
+            "name": "Innovate",
+            "path": "BuiltInThemes/Innovate.json",
+            "type": 201
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"484f4a70e8018a00e0aa\",\"target\":\"9803c5878987c10eca6e\",\"type\":1},{\"source\":\"21e3c9cf5bb481b8e806\",\"target\":\"9803c5878987c10eca6e\",\"type\":1},{\"source\":\"21e3c9cf5bb481b8e806\",\"target\":\"7910c214046090979467\",\"type\":2},{\"source\":\"7910c214046090979467\",\"target\":\"9803c5878987c10eca6e\",\"type\":1}],\"objects\":{\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.1}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.1}}}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "d36fa792b67a76700b01",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0aed6fb0a12209a742a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":921.9725141471301,\"y\":0,\"z\":4000,\"width\":282.48989490703315,\"height\":118.99757477768796,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Goal\":[{\"queryRef\":\"Sum(metric_admission.patrient_satisfaction_target)\"}],\"Indicator\":[{\"queryRef\":\"Sum(dim_admission.patient_satisfaction)\"}],\"TrendLine\":[{\"queryRef\":\"dim_admission.admission_date (bins) 2\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"metric_admission\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_admission\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"patrient_satisfaction_target\"}},\"Function\":1},\"Name\":\"Sum(metric_admission.patrient_satisfaction_target)\",\"NativeReferenceName\":\"Average of patrient_satisfaction_target\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"patient_satisfaction\"}},\"Function\":1},\"Name\":\"Sum(dim_admission.patient_satisfaction)\",\"NativeReferenceName\":\"Average of patient_satisfaction1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"admission_date (bins) 2\"},\"Name\":\"dim_admission.admission_date (bins) 2\",\"NativeReferenceName\":\"admission_date (bins) 2\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"lastDate\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Nivel de Satisfaccion'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 119.00,
+          "width": 282.49,
+          "x": 921.97,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"1efda1fd120b8b9a8602\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24.83427647534357,\"y\":118.99757477768796,\"z\":0,\"width\":1228.2619240097008,\"height\":586.7097817299918,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"10L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 586.71,
+          "width": 1228.26,
+          "x": 24.83,
+          "y": 119.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"21b1ee205d9375b1471e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640.517380759903,\"y\":0,\"z\":3000,\"width\":281.45513338722714,\"height\":118.99757477768796,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"Indicator\":[{\"queryRef\":\"Sum(dim_admission.total_time)\"}],\"Goal\":[{\"queryRef\":\"Sum(metric_admission_type.wait_time_target)\"}],\"TrendLine\":[{\"queryRef\":\"dim_admission.admission_date (bins) 2\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_admission\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"metric_admission_type\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"total_time\"}},\"Function\":1},\"Name\":\"Sum(dim_admission.total_time)\",\"NativeReferenceName\":\"Average of total_time\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"wait_time_target\"}},\"Function\":1},\"Name\":\"Sum(metric_admission_type.wait_time_target)\",\"NativeReferenceName\":\"Average of wait_time_target\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"admission_date (bins) 2\"},\"Name\":\"dim_admission.admission_date (bins) 2\",\"NativeReferenceName\":\"admission_date (bins) 2\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"status\":[{\"properties\":{\"direction\":{\"expr\":{\"Literal\":{\"Value\":\"'Negative'\"}}}}}],\"indicator\":[{\"properties\":{\"iconSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"lastDate\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tiempo de Espera'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 119.00,
+          "width": 281.46,
+          "x": 640.52,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"21e3c9cf5bb481b8e806\",\"layouts\":[{\"id\":0,\"position\":{\"x\":46.5642683912692,\"y\":147.97089733225545,\"z\":5000,\"width\":322.84559417946645,\"height\":232.821341956346,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(fact_admission.admission_id)\"}],\"Category\":[{\"queryRef\":\"dim_admission_type.admission_type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_admission\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_admission_type\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"admission_id\"}},\"Function\":5},\"Name\":\"CountNonNull(fact_admission.admission_id)\",\"NativeReferenceName\":\"admission_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"admission_type\"},\"Name\":\"dim_admission_type.admission_type\",\"NativeReferenceName\":\"admission_type\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"admission_id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Category, percent of total'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_admission_type\"}},\"Property\":\"admission_type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Critical'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_admission_type\"}},\"Property\":\"admission_type\"}},\"Right\":{\"Literal\":{\"Value\":\"'High'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_admission_type\"}},\"Property\":\"admission_type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Elective'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_admission_type\"}},\"Property\":\"admission_type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Low'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_admission_type\"}},\"Property\":\"admission_type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Medium'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Admisiones por NIvel de Urgencia'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"visualHeader\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 232.82,
+          "width": 322.85,
+          "x": 46.56,
+          "y": 147.97,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"28f317fd687440201dd9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":46.5642683912692,\"y\":559.8059822150364,\"z\":7000,\"width\":566.0145513338723,\"height\":120.03233629749393,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Sum(dim_admission.registration_time)\"},{\"queryRef\":\"Sum(dim_admission.triage_time)\"},{\"queryRef\":\"Sum(dim_admission.medic_time)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_admission\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"registration_time\"}},\"Function\":1},\"Name\":\"Sum(dim_admission.registration_time)\",\"NativeReferenceName\":\"Average of registration_time\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"medic_time\"}},\"Function\":1},\"Name\":\"Sum(dim_admission.medic_time)\",\"NativeReferenceName\":\"Average of medic_time\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"triage_time\"}},\"Function\":1},\"Name\":\"Sum(dim_admission.triage_time)\",\"NativeReferenceName\":\"Average of triage_time\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"registration_time\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"label\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tiempo a Registrarse'\"}}}},\"selector\":{\"metadata\":\"Sum(dim_admission.registration_time)\"}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tiempo a Triaje'\"}}}},\"selector\":{\"metadata\":\"Sum(dim_admission.triage_time)\"}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tiempo a Medico'\"}}}},\"selector\":{\"metadata\":\"Sum(dim_admission.medic_time)\"}}]}}}",
+          "filters": "[]",
+          "height": 120.03,
+          "width": 566.01,
+          "x": 46.56,
+          "y": 559.81,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"2cf975ee0944c173602e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":46.5642683912692,\"y\":380.7922392886014,\"z\":9000,\"width\":566.0145513338723,\"height\":179.01374292643493,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_admission.admission_hour\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(fact_admission.nurse_ratio)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_admission\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fact_admission\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"admission_hour\"},\"Name\":\"dim_admission.admission_hour\",\"NativeReferenceName\":\"admission_hour\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"nurse_ratio\"}},\"Function\":1},\"Name\":\"CountNonNull(fact_admission.nurse_ratio)\",\"NativeReferenceName\":\"Average of nurse_ratio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"nurse_ratio\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"start\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Enfermeros Asignados por Hora del Dia'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 179.01,
+          "width": 566.01,
+          "x": 46.56,
+          "y": 380.79,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"484f4a70e8018a00e0aa\",\"layouts\":[{\"id\":0,\"position\":{\"x\":612.5788197251414,\"y\":147.97089733225545,\"z\":1000,\"width\":617.7526273241714,\"height\":232.821341956346,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(dim_admission.total_time)\"}],\"Series\":[{\"queryRef\":\"dim_admission_type.admission_type\"}],\"Size\":[{\"queryRef\":\"Sum(dim_admission.bed_days)\"}],\"X\":[{\"queryRef\":\"dim_admission.admission_date.Variation.Date Hierarchy.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_admission\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dim_admission_type\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"total_time\"},\"Name\":\"Sum(dim_admission.total_time)\",\"NativeReferenceName\":\"total_time\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"admission_type\"},\"Name\":\"dim_admission_type.admission_type\",\"NativeReferenceName\":\"admission_type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"bed_days\"}},\"Function\":0},\"Name\":\"Sum(dim_admission.bed_days)\",\"NativeReferenceName\":\"Sum of bed_days\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"admission_date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"dim_admission.admission_date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"admission_date Day\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"bubbles\":[{\"properties\":{\"bubbleSize\":{\"expr\":{\"Literal\":{\"Value\":\"-15L\"}}},\"markerRangeType\":{\"expr\":{\"Literal\":{\"Value\":\"'dataRange'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_admission_type\"}},\"Property\":\"admission_type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Critical'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_admission_type\"}},\"Property\":\"admission_type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Elective'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_admission_type\"}},\"Property\":\"admission_type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Low'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_admission_type\"}},\"Property\":\"admission_type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Medium'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_admission_type\"}},\"Property\":\"admission_type\"}},\"Right\":{\"Literal\":{\"Value\":\"'High'\"}}}}}]}}],\"legend\":[{\"properties\":{\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Dia'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tiempo de Atencion por Admision'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 232.82,
+          "width": 617.75,
+          "x": 612.58,
+          "y": 147.97,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"7910c214046090979467\",\"layouts\":[{\"id\":0,\"position\":{\"x\":369.40986257073564,\"y\":147.97089733225545,\"z\":6000,\"width\":243.1689571544058,\"height\":232.821341956346,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_admission.patient_satisfaction\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(fact_admission.admission_id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_admission\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fact_admission\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"patient_satisfaction\"},\"Name\":\"dim_admission.patient_satisfaction\",\"NativeReferenceName\":\"patient_satisfaction\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"admission_id\"}},\"Function\":5},\"Name\":\"CountNonNull(fact_admission.admission_id)\",\"NativeReferenceName\":\"Count of admission_id\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"admission_id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Nivel de Satisfaccion'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 232.82,
+          "width": 243.17,
+          "x": 369.41,
+          "y": 147.97,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"9803c5878987c10eca6e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":612.5788197251414,\"y\":475.99029911075183,\"z\":2000,\"width\":617.7526273241714,\"height\":203.8480194017785,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"ribbonChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(fact_admission.admission_id)\"}],\"Series\":[{\"queryRef\":\"dim_admission.primary_diagnosis\"}],\"Category\":[{\"queryRef\":\"dim_admission.admission_date (bins) 3\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_admission\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fact_admission\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"admission_id\"}},\"Function\":5},\"Name\":\"CountNonNull(fact_admission.admission_id)\",\"NativeReferenceName\":\"Count of admission_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"primary_diagnosis\"},\"Name\":\"dim_admission.primary_diagnosis\",\"NativeReferenceName\":\"primary_diagnosis\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"admission_date (bins) 3\"},\"Name\":\"dim_admission.admission_date (bins) 3\",\"NativeReferenceName\":\"admission_date (bins) 3\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"admission_date (bins) 3\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Admisiones por Diagnostico Semanal'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 203.85,
+          "width": 617.75,
+          "x": 612.58,
+          "y": 475.99,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"b4dc8dc026818c9076db\",\"layouts\":[{\"id\":0,\"position\":{\"x\":612.5788197251414,\"y\":380.7922392886014,\"z\":8000,\"width\":617.7526273241714,\"height\":95.19805982215036,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_admission.admission_date (bins) 3\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_admission\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"admission_date (bins) 3\"},\"Name\":\"dim_admission.admission_date (bins) 3\",\"NativeReferenceName\":\"admission_date (bins) 3\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"admission_date (bins) 3\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-09-29T00:00:00'\"}}},\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-10-27T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_admission\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"admission_date (bins) 3\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-09-29T00:00:00'\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"admission_date (bins) 3\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-10-28T00:00:00'\"}}}}}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 95.20,
+          "width": 617.75,
+          "x": 612.58,
+          "y": 380.79,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"c9a4ea4ad3a04b0e0007\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24.83427647534357,\"y\":23.79951495553759,\"z\":9001,\"width\":587.7445432497979,\"height\":63.12045270816491,\"tabOrder\":9001}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Reporte de Admisiones\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 63.12,
+          "width": 587.74,
+          "x": 24.83,
+          "y": 23.80,
+          "z": 9001.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Innovate"
+}

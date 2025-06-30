@@ -1,0 +1,23 @@
+table metric_admission
+	lineageTag: f3cbb655-9171-48d5-a59c-7a8749c27d85
+
+	column patrient_satisfaction_target
+		dataType: int64
+		formatString: 0
+		lineageTag: b94df24e-2835-42ac-9276-90e07a926646
+		summarizeBy: sum
+		sourceColumn: patrient_satisfaction_target
+
+		annotation SummarizationSetBy = Automatic
+
+	partition metric_admission = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlaKjQUA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [patrient_satisfaction_target = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"patrient_satisfaction_target", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

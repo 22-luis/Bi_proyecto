@@ -1,0 +1,42 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["dim_item","dim_medication","dim_patient","dim_patient_outcome","dim_resource","dim_staff","dim_vendor","fact_admission","fact_inventory","fact_staff_shift","fact_expense","dim_date","dim_admission_type","dim_admission","metric_admission_type","metric_admission"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.142.1277.0 (25.04)+014fde450f93691fc9537f0758d73d1c5df153ef
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dim_item
+ref table dim_medication
+ref table dim_patient
+ref table dim_patient_outcome
+ref table dim_resource
+ref table dim_staff
+ref table dim_vendor
+ref table DateTableTemplate_fdec8bbf-c39b-4a50-a3ba-04320dd7221c
+ref table LocalDateTable_bfc79361-f8a3-43fb-aa33-cf141024d391
+ref table LocalDateTable_01247875-7783-4370-b43b-c201771ee6fe
+ref table fact_admission
+ref table fact_inventory
+ref table fact_staff_shift
+ref table LocalDateTable_bb8d25a6-2325-494b-a5f5-313d371da5e1
+ref table fact_expense
+ref table dim_date
+ref table LocalDateTable_71cbe185-df2c-4e6c-a973-113dd7f901dc
+ref table dim_admission_type
+ref table dim_admission
+ref table LocalDateTable_1faa1026-dc73-4e03-ad7c-11033316705d
+ref table LocalDateTable_bc7bf544-e593-45f6-9a84-c6cc9a7ce451
+ref table metric_admission_type
+ref table metric_admission
+
+ref cultureInfo en-US
+

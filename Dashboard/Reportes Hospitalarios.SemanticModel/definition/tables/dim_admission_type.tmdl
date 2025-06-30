@@ -1,0 +1,39 @@
+table dim_admission_type
+	lineageTag: 4286012e-bb95-4de5-ba96-7211d72b1f3e
+
+	column admission_type_id
+		dataType: int64
+		formatString: 0
+		lineageTag: fa4890ea-4c85-4816-a804-cd69f9bc609d
+		summarizeBy: none
+		sourceColumn: admission_type_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_type
+		dataType: string
+		lineageTag: 3e83379a-fbc3-4295-b43f-02ec2a6d03e6
+		summarizeBy: none
+		sourceColumn: admission_type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_admission_type = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("DESKTOP-1JBH24U\TESTDW", "DW"),
+				    dbo_dim_admission_type = Source{[Schema="dbo",Item="dim_admission_type"]}[Data]
+				in
+				    dbo_dim_admission_type
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

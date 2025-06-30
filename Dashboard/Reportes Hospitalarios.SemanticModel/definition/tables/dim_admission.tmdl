@@ -1,0 +1,289 @@
+table dim_admission
+	lineageTag: c5211195-68d0-4c52-bbbf-bd1fa4678aae
+
+	column admission_id
+		dataType: int64
+		formatString: 0
+		lineageTag: d78b9b57-24b0-4516-a024-43674bf4acc0
+		summarizeBy: none
+		sourceColumn: admission_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_id
+		dataType: string
+		lineageTag: 86568b29-42a2-4416-a423-b071f19e4443
+		summarizeBy: none
+		sourceColumn: patient_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3578c63c-6bf9-4fc1-9557-9c3de3c808a3
+		summarizeBy: none
+		sourceColumn: admission_date
+
+		variation Variation
+			isDefault
+			relationship: fae838d9-5a71-4069-b564-6f09bd995a78
+			defaultHierarchy: LocalDateTable_1faa1026-dc73-4e03-ad7c-11033316705d.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"dim_admission","TableItemName":"admission_date (bins)","ObjectType":4},"LinkType":"UsedInGroup"},{"LinkTarget":{"TableName":"dim_admission","TableItemName":"admission_date (bins) 2","ObjectType":4},"LinkType":"UsedInGroup"},{"LinkTarget":{"TableName":"dim_admission","TableItemName":"admission_date (bins) 3","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column discharge_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f2c9767e-3091-4480-8de0-dbffe7192c1b
+		summarizeBy: none
+		sourceColumn: discharge_date
+
+		variation Variation
+			isDefault
+			relationship: 4c8b3e24-79e5-4340-a140-1c0834205fbb
+			defaultHierarchy: LocalDateTable_bc7bf544-e593-45f6-9a84-c6cc9a7ce451.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column primary_diagnosis
+		dataType: string
+		lineageTag: ce983aaa-91d9-4006-b0d8-e370fdb7006d
+		summarizeBy: none
+		sourceColumn: primary_diagnosis
+
+		annotation SummarizationSetBy = Automatic
+
+	column procedure_performed
+		dataType: string
+		lineageTag: 34169611-79ac-432e-81f7-2952e8ee51b2
+		summarizeBy: none
+		sourceColumn: procedure_performed
+
+		annotation SummarizationSetBy = Automatic
+
+	column room_type
+		dataType: string
+		lineageTag: afd9e31a-19e7-473c-9ad2-caff0e58a96f
+		summarizeBy: none
+		sourceColumn: room_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column bed_days
+		dataType: int64
+		formatString: 0
+		lineageTag: 072a0741-6991-4361-b80f-2a44fbfdfa3b
+		summarizeBy: sum
+		sourceColumn: bed_days
+
+		annotation SummarizationSetBy = Automatic
+
+	column medication_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 698418b2-1eac-4899-bb7f-cbb5b2551e3d
+		summarizeBy: none
+		sourceColumn: medication_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_type_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 61c9c304-8916-4736-a7ec-1d9cca23ea84
+		summarizeBy: none
+		sourceColumn: admission_type_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_outcome_id
+		dataType: int64
+		formatString: 0
+		lineageTag: f89ddb02-aad5-4b40-957d-f2f112722906
+		summarizeBy: none
+		sourceColumn: patient_outcome_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column registration_time
+		dataType: int64
+		formatString: 0
+		lineageTag: a5a9fef4-72e0-4ef9-b2d5-99a9cc19b026
+		summarizeBy: sum
+		sourceColumn: registration_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column triage_time
+		dataType: int64
+		formatString: 0
+		lineageTag: 8cb0db09-35c5-415c-975b-7f8e11c2f577
+		summarizeBy: sum
+		sourceColumn: triage_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column medic_time
+		dataType: int64
+		formatString: 0
+		lineageTag: ea43b40d-6203-42fa-97d3-03b6dad4ce2d
+		summarizeBy: sum
+		sourceColumn: medic_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_time
+		dataType: int64
+		formatString: 0
+		lineageTag: e8a3275d-29c3-47b9-9908-829437f7b7ec
+		summarizeBy: sum
+		sourceColumn: total_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_satisfaction
+		dataType: int64
+		formatString: 0
+		lineageTag: 55fb5556-34dc-4b18-975a-cba17a66976c
+		summarizeBy: sum
+		sourceColumn: patient_satisfaction
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'admission_date (bins)' =
+			IF(
+				ISBLANK('dim_admission'[admission_date]),
+				BLANK(),
+				1 + (INT((INT('dim_admission'[admission_date]) - 1) / 5) * 5)
+			)
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 031e2d79-3e71-4a98-a8ca-ee33a6f30081
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "dim_admission"
+				          }
+				        },
+				        "Property": "admission_date"
+				      }
+				    }
+				  ],
+				  "binningMetadata": {
+				    "binSize": {
+				      "value": 5.0,
+				      "unit": 8
+				    }
+				  }
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"d","Entity":"dim_admission"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"admission_date"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"admission_date"}},"Size":5.0,"TimeUnit":0}}}}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'admission_date (bins) 2' =
+			IF(
+				ISBLANK('dim_admission'[admission_date]),
+				BLANK(),
+				1 + INT(INT('dim_admission'[admission_date]) - 1)
+			)
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: cdb2907a-795f-4818-821e-6cf17e61215b
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "dim_admission"
+				          }
+				        },
+				        "Property": "admission_date"
+				      }
+				    }
+				  ],
+				  "binningMetadata": {
+				    "binSize": {
+				      "value": 1.0,
+				      "unit": 8
+				    }
+				  }
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"d","Entity":"dim_admission"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"admission_date"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"admission_date"}},"Size":1.0,"TimeUnit":0}}}}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'admission_date (bins) 3' =
+			IF(
+				ISBLANK('dim_admission'[admission_date]),
+				BLANK(),
+				1 + (INT((INT('dim_admission'[admission_date]) - 1) / 7) * 7)
+			)
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 1c7c5302-22e9-4f18-98d0-cf38fbcfa3d8
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "dim_admission"
+				          }
+				        },
+				        "Property": "admission_date"
+				      }
+				    }
+				  ],
+				  "binningMetadata": {
+				    "binSize": {
+				      "value": 7.0,
+				      "unit": 8
+				    }
+				  }
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"d","Entity":"dim_admission"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"admission_date"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"d"}},"Property":"admission_date"}},"Size":7.0,"TimeUnit":0}}}}
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_hour = HOUR(dim_admission[admission_date])
+		formatString: 0
+		lineageTag: 82a6c11e-89cb-47a8-bcca-eee0d6c3535b
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_admission = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("DESKTOP-1JBH24U\TESTDW", "DW"),
+				    dbo_dim_admission = Source{[Schema="dbo",Item="dim_admission"]}[Data]
+				in
+				    dbo_dim_admission
+
+	annotation PBI_ResultType = Table
+

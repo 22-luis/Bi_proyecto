@@ -1,0 +1,30 @@
+table dim_staff
+	lineageTag: 06188f00-f241-44ef-8fe0-ee42ebf11d10
+
+	column staff_id
+		dataType: string
+		lineageTag: 9df5e583-7ce4-4cc6-b78a-9cd89adbb290
+		summarizeBy: none
+		sourceColumn: staff_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column staff_type
+		dataType: string
+		lineageTag: b2d00876-b74b-407a-9cdf-ac4df33f3b30
+		summarizeBy: none
+		sourceColumn: staff_type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_staff = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("DESKTOP-1JBH24U\TESTDW", "DW"),
+				    dbo_dim_staff = Source{[Schema="dbo",Item="dim_staff"]}[Data]
+				in
+				    dbo_dim_staff
+
+	annotation PBI_ResultType = Table
+

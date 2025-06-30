@@ -1,0 +1,41 @@
+table dim_item
+	lineageTag: 39bea56c-50ba-4813-9013-7921699c218a
+
+	column item_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 24ecc30c-aff0-47be-aadd-897fbca7ee1c
+		summarizeBy: none
+		sourceColumn: item_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column item_type
+		dataType: string
+		lineageTag: 3db524f3-b86b-46a4-a058-98152dd63e8c
+		summarizeBy: none
+		sourceColumn: item_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column item_name
+		dataType: string
+		lineageTag: f2dbc968-f244-48d1-9774-2abc91c6fb1a
+		summarizeBy: none
+		sourceColumn: item_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_item = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("DESKTOP-1JBH24U\TESTDW", "DW"),
+				    dbo_dim_item = Source{[Schema="dbo",Item="dim_item"]}[Data]
+				in
+				    dbo_dim_item
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

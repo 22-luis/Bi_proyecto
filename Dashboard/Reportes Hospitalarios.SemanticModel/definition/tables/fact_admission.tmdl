@@ -1,0 +1,70 @@
+table fact_admission
+	lineageTag: b8ce77a0-7189-4e61-b78f-91ab440a6d29
+
+	column fact_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c7c00ead-54fb-4b30-857e-b58bacd9ea28
+		summarizeBy: sum
+		sourceColumn: fact_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 000130e5-e1f8-426b-8d8d-65a574757800
+		summarizeBy: none
+		sourceColumn: admission_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column supplies_used
+		dataType: string
+		lineageTag: 7d5d4d1d-7709-40a5-b73c-3bf80cef8c26
+		summarizeBy: none
+		sourceColumn: supplies_used
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipment_used
+		dataType: string
+		lineageTag: 95d7cc41-6122-4fa8-b0c1-56efc2ae0aff
+		summarizeBy: none
+		sourceColumn: equipment_used
+
+		annotation SummarizationSetBy = Automatic
+
+	column nurse_ratio
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b9c5dc6-bdf6-44aa-b383-c08c5a7bdb05
+		summarizeBy: sum
+		sourceColumn: nurse_ratio
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_cost
+		dataType: int64
+		formatString: 0
+		lineageTag: f439680c-5012-4f94-a4b3-b494f6028c72
+		summarizeBy: sum
+		sourceColumn: total_cost
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_admission = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("DESKTOP-1JBH24U\TESTDW", "DW"),
+				    dbo_fact_admission = Source{[Schema="dbo",Item="fact_admission"]}[Data]
+				in
+				    dbo_fact_admission
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

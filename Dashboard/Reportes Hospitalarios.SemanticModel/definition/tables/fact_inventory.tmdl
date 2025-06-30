@@ -1,0 +1,104 @@
+table fact_inventory
+	lineageTag: 1092cf18-9a7a-4f58-a9ff-17efb8f9c04a
+
+	column inventory_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f7d9aa8-f70a-442a-b656-a1a761730d44
+		summarizeBy: sum
+		sourceColumn: inventory_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 2c78ada2-5a2e-4a54-84e9-0daf4df328c9
+		summarizeBy: none
+		sourceColumn: date_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column item_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 078192fb-66ba-40f5-a219-61af51f7e40f
+		summarizeBy: none
+		sourceColumn: item_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_stock
+		dataType: int64
+		formatString: 0
+		lineageTag: fa9874eb-2cec-4434-b29b-c1543398df09
+		summarizeBy: sum
+		sourceColumn: current_stock
+
+		annotation SummarizationSetBy = Automatic
+
+	column min_required
+		dataType: int64
+		formatString: 0
+		lineageTag: 8c7d8a57-e597-4d45-9caf-bcd814569c30
+		summarizeBy: sum
+		sourceColumn: min_required
+
+		annotation SummarizationSetBy = Automatic
+
+	column max_capacity
+		dataType: int64
+		formatString: 0
+		lineageTag: c6fdeab7-0475-4839-984e-d07d674b47f8
+		summarizeBy: sum
+		sourceColumn: max_capacity
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit_cost
+		dataType: double
+		lineageTag: 9ea68d52-069f-402c-8764-30b97246f946
+		summarizeBy: sum
+		sourceColumn: unit_cost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column avg_usage_per_day
+		dataType: int64
+		formatString: 0
+		lineageTag: d51e1698-9759-4827-944f-39138dca7f14
+		summarizeBy: sum
+		sourceColumn: avg_usage_per_day
+
+		annotation SummarizationSetBy = Automatic
+
+	column restock_lead_time
+		dataType: int64
+		formatString: 0
+		lineageTag: 7043935d-3022-4ea5-aa2c-8180af171d26
+		summarizeBy: sum
+		sourceColumn: restock_lead_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column vendor_id
+		dataType: string
+		lineageTag: 82b07219-92d6-46fb-a2ef-07b8d2cb65e8
+		summarizeBy: none
+		sourceColumn: vendor_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_inventory = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("DESKTOP-1JBH24U\TESTDW", "DW"),
+				    dbo_fact_inventory = Source{[Schema="dbo",Item="fact_inventory"]}[Data]
+				in
+				    dbo_fact_inventory
+
+	annotation PBI_ResultType = Table
+

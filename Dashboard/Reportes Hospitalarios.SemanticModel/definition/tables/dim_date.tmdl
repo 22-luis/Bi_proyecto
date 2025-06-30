@@ -1,0 +1,84 @@
+table dim_date
+	lineageTag: 3f74c747-4dd0-425f-9020-5d27b22fedcc
+
+	column date_id
+		dataType: int64
+		formatString: 0
+		lineageTag: e4ebde62-7c89-414d-b85c-9c1de85a8c7e
+		summarizeBy: none
+		sourceColumn: date_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column full_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 71bce224-e04c-43db-b38e-4b465abc36e9
+		summarizeBy: none
+		sourceColumn: full_date
+
+		variation Variation
+			isDefault
+			relationship: ddc9cc55-c0fa-416f-badd-024097d29fcb
+			defaultHierarchy: LocalDateTable_71cbe185-df2c-4e6c-a973-113dd7f901dc.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column day
+		dataType: int64
+		formatString: 0
+		lineageTag: bb5639c3-a96e-42f3-beae-b44bdb40bd0a
+		summarizeBy: sum
+		sourceColumn: day
+
+		annotation SummarizationSetBy = Automatic
+
+	column month
+		dataType: int64
+		formatString: 0
+		lineageTag: a081bf7f-0136-432b-ba89-8182bfeb47e7
+		summarizeBy: sum
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 9dcf2ed1-1e90-4c66-bd4e-10e156ae1168
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: 60ac4efb-0939-4d39-93ec-d4c693a7d58e
+		summarizeBy: sum
+		sourceColumn: quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column day_of_week
+		dataType: int64
+		formatString: 0
+		lineageTag: eec7fca0-bc5f-4a68-b659-abae96b8a68a
+		summarizeBy: sum
+		sourceColumn: day_of_week
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_date = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("DESKTOP-1JBH24U\TESTDW", "DW"),
+				    dbo_dim_date = Source{[Schema="dbo",Item="dim_date"]}[Data]
+				in
+				    dbo_dim_date
+
+	annotation PBI_ResultType = Table
+

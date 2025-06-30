@@ -1,0 +1,110 @@
+relationship 78bd20c6-5a07-40d9-afff-6876818b6a7f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_vendor.last_order_date
+	toColumn: LocalDateTable_bfc79361-f8a3-43fb-aa33-cf141024d391.Date
+
+relationship b075f214-c5e9-43e0-8830-2faf179784a2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_vendor.next_delivery_date
+	toColumn: LocalDateTable_01247875-7783-4370-b43b-c201771ee6fe.Date
+
+relationship 514571f7-1d9f-4e11-a218-42675c53aba5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_staff_shift.shift_date
+	toColumn: LocalDateTable_bb8d25a6-2325-494b-a5f5-313d371da5e1.Date
+
+relationship ddc9cc55-c0fa-416f-badd-024097d29fcb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.full_date
+	toColumn: LocalDateTable_71cbe185-df2c-4e6c-a973-113dd7f901dc.Date
+
+relationship fae838d9-5a71-4069-b564-6f09bd995a78
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_admission.admission_date
+	toColumn: LocalDateTable_1faa1026-dc73-4e03-ad7c-11033316705d.Date
+
+relationship 4c8b3e24-79e5-4340-a140-1c0834205fbb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_admission.discharge_date
+	toColumn: LocalDateTable_bc7bf544-e593-45f6-9a84-c6cc9a7ce451.Date
+
+relationship ccb5d26a-3dd7-448d-a45f-cd63adcbeae1
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: fact_admission.admission_id
+	toColumn: dim_admission.admission_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship d168d01e-5513-4a8f-8cb9-7ab6cf25db47
+	fromColumn: fact_inventory.item_id
+	toColumn: dim_item.item_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 5ccae4e0-5790-4621-9c59-fc035973b812
+	fromColumn: fact_inventory.vendor_id
+	toColumn: dim_vendor.vendor_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship deb10f02-94f9-440f-916c-457245f3e3db
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: fact_inventory.date_id
+	toColumn: dim_date.date_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 3c6aef56-6e16-47c6-95b2-1ea48fb2afe9
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: fact_staff_shift.staff_id
+	toColumn: dim_staff.staff_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 1a458a8d-a951-4412-b169-47b204a159b5
+	fromColumn: fact_expense.resource_id
+	toColumn: dim_resource.resource_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 98bab3e9-eb62-44a0-b3ec-b254302c2651
+	fromColumn: fact_expense.admission_id
+	toColumn: dim_admission.admission_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 834b2cea-bf65-415d-8621-077336435e3a
+	fromColumn: dim_admission.medication_id
+	toColumn: dim_medication.medication_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship b3d1530c-dfcf-4014-b72e-3697d4482ce9
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: dim_admission.patient_id
+	toColumn: dim_patient.patient_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 4d496dd2-ef95-4064-b347-ac2c5a1f63c6
+	fromColumn: dim_admission.patient_outcome_id
+	toColumn: dim_patient_outcome.patient_outcome_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship e7c78cb4-7947-41a6-98a0-4269b0e8e71c
+	fromColumn: dim_admission.admission_type_id
+	toColumn: dim_admission_type.admission_type_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 906e4339-9941-c787-11c1-f9394c730320
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: dim_admission_type.admission_type
+	toColumn: metric_admission_type.admission_type
+
