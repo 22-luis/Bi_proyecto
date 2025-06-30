@@ -1,0 +1,76 @@
+table financial_data
+	lineageTag: f8318f9b-81ad-4dd9-b808-2d43d166604f
+
+	measure 'QTD de Suma de Amount' =
+			
+			IF(
+				ISFILTERED('financial_data'[Date]),
+				ERROR("La medida rápida de inteligencia de tiempo solo se puede agrupar o filtrar mediante la jerarquía de datos proporcionada por Power BI o por la columna de datos principal."),
+				TOTALQTD(SUM('financial_data'[Amount]), 'financial_data'[Date].[Date])
+			)
+		lineageTag: 652cd76c-cb85-49eb-859c-00fbd1d620b6
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "QuarterToDate"
+				}
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 64a93f63-9f19-481f-8464-3fd5fc23ed0a
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variación
+			isDefault
+			relationship: 9e85cfda-66f8-42be-a8c0-0dc5e7b6d52f
+			defaultHierarchy: LocalDateTable_d7a5baf4-7277-4fab-bfb5-e67cee610167.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Expense_Category
+		dataType: string
+		lineageTag: 0d8df35d-9892-4b39-b196-5ab33ee17871
+		summarizeBy: none
+		sourceColumn: Expense_Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Amount
+		dataType: double
+		lineageTag: 7414b818-3d22-429f-84e6-fbb7c3642e00
+		summarizeBy: sum
+		sourceColumn: Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Description
+		dataType: string
+		lineageTag: b1507d8a-56aa-4511-80cf-8952aba950f2
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	partition financial_data = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents("C:\Users\Edwin\Downloads\BI\Bi_proyecto\Base Proyecto\financial_data.csv"),[Delimiter=",", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Date", type date}, {"Expense_Category", type text}, {"Amount", type number}, {"Description", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+
