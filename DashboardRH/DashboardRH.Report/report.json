@@ -1,0 +1,102 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2},\"customTheme\":{\"name\":\"Innovate\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          },
+          {
+            "name": "Innovate",
+            "path": "BuiltInThemes/Innovate.json",
+            "type": 201
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1200.00,
+      "name": "26cdc2de5b14c5107777",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"12189ba383db5341bed1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":57.5,\"y\":132.5,\"z\":0,\"width\":617.5,\"height\":332.5,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Empleados.Departamento\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Empleados.ID_Empleado)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Empleados\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Departamento\"},\"Name\":\"Empleados.Departamento\",\"NativeReferenceName\":\"Departamento\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"ID_Empleado\"}},\"Function\":5},\"Name\":\"CountNonNull(Empleados.ID_Empleado)\",\"NativeReferenceName\":\"Count of ID_Empleado\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"ID_Empleado\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Empleados por Area'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 332.50,
+          "width": 617.50,
+          "x": 57.50,
+          "y": 132.50,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"1ccb36e0b7cc7a4c76cd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":56.66666666666667,\"y\":23.333333333333336,\"z\":5003,\"width\":486.6666666666667,\"height\":73.33333333333334,\"tabOrder\":5002}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Recursos Humanos\",\"textStyle\":{\"fontSize\":\"40pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 73.33,
+          "width": 486.67,
+          "x": 56.67,
+          "y": 23.33,
+          "z": 5003.00
+        },
+        {
+          "config": "{\"name\":\"791f7e91902297ce125d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":632.5,\"y\":855,\"z\":5000,\"width\":725,\"height\":295,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Encuestas.Tema\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Encuestas.Valor)\"}],\"Series\":[{\"queryRef\":\"Encuestas.Valor\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Encuestas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Tema\"},\"Name\":\"Encuestas.Tema\",\"NativeReferenceName\":\"Count of Tema\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Valor\"}},\"Function\":0},\"Name\":\"Sum(Encuestas.Valor)\",\"NativeReferenceName\":\"Sum of Valor\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Valor\"},\"Name\":\"Encuestas.Valor\",\"NativeReferenceName\":\"Valor\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Valor\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Satisfacción del personal'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 295.00,
+          "width": 725.00,
+          "x": 632.50,
+          "y": 855.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"852ad24500cb02988a17\",\"layouts\":[{\"id\":0,\"position\":{\"x\":57.5,\"y\":495,\"z\":2000,\"width\":670,\"height\":330,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"HorasExtra.Fecha\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(HorasExtra.Horas_Extra)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HorasExtra\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Fecha\"},\"Name\":\"HorasExtra.Fecha\",\"NativeReferenceName\":\"Sum of Fecha\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Horas_Extra\"}},\"Function\":0},\"Name\":\"Sum(HorasExtra.Horas_Extra)\",\"NativeReferenceName\":\"Horas_Extra\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Horas_Extra\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Horas extra'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 330.00,
+          "width": 670.00,
+          "x": 57.50,
+          "y": 495.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"9f28797748e8830514c4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":700,\"y\":132.5,\"z\":1000,\"width\":657.5,\"height\":332.5,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(Asistencias.Asistencia)\"}],\"Series\":[{\"queryRef\":\"Asistencias.Asistencia\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Asistencias\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Asistencia\"}},\"Function\":5},\"Name\":\"CountNonNull(Asistencias.Asistencia)\",\"NativeReferenceName\":\"Count of Asistencia\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Asistencia\"},\"Name\":\"Asistencias.Asistencia\",\"NativeReferenceName\":\"Asistencia\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Asistencia\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Asistencias y ausencias'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 332.50,
+          "width": 657.50,
+          "x": 700.00,
+          "y": 132.50,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"b6a99b99d3b88c72c55e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":57.5,\"y\":855,\"z\":4000,\"width\":547.5,\"height\":295,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(Empleados.Categoría)\"}],\"Category\":[{\"queryRef\":\"Empleados.Departamento\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Empleados\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Categoría\"}},\"Function\":5},\"Name\":\"CountNonNull(Empleados.Categoría)\",\"NativeReferenceName\":\"Count of Categoría\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Departamento\"},\"Name\":\"Empleados.Departamento\",\"NativeReferenceName\":\"Departamento\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Categoría\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Productividad por departamento'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"a4273a207cd612636251\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Asistencias\"}},\"Property\":\"Asistencia\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Asistencias\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Asistencia\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Presente'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{}}]}}]",
+          "height": 295.00,
+          "width": 547.50,
+          "x": 57.50,
+          "y": 855.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"ee53272e11926460304a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":750,\"y\":495,\"z\":3000,\"width\":607.5,\"height\":330,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Bajas.Fecha_Baja\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Bajas.ID_Empleado)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Bajas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Fecha_Baja\"},\"Name\":\"Bajas.Fecha_Baja\",\"NativeReferenceName\":\"Fecha_Baja\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"ID_Empleado\"}},\"Function\":5},\"Name\":\"CountNonNull(Bajas.ID_Empleado)\",\"NativeReferenceName\":\"Count of ID_Empleado\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Fecha_Baja\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tasa de rotación'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 330.00,
+          "width": 607.50,
+          "x": 750.00,
+          "y": 495.00,
+          "z": 3000.00
+        }
+      ],
+      "width": 1400.00
+    }
+  ],
+  "theme": "Innovate"
+}

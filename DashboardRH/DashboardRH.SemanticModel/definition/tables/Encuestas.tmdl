@@ -1,0 +1,59 @@
+table Encuestas
+	lineageTag: 35e92699-59fe-4fcf-ae06-58d8f53a45f4
+
+	column ID_Empleado
+		dataType: string
+		lineageTag: e7dcb72b-6bff-4222-8310-aa5ead8f922c
+		summarizeBy: none
+		sourceColumn: ID_Empleado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c2be3904-8d0f-487b-9eb9-d6c217cf5f03
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		variation Variation
+			isDefault
+			relationship: bf8408a5-0a27-4d27-a7c7-5a37ba19ea00
+			defaultHierarchy: LocalDateTable_0925378f-5c02-44cd-83cc-36e53b204bad.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Tema
+		dataType: string
+		lineageTag: 194d02c3-4ae3-4fd8-967e-518b8feb6ade
+		summarizeBy: none
+		sourceColumn: Tema
+
+		annotation SummarizationSetBy = Automatic
+
+	column Valor
+		dataType: int64
+		formatString: 0
+		lineageTag: b42133c9-013d-41e2-bef8-dc017703ddd6
+		summarizeBy: sum
+		sourceColumn: Valor
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Encuestas = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Admin\Downloads\HR_Dataset_Extendido.xlsx"), null, true),
+				    Encuestas_Sheet = Source{[Item="Encuestas",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Encuestas_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ID_Empleado", type text}, {"Fecha", Int64.Type}, {"Tema", type text}, {"Valor", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,82 @@
+table Empleados
+	lineageTag: c972963a-5cec-46b9-b939-2b32673a1418
+
+	column ID_Empleado
+		dataType: string
+		lineageTag: c75daed1-f90a-46c0-979d-138745536d15
+		summarizeBy: none
+		sourceColumn: ID_Empleado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nombre
+		dataType: string
+		lineageTag: 705d816e-7670-46b2-a758-75aeff07500b
+		summarizeBy: none
+		sourceColumn: Nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column Departamento
+		dataType: string
+		lineageTag: 36b4aeb0-87a5-4e9c-b16e-97fb247ad070
+		summarizeBy: none
+		sourceColumn: Departamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categoría
+		dataType: string
+		lineageTag: d0f71ae6-b759-46a3-a92a-7e6180b8387f
+		summarizeBy: none
+		sourceColumn: Categoría
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha_Contratación
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: dbb02bc2-58b6-451e-b57a-2cfde8dcaf3f
+		summarizeBy: none
+		sourceColumn: Fecha_Contratación
+
+		variation Variation
+			isDefault
+			relationship: 65a13e39-a4de-4c11-85a7-92d521894f6c
+			defaultHierarchy: LocalDateTable_2eda8fb5-4f4c-4392-895c-07f4053d80cd.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Estado
+		dataType: string
+		lineageTag: 66a3ae18-575f-4e3d-80c4-5ee9b1192d0d
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Turno
+		dataType: string
+		lineageTag: 1f7bd173-cf31-4146-9ccb-78c396db7a18
+		summarizeBy: none
+		sourceColumn: Turno
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Empleados = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Admin\Downloads\HR_Dataset_Extendido.xlsx"), null, true),
+				    Empleados_Sheet = Source{[Item="Empleados",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Empleados_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ID_Empleado", type text}, {"Nombre", type text}, {"Departamento", type text}, {"Categoría", type text}, {"Fecha_Contratación", Int64.Type}, {"Estado", type text}, {"Turno", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

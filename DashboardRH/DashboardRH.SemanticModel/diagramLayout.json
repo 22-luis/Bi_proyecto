@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 50,
+            "y": 283.90364512729468
+          },
+          "nodeIndex": "Asistencias",
+          "nodeLineageTag": "b00d4c2f-d6b4-4180-9773-085836761111",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 337.00384376806062,
+            "y": -50
+          },
+          "nodeIndex": "Bajas",
+          "nodeLineageTag": "dfc1e93c-0024-452f-8072-b2bbf65f8bbd",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 337.07038680520839,
+            "y": 162.89098237421319
+          },
+          "nodeIndex": "Empleados",
+          "nodeLineageTag": "c972963a-5cec-46b9-b939-2b32673a1418",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 337.13020487962859,
+            "y": 463.29303324022203
+          },
+          "nodeIndex": "Encuestas",
+          "nodeLineageTag": "35e92699-59fe-4fcf-ae06-58d8f53a45f4",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 624.12384814406664,
+            "y": 116.32399663192314
+          },
+          "nodeIndex": "HorasExtra",
+          "nodeLineageTag": "8c675680-1ebf-4b7d-9c0e-1f7fd551dfd4",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 79.553182037699813,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

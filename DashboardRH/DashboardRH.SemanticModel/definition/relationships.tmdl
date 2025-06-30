@@ -1,0 +1,43 @@
+relationship AutoDetected_79ae2b2a-0479-4bce-8775-0c146b3e7a89
+	fromColumn: Asistencias.ID_Empleado
+	toColumn: Empleados.ID_Empleado
+
+relationship AutoDetected_939a9f0b-4832-4e49-8e9a-d8c1f2204cff
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Bajas.ID_Empleado
+	toColumn: Empleados.ID_Empleado
+
+relationship AutoDetected_ee634a8a-71c1-4682-ac60-d301c0440eeb
+	fromColumn: Encuestas.ID_Empleado
+	toColumn: Empleados.ID_Empleado
+
+relationship AutoDetected_5cc7007c-ee22-40e0-ac84-05f0794cbe70
+	fromColumn: HorasExtra.ID_Empleado
+	toColumn: Empleados.ID_Empleado
+
+relationship f375d666-58ee-45d1-a35f-26d6b679af30
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Asistencias.Fecha
+	toColumn: LocalDateTable_efa360d1-2b6b-4843-8940-4ad504c91432.Date
+
+relationship 8ef50f24-20c7-466c-ba24-d52db0a195bf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Bajas.Fecha_Baja
+	toColumn: LocalDateTable_81ea85f9-db78-43d6-b2d0-25d63257fa6d.Date
+
+relationship 65a13e39-a4de-4c11-85a7-92d521894f6c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Empleados.Fecha_Contratación
+	toColumn: LocalDateTable_2eda8fb5-4f4c-4392-895c-07f4053d80cd.Date
+
+relationship bf8408a5-0a27-4d27-a7c7-5a37ba19ea00
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Encuestas.Fecha
+	toColumn: LocalDateTable_0925378f-5c02-44cd-83cc-36e53b204bad.Date
+
+relationship b8c7fabe-178b-4814-a3a9-bcdb6ebb21e7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HorasExtra.Fecha
+	toColumn: LocalDateTable_613515bf-f970-41d0-9401-c7e3ac61c45d.Date
+

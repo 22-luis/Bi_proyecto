@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "DashboardRH"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1643b5d1-a10c-4ea6-b5c7-69949ee6bf62"
+  }
+}

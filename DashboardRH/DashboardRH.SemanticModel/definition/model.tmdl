@@ -1,0 +1,30 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Asistencias","Bajas","Empleados","Encuestas","HorasExtra"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.142.928.0 (25.04)+de52df9f0bb74ad93a80d89c52d63fe6d07e0e1b
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Asistencias
+ref table Bajas
+ref table Empleados
+ref table Encuestas
+ref table HorasExtra
+ref table DateTableTemplate_a744abc0-ee11-410a-a407-a2c8d599ff3b
+ref table LocalDateTable_efa360d1-2b6b-4843-8940-4ad504c91432
+ref table LocalDateTable_81ea85f9-db78-43d6-b2d0-25d63257fa6d
+ref table LocalDateTable_2eda8fb5-4f4c-4392-895c-07f4053d80cd
+ref table LocalDateTable_0925378f-5c02-44cd-83cc-36e53b204bad
+ref table LocalDateTable_613515bf-f970-41d0-9401-c7e3ac61c45d
+
+ref cultureInfo en-US
+
