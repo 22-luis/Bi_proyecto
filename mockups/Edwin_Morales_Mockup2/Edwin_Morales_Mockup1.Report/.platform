@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Edwin_Morales_Mockup1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "36cb5cd3-9202-4c90-9dbb-3b7b162c3c36"
+  }
+}
